@@ -1,0 +1,695 @@
+"id","site","job_url","job_url_direct","title","company","location","date_posted","job_type","salary_source","interval","min_amount","max_amount","currency","is_remote","job_level","job_function","listing_type","emails","description","company_industry","company_url","company_logo","company_url_direct","company_addresses","company_num_employees","company_revenue","company_description","skills","experience_range","company_rating","company_reviews_count","vacancy_count","work_from_home_type"
+"in-4ad98b8ed074361b","indeed","https://www.indeed.com/viewjob?jk=4ad98b8ed074361b","https://lifeattiktok.com/search/7553187214310656274","Senior Machine Learning Engineer - TikTok Short Video Content Understanding/Multimodal Recommendation","TikTok","San Jose, CA, US","2025-09-24","","direct_data","yearly",136800.0,359720.0,"USD",False,"","","","","Algorithm
+  
+  
+Senior Machine Learning Engineer - TikTok Short Video Content Understanding/Multimodal Recommendation
+  
+  
+Location
+  
+:
+  
+  
+San Jose
+  
+  
+Employment Type
+  
+:
+  
+  
+Regular
+  
+  
+Job Code
+  
+:
+  
+  
+A75648
+  
+  
+Responsibilities
+  
+  
+Our team's mission is to empower content understanding for TikTok Short Video business. We focus on cutting-edge research in content understanding and the development of advanced LLM/MLLM algorithms and applications, including generative recommendation, weakly-supervised learning, few-shot classification, video tagging, multi-task learning, multilingual learning, multimodal pretraining, and more. We aim to succeed both in driving measurable business impact (e.g., recommendation metrics) and delivering state-of-the-art research outputs.
+  
+  
+Responsibilities
+  
+1. Lead multimodal algorithm development for TikTok’s short-video business, explore applications of multimodal technologies in recommendation systems and other scenarios to improve key business metrics.
+  
+2. Conduct cutting-edge research in multimodal and MLLM technologies, design advanced algorithms to solve business requirements while achieving technical breakthroughs.
+  
+3. Drive engineering deployment and implementation, ensuring model stability, scalability, and efficiency in production environments.
+  
+  
+**4. Focus on key areas including (but not limited to):**  
+
+* General AI platform design and development, including few-shot/zero-shot on MLLM, AI-labeling, auto prompting, active-learning, continue pretraining and RL.
+* Integration of content understanding with recommendation systems (e.g., UGC ecosystems, cold start, interest exploration, comment understanding).
+* Leveraging multimodal techniques to develop next-generation recommendation systems, such as generative models and end-to-end approaches.
+
+Qualifications
+  
+  
+Minimum Qualifications
+  
+1. Proven experience in multimodal content understanding, with expertise in large language models (LLMs) and familiarity with cutting-edge progress in the field.
+  
+2. Strong technical foundation in at least one major deep learning framework (e.g., PyTorch, TensorFlow).
+  
+3. Proactive mindset, strong sense of ownership, excellent communication skills, and ability to collaborate across teams.
+  
+  
+Preferred Qualification
+  
+1. Hands-on experience deploying content understanding solutions in search, advertising, recommendation, or related domains.
+  
+  
+Job Information
+  
+  
+【For Pay Transparency】Compensation Description (Annually)
+  
+  
+The base salary range for this position in the selected city is $136800 - $359720 annually.
+  
+  
+​
+  
+  
+Compensation may vary outside of this range depending on a number of factors, including a candidate’s qualifications, skills, competencies and experience, and location. Base pay is one part of the Total Package that is provided to compensate and recognize employees for their work, and this role may be eligible for additional discretionary bonuses/incentives, and restricted stock units.
+  
+  
+​
+  
+  
+Benefits may vary depending on the nature of employment and the country work location. Employees have day one access to medical, dental, and vision insurance, a 401(k) savings plan with company match, paid parental leave, short-term and long-term disability coverage, life insurance, wellbeing benefits, among others. Employees also receive 10 paid holidays per year, 10 paid sick days per year and 17 days of Paid Personal Time (prorated upon hire with increasing accruals by tenure).
+  
+  
+​
+  
+  
+The Company reserves the right to modify or change these benefits programs at any time, with or without notice.
+  
+  
+​
+  
+  
+**For Los Angeles County (unincorporated) Candidates:**  
+​
+  
+  
+Qualified applicants with arrest or conviction records will be considered for employment in accordance with all federal, state, and local laws including the Los Angeles County Fair Chance Ordinance for Employers and the California Fair Chance Act. Our company believes that criminal history may have a direct, adverse and negative relationship on the following job duties, potentially resulting in the withdrawal of the conditional offer of employment:
+  
+  
+​
+  
+  
+1. Interacting and occasionally having unsupervised contact with internal/external clients and/or colleagues;
+  
+  
+​
+  
+  
+2. Appropriately handling and managing confidential information including proprietary and trade secret information and access to information technology systems; and
+  
+  
+​
+  
+  
+3. Exercising sound judgment.
+  
+  
+​
+  
+  
+About TikTok
+  
+  
+TikTok is the leading destination for short-form mobile video. At TikTok, our mission is to inspire creativity and bring joy. TikTok's global headquarters are in Los Angeles and Singapore, and we also have offices in New York City, London, Dublin, Paris, Berlin, Dubai, Jakarta, Seoul, and Tokyo.
+  
+  
+​
+  
+  
+Why Join Us
+  
+  
+Inspiring creativity is at the core of TikTok's mission. Our innovative product is built to help people authentically express themselves, discover and connect – and our global, diverse teams make that possible. Together, we create value for our communities, inspire creativity and bring joy - a mission we work towards every day.
+  
+  
+​
+  
+  
+We strive to do great things with great people. We lead with curiosity, humility, and a desire to make impact in a rapidly growing tech company. Every challenge is an opportunity to learn and innovate as one team. We're resilient and embrace challenges as they come. By constantly iterating and fostering an ""Always Day 1"" mindset, we achieve meaningful breakthroughs for ourselves, our company, and our users. When we create and grow together, the possibilities are limitless. Join us.
+  
+  
+​
+  
+  
+​
+  
+  
+Diversity & Inclusion
+  
+  
+​
+  
+  
+TikTok is committed to creating an inclusive space where employees are valued for their skills, experiences, and unique perspectives. Our platform connects people from across the globe and so does our workplace. At TikTok, our mission is to inspire creativity and bring joy. To achieve that goal, we are committed to celebrating our diverse voices and to creating an environment that reflects the many communities we reach. We are passionate about this and hope you are too.
+  
+  
+​
+  
+  
+TikTok Accommodation
+  
+  
+TikTok is committed to providing reasonable accommodations in our recruitment processes for candidates with disabilities, pregnancy, sincerely held religious beliefs or other reasons protected by applicable laws. If you need assistance or a reasonable accommodation, please reach out to us at
+  
+  
+https://tinyurl.com/RA-request","","https://www.indeed.com/cmp/Tiktok","https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/83b6323a8116bb3e0e44be12781095c5","https://www.tiktok.com/","Los Angeles, CA","10,000+","Decline to state","TikTok is a destination for short-form mobile videos.","","","","","",""
+"in-430209e6c8245662","indeed","https://www.indeed.com/viewjob?jk=430209e6c8245662","https://click.appcast.io/t/ocCm0DHpxpLTq5wCzh9u1bzNhbsgiD5k4O-Fa6ui8kg=","Network Site Reliability Engineer","NVIDIA","Santa Clara, CA, US","2025-09-24","fulltime","direct_data","yearly",168000.0,264500.0,"USD",False,"","","","","NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.
+
+We are seeking a highly skilled and experienced Network Site Reliability Engineer (SRE) to join our Enterprise Network Operations and SRE team. In this role, you will be pivotal in implementing our vision for a reliable and efficient network infrastructure. The ideal candidate is passionate about network operations and committed to enhancing the user experience. You'll have the opportunity to solve complex network challenges using hands-on debugging and by focusing on network automation, observability, documentation, and operational excellence. Your primary responsibilities will include minimizing manual operational tasks to achieve and maintain Service Level Objectives (SLOs), proactively identifying and mitigating network risks to promote continuous improvement, developing knowledge base articles for automation and bots, and conducting blameless postmortems & following through on Root Cause Analyses (RCAs). This is a critical position focused on ensuring user satisfaction and brilliance in network operations. The role requires a wealth of skills and experience in network operations.
+
+**What you will be doing:**
+
+* Owning the operational aspect of the network infrastructure, ensuring its high availability and reliability, actively working on network incidents and service requests.
+* Partnering with architecture and deployment teams to guarantee that new implementations are supportable and align with production standards.
+* Advocating for and implementing automation to reduce toil and improve operational efficiency.
+* Monitoring network performance, identifying areas for improvement, and collaborating with relevant teams to implement refinements.
+* Collaborating with domain experts across functions to resolve production issues swiftly and effectively, ensuring customer happiness.
+* Discovering opportunities for operational improvements and teaming up with colleagues to devise solutions that enhance excellence and sustainability in network operations.
+
+**What we need to see:**
+
+* BS degree in Computer Science, Electrical Engineering, or a related technical field, or equivalent experience.
+* A minimum of 10 years of industry practice in network operations or related fields concentrating on automation & site reliability engineering. Familiarity with both enterprise and the data center networks is critical.
+* Proficiency in network fundamentals & fixing complex network issues with expertise in network tech like TCP/UDP, IPv4/IPv6, Wireless, BGP, ISIS, VPN, L2 switching, Firewalls, Load Balancers, Data Center Network technologies, etc. Consistent track record in network operations.
+* Monitoring Tools: Familiarity with network management tools such as Prometheus, Grafana, Alert Manager, Nautobot/Netbox, BigPanda.
+* Network Automation: Expertise in automating networks using frameworks such as Salt, Ansible, or similar.
+* Process & Service Tooling: Skills with ServiceNow, Jira & foundational knowledge of ITIL framework
+* System Administration: Knowledge of Linux system fundamentals.
+* Problem-Solving and Communication: Detailed problem-solving approach, critical thinking, coupled with good interpersonal skills and a solid grasp of ownership and drive.
+
+**Ways to stand out from the crowd:**
+
+* Support Automation: Track record of taking operational signals through means such as SNMP, Syslog, Streaming Telemetry to solve operational challenges.
+* Platform Exposure: Experience with Mellanox/Cumulus Linux, Palo Alto firewalls, Netscalers and F5 load balancers.
+* Technical Proficiency in Programming and Scripting: Competence in Python, Go, or related programming languages. Skilled in constructing intricate systems to supervise and regulate network operations, surpassing elementary script development.
+* Network Technologies: Proficient knowledge of one or more of the following technologies: VXLAN/EVPN at Scale, MPLS, RSVP, Segment Routing, SDWAN, SASE Platforms
+
+NVIDIA is widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us. If you're creative, results-oriented and enjoy learning while having fun, then what are you waiting for? Apply today!
+
+#LI-Hybrid
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 168,000 USD - 264,500 USD.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until September 27, 2025.NVIDIA is committed to fostering a diverse work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.","","https://www.indeed.com/cmp/Nvidia","https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/9cda2ebf26905efa812e1a5315c7a53d","http://www.nvidia.com","Santa Clara, CA","10,000+","$5B to $10B (USD)","Bringing superhuman capabilities to some of the world's toughest problems.","","","","","",""
+"in-b2448b3bfd9e2cf1","indeed","https://www.indeed.com/viewjob?jk=b2448b3bfd9e2cf1","https://click.appcast.io/t/TH6oTt_CmP7150_p_R_RYTNz829wAqbBwaBfRpXhrD8=","Senior Machine Learning Engineer","NVIDIA","Santa Clara, CA, US","2025-09-24","fulltime","direct_data","yearly",184000.0,287500.0,"USD",False,"","","","","As a Senior Machine Learning Engineer at NVIDIA, you will build the machine learning brain that keeps NVIDIA’s global DGX Cloud healthy, efficient and ready for the next waves of AI breakthroughs. DGX Cloud fuses NVIDIA GPUs, NVLink networking and the full AI software stack into elastic infrastructure powering large language models, drug discovery, autonomous driving and climate science. Your models will turn billions of telemetry signals into predictive insight. This frees customers to innovate while our platform runs smarter.
+
+**What you'll be doing:**
+
+* Ground breaking and developing innovative machine learning algorithms and models that propel our AI products.
+* Build production models for anomaly detection, predictive maintenance and usage optimization.
+* Develop tools surfacing real time telemetry, efficiency metrics and long term trends.
+* Develop forecasting and simulation models for global scale planning.
+* Analyzing complex datasets to determine the best approach for model training and optimization.
+* Translate findings into clear engineering actions with infrastructure, operations and product teams.
+* Participating in cross-functional projects to integrate machine learning capabilities into various NVIDIA products.
+
+**What we need to see:**
+
+* Master's degree or PhD in Mathematics, Statistics, Machine Learning or related quantitative field (or equivalent experience).
+* 8+ years experience applying Machine Learning to operational systems.
+* Proven track record of building and deploying Machine Learning models in production environments.
+* Experience with time series analysis and optimization algorithms.
+* Familiarity with distributed systems and cloud platforms such as AWS and Kubernetes.
+* Strong software engineering skills and proficiency in Python.
+* Effective verbal/written communication, and technical presentation skills.
+* Experience with machine learning frameworks such as TensorFlow, PyTorch, or similar.
+* A track record of delivering high-impact projects to compete in a fast-paced environment.
+
+**Ways to stand out from the crowd:**
+
+* Experience solving capacity planning problems.
+* Deep understanding of GPU performance metrics.
+* Familiarity with prometheus and PromQL.
+
+Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 184,000 USD - 287,500 USD.
+
+You will also be eligible for equity and benefits.
+
+Applications for this job will be accepted at least until September 27, 2025.NVIDIA is committed to fostering a diverse work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.","","https://www.indeed.com/cmp/Nvidia","https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/9cda2ebf26905efa812e1a5315c7a53d","http://www.nvidia.com","Santa Clara, CA","10,000+","$5B to $10B (USD)","Bringing superhuman capabilities to some of the world's toughest problems.","","","","","",""
+"in-79cb4cb138e8956a","indeed","https://www.indeed.com/viewjob?jk=79cb4cb138e8956a","https://careers.usbank.com/global/en/job/UBNAGLOBAL20250020383EXTERNALENGLOBAL/Software-Engineer-2-Tandem-TAL-TACL-Developer?utm_source=indeed&utm_medium=phenom-feeds","Software Engineer 2 (Tandem TAL, TACL Developer)","U.S. Bank","San Francisco, CA, US","2025-09-23","fulltime","direct_data","yearly",105400.0,124000.0,"USD",False,"","","","","At U.S. Bank, we’re on a journey to do our best. Helping the customers and businesses we serve to make better and smarter financial decisions and enabling the communities we support to grow and succeed. We believe it takes all of us to bring our shared ambition to life, and each person is unique in their potential. A career with U.S. Bank gives you a wide, ever-growing range of opportunities to discover what makes you thrive at every stage of your career. Try new things, learn new skills and discover what you excel at—all from Day One.
+
+**Job Description**
+-------------------
+
+This position will be responsible for the analysis, design, testing, development and maintenance of best in class software experiences. The candidate is a self-motivated individual who can collaborate with a team and across the organization. The candidate takes responsibility of the software artifacts produced adhering to U.S. Bank standards in order to ensure minimal impact to the customer experience. The candidate will be adept with the agile software development lifecycle and DevOps principles.  
+  
+**Essential Responsibilities:**
+
+* Responsible for designing, developing, testing, operating and maintaining products
+* Takes full stack ownership by consistently writing production-ready and testable code
+* Consistently creates optimal design adhering to architectural best practices; considers scalability, reliability and performance of systems/contexts affected when defining technical designs
+* L**everages expertise in web-based applications like Auto Attendant Web, RMBS, and Abacus, as well as various technical environments including Tandem, COBOL85, SCOBOL, Pathway Req/Servers, TACL, EXEC, Enscribe, KLIST, DDL, Control Net batch, Guardian, TEDIT, Axcel, BIND, Outside view, Inspect, FTP, and Connect :Direct.**
+* Makes sound design/coding decisions keeping customer experience in the forefront
+* Takes feedback from code review and apply changes to meet standards
+* Conducts code reviews to provide guidance on engineering best practices and compliance with development procedures
+* Accountable for ensuring all aspects of product development follow compliance and security best practices
+* Exhibits relentless focus in software reliability engineering standards embedded into development standards
+
+**Basic Qualifications**
+
+* Bachelor’s degree, or equivalent work experience
+* Three to five years of relevant experience
+
+**Preferred Skills/Experience:**
+
+* Hands-on experience in software development in an **HP Non-Stop** (legacy **Tandem**) environment, **using Guardian and/or OSS**, combination of **TAL**, **TACL**, SCOBOL, COBOL, **and tools such as C/C++, Java, Python, Eclipse IDE, Web Development, ICE Webgate, WFT/Paragon Products, SIM++/VTS/MDS INQ/Lexcel**
+* Coding skills in the **HP Non-Stop environment** using a combination of **TAL**, **TACL**, SCOBOL, COBOL - good to have
+* **knowledge in specialized applications like Base24 Classic Application, Base24 Business Analyst, Base24 ATM/POS Processing, and related areas such as Network Compares, Network Mandates, and Network Adjustment**
+* **Experience with Safeguard, MQ Series, and ACI Desktop TSS - big plus**
+* Previous experience with test automation tools and test case development
+* Development or support experience with wire transfer (**Fedwire**, CHIPS, SWIFT) applications
+* Strong problem-solving and analytical skills
+* Excellent communication and interpersonal skills
+
+***Location Expectations***
+
+***The role offers a hybrid/flexible schedule, which means there's an in-office expectation of 3 or more days per week and the flexibility to work outside the office location for the other days.***
+
+If there’s anything we can do to accommodate a disability during any portion of the application or hiring process, please refer to our disability accommodations for applicants.
+
+**Benefits:**
+
+Our approach to benefits and total rewards considers our team members’ whole selves and what may be needed to thrive in and outside work. That's why our benefits are designed to help you and your family boost your health, protect your financial security and give you peace of mind. Our benefits include the following (some may vary based on role, location or hours):
+
+* Healthcare (medical, dental, vision)
+* Basic term and optional term life insurance
+* Short-term and long-term disability
+* Pregnancy disability and parental leave
+* 401(k) and employer-funded retirement plan
+* Paid vacation (from two to five weeks depending on salary grade and tenure)
+* Up to 11 paid holiday opportunities
+* Adoption assistance
+* Sick and Safe Leave accruals of one hour for every 30 worked, up to 80 hours per calendar year unless otherwise provided by law
+
+U.S. Bank is an equal opportunity employer. We consider all qualified applicants without regard to race, religion, color, sex, national origin, age, sexual orientation, gender identity, disability or veteran status, and other factors protected under applicable law.
+
+**E-Verify**
+
+U.S. Bank participates in the U.S. Department of Homeland Security E-Verify program in all facilities located in the United States and certain U.S. territories. The E-Verify program is an Internet-based employment eligibility verification system operated by the U.S. Citizenship and Immigration Services.
+
+The salary range reflects figures based on the primary location, which is listed first. The actual range for the role may differ based on the location of the role. In addition to salary, U.S. Bank offers a comprehensive benefits package, including incentive and recognition programs, equity stock purchase 401(k) contribution and pension (all benefits are subject to eligibility requirements). Pay Range: $105,400.00 - $124,000.00
+
+U.S. Bank will consider qualified applicants with arrest or conviction records for employment. U.S. Bank conducts background checks consistent with applicable local laws, including the Los Angeles County Fair Chance Ordinance and the California Fair Chance Act as well as the San Francisco Fair Chance Ordinance. U.S. Bank is subject to, and conducts background checks consistent with the requirements of Section 19 of the Federal Deposit Insurance Act (FDIA). In addition, certain positions may also be subject to the requirements of FINRA, NMLS registration, Reg Z, Reg G, OFAC, the NFA, the FCPA, the Bank Secrecy Act, the SAFE Act, and/or federal guidelines applicable to an agreement, such as those related to ethics, safety, or operational procedures.
+
+Applicants must be able to comply with U.S. Bank policies and procedures including the Code of Ethics and Business Conduct and related workplace conduct and safety policies.
+
+**Posting may be closed earlier due to high volume of applicants.**","","https://www.indeed.com/cmp/U.S.-Bank","https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/de1f5c624998e42c8ae033733fd90c6a","http://www.usbank.com","Minneapolis, MN","10,000+","more than $10B (USD)","U.S. Bancorp is the parent company of U.S. Bank National Association, the fifth-largest commercial bank in the United States headquartered in Minneapolis.","","","","","",""
+"in-f31969832aa6513c","indeed","https://www.indeed.com/viewjob?jk=f31969832aa6513c","https://careers.usbank.com/global/en/job/UBNAGLOBAL20250020383EXTERNALENGLOBAL/Software-Engineer-2-Tandem-TAL-TACL-Developer?utm_source=indeed&utm_medium=phenom-feeds","Software Engineer 2 (Tandem TAL, TACL Developer)","U.S. Bank","Cupertino, CA, US","2025-09-23","fulltime","direct_data","yearly",105400.0,124000.0,"USD",False,"","","","","At U.S. Bank, we’re on a journey to do our best. Helping the customers and businesses we serve to make better and smarter financial decisions and enabling the communities we support to grow and succeed. We believe it takes all of us to bring our shared ambition to life, and each person is unique in their potential. A career with U.S. Bank gives you a wide, ever-growing range of opportunities to discover what makes you thrive at every stage of your career. Try new things, learn new skills and discover what you excel at—all from Day One.
+
+**Job Description**
+-------------------
+
+This position will be responsible for the analysis, design, testing, development and maintenance of best in class software experiences. The candidate is a self-motivated individual who can collaborate with a team and across the organization. The candidate takes responsibility of the software artifacts produced adhering to U.S. Bank standards in order to ensure minimal impact to the customer experience. The candidate will be adept with the agile software development lifecycle and DevOps principles.  
+  
+**Essential Responsibilities:**
+
+* Responsible for designing, developing, testing, operating and maintaining products
+* Takes full stack ownership by consistently writing production-ready and testable code
+* Consistently creates optimal design adhering to architectural best practices; considers scalability, reliability and performance of systems/contexts affected when defining technical designs
+* L**everages expertise in web-based applications like Auto Attendant Web, RMBS, and Abacus, as well as various technical environments including Tandem, COBOL85, SCOBOL, Pathway Req/Servers, TACL, EXEC, Enscribe, KLIST, DDL, Control Net batch, Guardian, TEDIT, Axcel, BIND, Outside view, Inspect, FTP, and Connect :Direct.**
+* Makes sound design/coding decisions keeping customer experience in the forefront
+* Takes feedback from code review and apply changes to meet standards
+* Conducts code reviews to provide guidance on engineering best practices and compliance with development procedures
+* Accountable for ensuring all aspects of product development follow compliance and security best practices
+* Exhibits relentless focus in software reliability engineering standards embedded into development standards
+
+**Basic Qualifications**
+
+* Bachelor’s degree, or equivalent work experience
+* Three to five years of relevant experience
+
+**Preferred Skills/Experience:**
+
+* Hands-on experience in software development in an **HP Non-Stop** (legacy **Tandem**) environment, **using Guardian and/or OSS**, combination of **TAL**, **TACL**, SCOBOL, COBOL, **and tools such as C/C++, Java, Python, Eclipse IDE, Web Development, ICE Webgate, WFT/Paragon Products, SIM++/VTS/MDS INQ/Lexcel**
+* Coding skills in the **HP Non-Stop environment** using a combination of **TAL**, **TACL**, SCOBOL, COBOL - good to have
+* **knowledge in specialized applications like Base24 Classic Application, Base24 Business Analyst, Base24 ATM/POS Processing, and related areas such as Network Compares, Network Mandates, and Network Adjustment**
+* **Experience with Safeguard, MQ Series, and ACI Desktop TSS - big plus**
+* Previous experience with test automation tools and test case development
+* Development or support experience with wire transfer (**Fedwire**, CHIPS, SWIFT) applications
+* Strong problem-solving and analytical skills
+* Excellent communication and interpersonal skills
+
+***Location Expectations***
+
+***The role offers a hybrid/flexible schedule, which means there's an in-office expectation of 3 or more days per week and the flexibility to work outside the office location for the other days.***
+
+If there’s anything we can do to accommodate a disability during any portion of the application or hiring process, please refer to our disability accommodations for applicants.
+
+**Benefits:**
+
+Our approach to benefits and total rewards considers our team members’ whole selves and what may be needed to thrive in and outside work. That's why our benefits are designed to help you and your family boost your health, protect your financial security and give you peace of mind. Our benefits include the following (some may vary based on role, location or hours):
+
+* Healthcare (medical, dental, vision)
+* Basic term and optional term life insurance
+* Short-term and long-term disability
+* Pregnancy disability and parental leave
+* 401(k) and employer-funded retirement plan
+* Paid vacation (from two to five weeks depending on salary grade and tenure)
+* Up to 11 paid holiday opportunities
+* Adoption assistance
+* Sick and Safe Leave accruals of one hour for every 30 worked, up to 80 hours per calendar year unless otherwise provided by law
+
+U.S. Bank is an equal opportunity employer. We consider all qualified applicants without regard to race, religion, color, sex, national origin, age, sexual orientation, gender identity, disability or veteran status, and other factors protected under applicable law.
+
+**E-Verify**
+
+U.S. Bank participates in the U.S. Department of Homeland Security E-Verify program in all facilities located in the United States and certain U.S. territories. The E-Verify program is an Internet-based employment eligibility verification system operated by the U.S. Citizenship and Immigration Services.
+
+The salary range reflects figures based on the primary location, which is listed first. The actual range for the role may differ based on the location of the role. In addition to salary, U.S. Bank offers a comprehensive benefits package, including incentive and recognition programs, equity stock purchase 401(k) contribution and pension (all benefits are subject to eligibility requirements). Pay Range: $105,400.00 - $124,000.00
+
+U.S. Bank will consider qualified applicants with arrest or conviction records for employment. U.S. Bank conducts background checks consistent with applicable local laws, including the Los Angeles County Fair Chance Ordinance and the California Fair Chance Act as well as the San Francisco Fair Chance Ordinance. U.S. Bank is subject to, and conducts background checks consistent with the requirements of Section 19 of the Federal Deposit Insurance Act (FDIA). In addition, certain positions may also be subject to the requirements of FINRA, NMLS registration, Reg Z, Reg G, OFAC, the NFA, the FCPA, the Bank Secrecy Act, the SAFE Act, and/or federal guidelines applicable to an agreement, such as those related to ethics, safety, or operational procedures.
+
+Applicants must be able to comply with U.S. Bank policies and procedures including the Code of Ethics and Business Conduct and related workplace conduct and safety policies.
+
+**Posting may be closed earlier due to high volume of applicants.**","","https://www.indeed.com/cmp/U.S.-Bank","https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/de1f5c624998e42c8ae033733fd90c6a","http://www.usbank.com","Minneapolis, MN","10,000+","more than $10B (USD)","U.S. Bancorp is the parent company of U.S. Bank National Association, the fifth-largest commercial bank in the United States headquartered in Minneapolis.","","","","","",""
+"in-cfe6f865fa858e06","indeed","https://www.indeed.com/viewjob?jk=cfe6f865fa858e06","https://jobs.ashbyhq.com/gtv/d17dd0c3-cb91-4dcb-8543-37528074876d?utm_source=q5Bx5zK8aj","Software Engineer, Backend","gtv","San Francisco, CA, US","2025-09-23","fulltime","direct_data","yearly",200000.0,250000.0,"USD",False,"","","","","**About Unit**
+--------------
+
+Unit is an AI video company. We’re building intelligent systems that combine creativity and automation to deliver next-generation video products. Our team includes senior people from Instagram, TikTok, and NVIDIA. We’re based in San Francisco and backed by Khosla Ventures, Air Street Capital, and other leaders in AI.
+
+**Role Overview**
+-----------------
+
+We're looking for an experienced Backend Software Engineer to join the GTV team. You'll work closely with engineers, designers, and creatives to build our core systems, including video generation pipelines, reinforcement learning infrastructure, real-time processing workflows, and more. This is a role for someone who loves building high-performance systems and wants to shape the future of media.
+
+**Responsibilities**
+--------------------
+
+* Design and implement scalable backend systems that power the creative engine behind GTV
+* Partner with research engineers and data operators to productionize custom models, agentic workflows, and RL loops
+* Develop robust APIs to support internal tools and consumer-facing features, enabling rapid experimentation and testing
+* Drive system reliability and efficiency through rigorous testing, performance benchmarking, and end-to-end observability
+* Collaborate cross-functionally with engineers, researchers, and designers to develop and launch new product features
+
+**Requirements**
+----------------
+
+* Strong technical skills with proficiency in Python and NodeJS
+* Industry experience with AWS (S3, Lambda, RDS, SQS, ECS), Docker, CI/CD pipelines, and other infrastructure tools
+* Solid understanding of generative models, distributed systems, relational databases, real-time systems, and asynchronous workflows
+* Proven ability to debug complex systems, navigate ambiguity, and take ownership of challenging problems
+* Excellent collaboration and communication skills, with experience working across research, engineering, and design teams
+
+**Nice To Have**
+----------------
+
+* Prior work experience at early-stage or high-growth startups
+* Familiarity with video processing, storage, and distribution at scale
+* Ability to build internal tools and dashboards
+
+**Compensation**
+----------------
+
+* $200K-$250K base salary
+* Competitive equity grant
+* Top-tier benefits (medical, dental, and vision)
+* Daily dinner stipend
+* Relocation support
+
+Compensation Range: $200K - $250K","","https://www.indeed.com/cmp/Gtv","","","","","","","","","","","",""
+"in-9a45345a976bdcd6","indeed","https://www.indeed.com/viewjob?jk=9a45345a976bdcd6","https://jobs.ashbyhq.com/Crusoe/90f86030-4073-449b-ba2b-f473d04177a6?utm_source=4MqBxxdA0Q","Senior Staff Software Engineer","CRUSOE","Sunnyvale, CA, US","2025-09-23","fulltime","direct_data","yearly",233000.0,282000.0,"USD",False,"","","","","Crusoe's mission is to accelerate the abundance of energy and intelligence. We’re crafting the engine that powers a world where people can create ambitiously with AI — without sacrificing scale, speed, or sustainability.
+
+Be a part of the AI revolution with sustainable technology at Crusoe. Here, you'll drive meaningful innovation, make a tangible impact, and join a team that’s setting the pace for responsible, transformative cloud infrastructure.
+
+**About This Role:**
+
+We are looking for a highly skilled engineer with deep experience running Kubernetes at scale on bare metal. You will help design, build, and operate Crusoe’s next-generation Kubernetes platform across global datacenters, ensuring performance, reliability, and automation at every layer of the stack.
+
+**What You’ll Be Working On:**
+
+* Designing, building, and operating Kubernetes clusters on bare metal at scale
+* Engineering full cluster lifecycle management (Talos bootstrapping, upgrades, node reprovisioning, HA control planes, recovery workflows)
+* Architecting networking, load balancing, and service mesh solutions optimized for bare metal
+* Implementing performant CNIs (Calico, Cilium), integrating L2/L3 networking, routing (BGP/ECMP), and optimizing traffic across racks and datacenters
+* Automating provisioning via PXE/iPXE, Tinkerbell, MAAS, and managing BMCs/IPMI/Redfish with standardized BIOS/firmware across heterogeneous hardware fleets
+* Designing and operating persistent storage (local disks, block, object) including Ceph, Rook, and openEBS
+* Building automation and tooling (Go, Python, Bash) for provisioning, drift detection, upgrades, and incident response
+* Extending observability with Prometheus, Alertmanager, Grafana, OpenTelemetry, and defining SLOs for cluster health, latency, and workload availability
+* Implementing security best practices: Vault, cert-manager, RBAC hardening, network policies, and OS/K8s patch pipelines
+* Mentoring engineers and shaping technical direction for Crusoe’s Kubernetes platform
+
+**What You’ll Bring to the Team:**
+
+* 10+ years in infrastructure engineering, including 3+ years operating Kubernetes in production
+* Strong experience running Kubernetes on bare metal (not just managed services)
+* Expert-level knowledge of Linux internals (cgroups, namespaces, kernel networking)
+* Deep experience with CNIs (Cilium, Calico), load balancers (Envoy, HAProxy, F5), and L3 networking (BGP, ECMP)
+* Proven track record provisioning and operating physical servers at scale (PXE/iPXE, Tinkerbell, MAAS, BMC/IPMI automation)
+* Strong programming skills in Go for building operators, controllers, and automation tooling
+* Hands-on experience with distributed storage systems (Ceph, MinIO, Rook, CSI drivers)
+* Strong background in observability (Prometheus, Alertmanager, metrics autoscaling, logging/ELK)
+* Familiarity with PKI, identity, and secrets management (Vault, cert-manager)
+* Excellent debugging skills for complex distributed systems
+* Strong communication and collaboration across cross-functional teams
+
+**Bonus Points:**
+
+* Experience with hardware fleet management across multiple datacenters
+* Contributions to open source Kubernetes or related ecosystem projects
+* Experience implementing disaster recovery strategies at scale
+* Familiarity with GPUs, HPC clusters, or large-scale AI/ML workloads
+
+**Benefits:**
+
+* Industry competitive pay
+* Restricted Stock Units in a fast growing, well-funded technology company
+* Health insurance package options that include HDHP and PPO, vision, and dental for you and your dependents
+* Employer contributions to HSA accounts
+* Paid Parental Leave
+* Paid life insurance, short-term and long-term disability
+* Teladoc
+* 401(k) with a 100% match up to 4% of salary
+* Generous paid time off and holiday schedule
+* Cell phone reimbursement
+* Tuition reimbursement
+* Subscription to the Calm app
+* MetLife Legal
+* Company paid commuter benefit; $300 per month
+
+**Compensation:**
+
+Compensation will be paid in the range of $233,000 - $282,000 + Bonus. Restricted Stock Units are included in all offers. Compensation to be determined by the applicant’s education, experience, knowledge, skills, and abilities, as well as internal equity and alignment with market data.
+
+Crusoe is an Equal Opportunity Employer. Employment decisions are made without regard to race, color, religion, disability, genetic information, pregnancy, citizenship, marital status, sex/gender, sexual preference/ orientation, gender identity, age, veteran status, national origin, or any other status protected by law or regulation.","","https://www.indeed.com/cmp/Crusoe","https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/e3e3cdbaa1eb6bbfd62d02fd091ea812","https://crusoe.ai/","Denver, CO","501 to 1,000","Decline to state","We design, build, and operate the infrastructure powering the next generation of artificial intelligence.","","","","","",""
+"in-53b2fef9cae9913d","indeed","https://www.indeed.com/viewjob?jk=53b2fef9cae9913d","https://jobs.ashbyhq.com/Crusoe/90f86030-4073-449b-ba2b-f473d04177a6?utm_source=4MqBxxdA0Q","Senior Staff Software Engineer","CRUSOE","San Francisco, CA, US","2025-09-23","fulltime","direct_data","yearly",233000.0,282000.0,"USD",False,"","","","","Crusoe's mission is to accelerate the abundance of energy and intelligence. We’re crafting the engine that powers a world where people can create ambitiously with AI — without sacrificing scale, speed, or sustainability.
+
+Be a part of the AI revolution with sustainable technology at Crusoe. Here, you'll drive meaningful innovation, make a tangible impact, and join a team that’s setting the pace for responsible, transformative cloud infrastructure.
+
+**About This Role:**
+
+We are looking for a highly skilled engineer with deep experience running Kubernetes at scale on bare metal. You will help design, build, and operate Crusoe’s next-generation Kubernetes platform across global datacenters, ensuring performance, reliability, and automation at every layer of the stack.
+
+**What You’ll Be Working On:**
+
+* Designing, building, and operating Kubernetes clusters on bare metal at scale
+* Engineering full cluster lifecycle management (Talos bootstrapping, upgrades, node reprovisioning, HA control planes, recovery workflows)
+* Architecting networking, load balancing, and service mesh solutions optimized for bare metal
+* Implementing performant CNIs (Calico, Cilium), integrating L2/L3 networking, routing (BGP/ECMP), and optimizing traffic across racks and datacenters
+* Automating provisioning via PXE/iPXE, Tinkerbell, MAAS, and managing BMCs/IPMI/Redfish with standardized BIOS/firmware across heterogeneous hardware fleets
+* Designing and operating persistent storage (local disks, block, object) including Ceph, Rook, and openEBS
+* Building automation and tooling (Go, Python, Bash) for provisioning, drift detection, upgrades, and incident response
+* Extending observability with Prometheus, Alertmanager, Grafana, OpenTelemetry, and defining SLOs for cluster health, latency, and workload availability
+* Implementing security best practices: Vault, cert-manager, RBAC hardening, network policies, and OS/K8s patch pipelines
+* Mentoring engineers and shaping technical direction for Crusoe’s Kubernetes platform
+
+**What You’ll Bring to the Team:**
+
+* 10+ years in infrastructure engineering, including 3+ years operating Kubernetes in production
+* Strong experience running Kubernetes on bare metal (not just managed services)
+* Expert-level knowledge of Linux internals (cgroups, namespaces, kernel networking)
+* Deep experience with CNIs (Cilium, Calico), load balancers (Envoy, HAProxy, F5), and L3 networking (BGP, ECMP)
+* Proven track record provisioning and operating physical servers at scale (PXE/iPXE, Tinkerbell, MAAS, BMC/IPMI automation)
+* Strong programming skills in Go for building operators, controllers, and automation tooling
+* Hands-on experience with distributed storage systems (Ceph, MinIO, Rook, CSI drivers)
+* Strong background in observability (Prometheus, Alertmanager, metrics autoscaling, logging/ELK)
+* Familiarity with PKI, identity, and secrets management (Vault, cert-manager)
+* Excellent debugging skills for complex distributed systems
+* Strong communication and collaboration across cross-functional teams
+
+**Bonus Points:**
+
+* Experience with hardware fleet management across multiple datacenters
+* Contributions to open source Kubernetes or related ecosystem projects
+* Experience implementing disaster recovery strategies at scale
+* Familiarity with GPUs, HPC clusters, or large-scale AI/ML workloads
+
+**Benefits:**
+
+* Industry competitive pay
+* Restricted Stock Units in a fast growing, well-funded technology company
+* Health insurance package options that include HDHP and PPO, vision, and dental for you and your dependents
+* Employer contributions to HSA accounts
+* Paid Parental Leave
+* Paid life insurance, short-term and long-term disability
+* Teladoc
+* 401(k) with a 100% match up to 4% of salary
+* Generous paid time off and holiday schedule
+* Cell phone reimbursement
+* Tuition reimbursement
+* Subscription to the Calm app
+* MetLife Legal
+* Company paid commuter benefit; $300 per month
+
+**Compensation:**
+
+Compensation will be paid in the range of $233,000 - $282,000 + Bonus. Restricted Stock Units are included in all offers. Compensation to be determined by the applicant’s education, experience, knowledge, skills, and abilities, as well as internal equity and alignment with market data.
+
+Crusoe is an Equal Opportunity Employer. Employment decisions are made without regard to race, color, religion, disability, genetic information, pregnancy, citizenship, marital status, sex/gender, sexual preference/ orientation, gender identity, age, veteran status, national origin, or any other status protected by law or regulation.","","https://www.indeed.com/cmp/Crusoe","https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/e3e3cdbaa1eb6bbfd62d02fd091ea812","https://crusoe.ai/","Denver, CO","501 to 1,000","Decline to state","We design, build, and operate the infrastructure powering the next generation of artificial intelligence.","","","","","",""
+"in-ef6745142c275e73","indeed","https://www.indeed.com/viewjob?jk=ef6745142c275e73","https://jobs.ashbyhq.com/Crusoe/8a1d81bc-e4e1-418b-94f4-2eab0a460b40?utm_source=4MqBxxdA0Q","Senior Software Engineer","CRUSOE","Sunnyvale, CA, US","2025-09-23","fulltime","direct_data","yearly",166000.0,201000.0,"USD",False,"","","","","Crusoe's mission is to accelerate the abundance of energy and intelligence. We’re crafting the engine that powers a world where people can create ambitiously with AI — without sacrificing scale, speed, or sustainability.
+
+Be a part of the AI revolution with sustainable technology at Crusoe. Here, you'll drive meaningful innovation, make a tangible impact, and join a team that’s setting the pace for responsible, transformative cloud infrastructure.
+
+**About This Role:**
+
+We are looking for a highly skilled engineer with deep experience running Kubernetes at scale on bare metal. You will help design, build, and operate Crusoe’s next-generation Kubernetes platform across global datacenters, ensuring performance, reliability, and automation at every layer of the stack.
+
+**What You’ll Be Working On:**
+
+* Designing, building, and operating Kubernetes clusters on bare metal at scale
+* Engineering full cluster lifecycle management (Talos bootstrapping, upgrades, node reprovisioning, HA control planes, recovery workflows)
+* Architecting networking, load balancing, and service mesh solutions optimized for bare metal
+* Implementing performant CNIs (Calico, Cilium), integrating L2/L3 networking, routing (BGP/ECMP), and optimizing traffic across racks and datacenters
+* Automating provisioning via PXE/iPXE, Tinkerbell, MAAS, and managing BMCs/IPMI/Redfish with standardized BIOS/firmware across heterogeneous hardware fleets
+* Designing and operating persistent storage (local disks, block, object) including Ceph, Rook, and openEBS
+* Building automation and tooling (Go, Python, Bash) for provisioning, drift detection, upgrades, and incident response
+* Extending observability with Prometheus, Alertmanager, Grafana, OpenTelemetry, and defining SLOs for cluster health, latency, and workload availability
+* Implementing security best practices: Vault, cert-manager, RBAC hardening, network policies, and OS/K8s patch pipelines
+* Mentoring engineers and shaping technical direction for Crusoe’s Kubernetes platform
+
+**What You’ll Bring to the Team:**
+
+* 5+ years in infrastructure engineering, including 3+ years operating Kubernetes in production
+* Strong experience running Kubernetes on bare metal (not just managed services)
+* Expert-level knowledge of Linux internals (cgroups, namespaces, kernel networking)
+* Deep experience with CNIs (Cilium, Calico), load balancers (Envoy, HAProxy, F5), and L3 networking (BGP, ECMP)
+* Proven track record provisioning and operating physical servers at scale (PXE/iPXE, Tinkerbell, MAAS, BMC/IPMI automation)
+* Strong programming skills in Go for building operators, controllers, and automation tooling
+* Hands-on experience with distributed storage systems (Ceph, MinIO, Rook, CSI drivers)
+* Strong background in observability (Prometheus, Alertmanager, metrics autoscaling, logging/ELK)
+* Familiarity with PKI, identity, and secrets management (Vault, cert-manager)
+* Excellent debugging skills for complex distributed systems
+* Strong communication and collaboration across cross-functional teams
+
+**Bonus Points:**
+
+* Experience with hardware fleet management across multiple datacenters
+* Contributions to open source Kubernetes or related ecosystem projects
+* Experience implementing disaster recovery strategies at scale
+* Familiarity with GPUs, HPC clusters, or large-scale AI/ML workloads
+
+**Benefits:**
+
+* Industry competitive pay
+* Restricted Stock Units in a fast growing, well-funded technology company
+* Health insurance package options that include HDHP and PPO, vision, and dental for you and your dependents
+* Employer contributions to HSA accounts
+* Paid Parental Leave
+* Paid life insurance, short-term and long-term disability
+* Teladoc
+* 401(k) with a 100% match up to 4% of salary
+* Generous paid time off and holiday schedule
+* Cell phone reimbursement
+* Tuition reimbursement
+* Subscription to the Calm app
+* MetLife Legal
+* Company paid commuter benefit; $300 per month
+
+**Compensation:**
+
+Compensation will be paid in the range of $166,000 - $201,000 + Bonus. Restricted Stock Units are included in all offers. Compensation to be determined by the applicant’s education, experience, knowledge, skills, and abilities, as well as internal equity and alignment with market data.
+
+Crusoe is an Equal Opportunity Employer. Employment decisions are made without regard to race, color, religion, disability, genetic information, pregnancy, citizenship, marital status, sex/gender, sexual preference/ orientation, gender identity, age, veteran status, national origin, or any other status protected by law or regulation.","","https://www.indeed.com/cmp/Crusoe","https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/e3e3cdbaa1eb6bbfd62d02fd091ea812","https://crusoe.ai/","Denver, CO","501 to 1,000","Decline to state","We design, build, and operate the infrastructure powering the next generation of artificial intelligence.","","","","","",""
+"in-fd8e60d2d3b07504","indeed","https://www.indeed.com/viewjob?jk=fd8e60d2d3b07504","https://jobs.ashbyhq.com/Crusoe/8a1d81bc-e4e1-418b-94f4-2eab0a460b40?utm_source=4MqBxxdA0Q","Senior Software Engineer","CRUSOE","San Francisco, CA, US","2025-09-23","fulltime","direct_data","yearly",166000.0,201000.0,"USD",False,"","","","","Crusoe's mission is to accelerate the abundance of energy and intelligence. We’re crafting the engine that powers a world where people can create ambitiously with AI — without sacrificing scale, speed, or sustainability.
+
+Be a part of the AI revolution with sustainable technology at Crusoe. Here, you'll drive meaningful innovation, make a tangible impact, and join a team that’s setting the pace for responsible, transformative cloud infrastructure.
+
+**About This Role:**
+
+We are looking for a highly skilled engineer with deep experience running Kubernetes at scale on bare metal. You will help design, build, and operate Crusoe’s next-generation Kubernetes platform across global datacenters, ensuring performance, reliability, and automation at every layer of the stack.
+
+**What You’ll Be Working On:**
+
+* Designing, building, and operating Kubernetes clusters on bare metal at scale
+* Engineering full cluster lifecycle management (Talos bootstrapping, upgrades, node reprovisioning, HA control planes, recovery workflows)
+* Architecting networking, load balancing, and service mesh solutions optimized for bare metal
+* Implementing performant CNIs (Calico, Cilium), integrating L2/L3 networking, routing (BGP/ECMP), and optimizing traffic across racks and datacenters
+* Automating provisioning via PXE/iPXE, Tinkerbell, MAAS, and managing BMCs/IPMI/Redfish with standardized BIOS/firmware across heterogeneous hardware fleets
+* Designing and operating persistent storage (local disks, block, object) including Ceph, Rook, and openEBS
+* Building automation and tooling (Go, Python, Bash) for provisioning, drift detection, upgrades, and incident response
+* Extending observability with Prometheus, Alertmanager, Grafana, OpenTelemetry, and defining SLOs for cluster health, latency, and workload availability
+* Implementing security best practices: Vault, cert-manager, RBAC hardening, network policies, and OS/K8s patch pipelines
+* Mentoring engineers and shaping technical direction for Crusoe’s Kubernetes platform
+
+**What You’ll Bring to the Team:**
+
+* 5+ years in infrastructure engineering, including 3+ years operating Kubernetes in production
+* Strong experience running Kubernetes on bare metal (not just managed services)
+* Expert-level knowledge of Linux internals (cgroups, namespaces, kernel networking)
+* Deep experience with CNIs (Cilium, Calico), load balancers (Envoy, HAProxy, F5), and L3 networking (BGP, ECMP)
+* Proven track record provisioning and operating physical servers at scale (PXE/iPXE, Tinkerbell, MAAS, BMC/IPMI automation)
+* Strong programming skills in Go for building operators, controllers, and automation tooling
+* Hands-on experience with distributed storage systems (Ceph, MinIO, Rook, CSI drivers)
+* Strong background in observability (Prometheus, Alertmanager, metrics autoscaling, logging/ELK)
+* Familiarity with PKI, identity, and secrets management (Vault, cert-manager)
+* Excellent debugging skills for complex distributed systems
+* Strong communication and collaboration across cross-functional teams
+
+**Bonus Points:**
+
+* Experience with hardware fleet management across multiple datacenters
+* Contributions to open source Kubernetes or related ecosystem projects
+* Experience implementing disaster recovery strategies at scale
+* Familiarity with GPUs, HPC clusters, or large-scale AI/ML workloads
+
+**Benefits:**
+
+* Industry competitive pay
+* Restricted Stock Units in a fast growing, well-funded technology company
+* Health insurance package options that include HDHP and PPO, vision, and dental for you and your dependents
+* Employer contributions to HSA accounts
+* Paid Parental Leave
+* Paid life insurance, short-term and long-term disability
+* Teladoc
+* 401(k) with a 100% match up to 4% of salary
+* Generous paid time off and holiday schedule
+* Cell phone reimbursement
+* Tuition reimbursement
+* Subscription to the Calm app
+* MetLife Legal
+* Company paid commuter benefit; $300 per month
+
+**Compensation:**
+
+Compensation will be paid in the range of $166,000 - $201,000 + Bonus. Restricted Stock Units are included in all offers. Compensation to be determined by the applicant’s education, experience, knowledge, skills, and abilities, as well as internal equity and alignment with market data.
+
+Crusoe is an Equal Opportunity Employer. Employment decisions are made without regard to race, color, religion, disability, genetic information, pregnancy, citizenship, marital status, sex/gender, sexual preference/ orientation, gender identity, age, veteran status, national origin, or any other status protected by law or regulation.","","https://www.indeed.com/cmp/Crusoe","https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/e3e3cdbaa1eb6bbfd62d02fd091ea812","https://crusoe.ai/","Denver, CO","501 to 1,000","Decline to state","We design, build, and operate the infrastructure powering the next generation of artificial intelligence.","","","","","",""
+"li-4292439566","linkedin","https://www.linkedin.com/jobs/view/4292439566","","Frontend Engineer I","Twitch","San Francisco, CA","2025-09-19","","","","","","",False,"","","","","","","https://www.linkedin.com/company/twitch-tv","","","","","","","","","","","",""
+"li-4265604833","linkedin","https://www.linkedin.com/jobs/view/4265604833","","Software Engineer, Routing - New Grad","Nuro","Mountain View, CA","2025-09-14","","","","","","",False,"","","","","","","https://www.linkedin.com/company/nuro-inc.","","","","","","","","","","","",""
+"li-4191146990","linkedin","https://www.linkedin.com/jobs/view/4191146990","","Software Engineer, AI Platform - New Grad","Nuro","Mountain View, CA","2025-09-13","","","","","","",False,"","","","","","","https://www.linkedin.com/company/nuro-inc.","","","","","","","","","","","",""
+"li-4298408392","linkedin","https://www.linkedin.com/jobs/view/4298408392","","Software Engineer, Web Infrastructure","Notion","San Francisco, CA","2025-09-10","","","","","","",False,"","","","","","","https://www.linkedin.com/company/notionhq","","","","","","","","","","","",""
+"li-4287980146","linkedin","https://www.linkedin.com/jobs/view/4287980146","","Software Engineer, Infrastructure, Early Career","Notion","San Francisco, CA","2025-09-09","","","","","","",False,"","","","","","","https://www.linkedin.com/company/notionhq","","","","","","","","","","","",""
+"li-4296646591","linkedin","https://www.linkedin.com/jobs/view/4296646591","","Software Engineer, Fullstack, Early Career","Notion","San Francisco, CA","2025-09-06","","","","","","",False,"","","","","","","https://www.linkedin.com/company/notionhq","","","","","","","","","","","",""
+"li-4259593912","linkedin","https://www.linkedin.com/jobs/view/4259593912","","Software Engineer, Backend","Tinder","San Francisco, CA","2025-09-06","","","","","","",False,"","","","","","","https://www.linkedin.com/company/tinder-incorporated","","","","","","","","","","","",""
+"li-4259594855","linkedin","https://www.linkedin.com/jobs/view/4259594855","","Software Engineer, Backend","Tinder","Palo Alto, CA","2025-09-05","","","","","","",False,"","","","","","","https://www.linkedin.com/company/tinder-incorporated","","","","","","","","","","","",""
+"li-4202434314","linkedin","https://www.linkedin.com/jobs/view/4202434314","","Software Engineer 4 - Web Discovery","Netflix","Los Gatos, CA","2025-09-04","","","","","","",False,"","","","","","","https://www.linkedin.com/company/netflix","","","","","","","","","","","",""
+"li-4294691515","linkedin","https://www.linkedin.com/jobs/view/4294691515","","Software Engineer, New Grad","Stripe","San Francisco, CA","2025-09-03","","","","","","",False,"","","","","","","https://www.linkedin.com/company/stripe","","","","","","","","","","","",""
