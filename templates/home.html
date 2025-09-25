@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JobSpy Web</title>
+    <style>
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 8px; }
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <h1>JobSpy Scraper</h1>
+
+    <!-- Form to take user input -->
+    <form method="POST">
+        <input type="text" name="search_term" placeholder="Job title / keyword" required>
+        <input type="text" name="location" placeholder="Location" required>
+        <button type="submit">Search Jobs</button>
+    </form>
+
+    {% if jobs %}
+        <h2>Results</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Site</th>
+                    <th>Title</th>
+                    <th>Company</th>
+                    <th>Location</th>
+                    <th>Job URL</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for job in jobs %}
+                <tr>
+                    <td>{{ job['site'] }}</td>
+                    <td>{{ job['title'] }}</td>
+                    <td>{{ job['company'] }}</td>
+                    <td>{{ job['location'] }}</td>
+                    <td><a href="{{ job['job_url'] }}" target="_blank">Link</a></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endif %}
+</body>
+</html>

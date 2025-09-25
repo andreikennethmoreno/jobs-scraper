@@ -1,695 +1,512 @@
-"id","site","job_url","job_url_direct","title","company","location","date_posted","job_type","salary_source","interval","min_amount","max_amount","currency","is_remote","job_level","job_function","listing_type","emails","description","company_industry","company_url","company_logo","company_url_direct","company_addresses","company_num_employees","company_revenue","company_description","skills","experience_range","company_rating","company_reviews_count","vacancy_count","work_from_home_type"
-"in-4ad98b8ed074361b","indeed","https://www.indeed.com/viewjob?jk=4ad98b8ed074361b","https://lifeattiktok.com/search/7553187214310656274","Senior Machine Learning Engineer - TikTok Short Video Content Understanding/Multimodal Recommendation","TikTok","San Jose, CA, US","2025-09-24","","direct_data","yearly",136800.0,359720.0,"USD",False,"","","","","Algorithm
-  
-  
-Senior Machine Learning Engineer - TikTok Short Video Content Understanding/Multimodal Recommendation
-  
-  
-Location
-  
-:
-  
-  
-San Jose
-  
-  
-Employment Type
-  
-:
-  
-  
-Regular
-  
-  
-Job Code
-  
-:
-  
-  
-A75648
-  
-  
-Responsibilities
-  
-  
-Our team's mission is to empower content understanding for TikTok Short Video business. We focus on cutting-edge research in content understanding and the development of advanced LLM/MLLM algorithms and applications, including generative recommendation, weakly-supervised learning, few-shot classification, video tagging, multi-task learning, multilingual learning, multimodal pretraining, and more. We aim to succeed both in driving measurable business impact (e.g., recommendation metrics) and delivering state-of-the-art research outputs.
-  
-  
-Responsibilities
-  
-1. Lead multimodal algorithm development for TikTok’s short-video business, explore applications of multimodal technologies in recommendation systems and other scenarios to improve key business metrics.
-  
-2. Conduct cutting-edge research in multimodal and MLLM technologies, design advanced algorithms to solve business requirements while achieving technical breakthroughs.
-  
-3. Drive engineering deployment and implementation, ensuring model stability, scalability, and efficiency in production environments.
-  
-  
-**4. Focus on key areas including (but not limited to):**  
+id,site,job_url,job_url_direct,title,company,location,date_posted,job_type,salary_source,interval,min_amount,max_amount,currency,is_remote,job_level,job_function,listing_type,emails,description,company_industry,company_url,company_logo,company_url_direct,company_addresses,company_num_employees,company_revenue,company_description,skills,experience_range,company_rating,company_reviews_count,vacancy_count,work_from_home_type
+in-b6372018b1bcf9ee,indeed,https://www.indeed.com/viewjob?jk=b6372018b1bcf9ee,https://careers.microsoft.com/us/en/job/1879479/Software-Engineer-II?jobsource=indeed&utm_source=Job%20Board&utm_campaign=indeed-feed,Software Engineer II,Microsoft,"Redmond, WA, US",2025-09-24,fulltime,direct_data,yearly,100600.0,215400.0,USD,False,,,,,"We are looking for a Software Engineer to join our team focused on building intelligent, scalable, and secure systems. This role involves designing and implementing AI\-enhanced services that support enterprise\-scale applications and customer\-facing experiences. You will contribute to architecture, development, and optimization of cloud\-native solutions, with emphasis on responsible AI practices.  
 
-* General AI platform design and development, including few-shot/zero-shot on MLLM, AI-labeling, auto prompting, active-learning, continue pretraining and RL.
-* Integration of content understanding with recommendation systems (e.g., UGC ecosystems, cold start, interest exploration, comment understanding).
-* Leveraging multimodal techniques to develop next-generation recommendation systems, such as generative models and end-to-end approaches.
-
-Qualifications
-  
-  
-Minimum Qualifications
-  
-1. Proven experience in multimodal content understanding, with expertise in large language models (LLMs) and familiarity with cutting-edge progress in the field.
-  
-2. Strong technical foundation in at least one major deep learning framework (e.g., PyTorch, TensorFlow).
-  
-3. Proactive mindset, strong sense of ownership, excellent communication skills, and ability to collaborate across teams.
-  
-  
-Preferred Qualification
-  
-1. Hands-on experience deploying content understanding solutions in search, advertising, recommendation, or related domains.
-  
-  
-Job Information
-  
-  
-【For Pay Transparency】Compensation Description (Annually)
-  
-  
-The base salary range for this position in the selected city is $136800 - $359720 annually.
-  
-  
-​
-  
-  
-Compensation may vary outside of this range depending on a number of factors, including a candidate’s qualifications, skills, competencies and experience, and location. Base pay is one part of the Total Package that is provided to compensate and recognize employees for their work, and this role may be eligible for additional discretionary bonuses/incentives, and restricted stock units.
-  
-  
-​
-  
-  
-Benefits may vary depending on the nature of employment and the country work location. Employees have day one access to medical, dental, and vision insurance, a 401(k) savings plan with company match, paid parental leave, short-term and long-term disability coverage, life insurance, wellbeing benefits, among others. Employees also receive 10 paid holidays per year, 10 paid sick days per year and 17 days of Paid Personal Time (prorated upon hire with increasing accruals by tenure).
-  
-  
-​
-  
-  
-The Company reserves the right to modify or change these benefits programs at any time, with or without notice.
-  
-  
-​
-  
-  
-**For Los Angeles County (unincorporated) Candidates:**  
-​
-  
-  
-Qualified applicants with arrest or conviction records will be considered for employment in accordance with all federal, state, and local laws including the Los Angeles County Fair Chance Ordinance for Employers and the California Fair Chance Act. Our company believes that criminal history may have a direct, adverse and negative relationship on the following job duties, potentially resulting in the withdrawal of the conditional offer of employment:
-  
-  
-​
-  
-  
-1. Interacting and occasionally having unsupervised contact with internal/external clients and/or colleagues;
-  
-  
-​
-  
-  
-2. Appropriately handling and managing confidential information including proprietary and trade secret information and access to information technology systems; and
-  
-  
-​
-  
-  
-3. Exercising sound judgment.
-  
-  
-​
-  
-  
-About TikTok
-  
-  
-TikTok is the leading destination for short-form mobile video. At TikTok, our mission is to inspire creativity and bring joy. TikTok's global headquarters are in Los Angeles and Singapore, and we also have offices in New York City, London, Dublin, Paris, Berlin, Dubai, Jakarta, Seoul, and Tokyo.
-  
-  
-​
-  
-  
-Why Join Us
-  
-  
-Inspiring creativity is at the core of TikTok's mission. Our innovative product is built to help people authentically express themselves, discover and connect – and our global, diverse teams make that possible. Together, we create value for our communities, inspire creativity and bring joy - a mission we work towards every day.
-  
-  
-​
-  
-  
-We strive to do great things with great people. We lead with curiosity, humility, and a desire to make impact in a rapidly growing tech company. Every challenge is an opportunity to learn and innovate as one team. We're resilient and embrace challenges as they come. By constantly iterating and fostering an ""Always Day 1"" mindset, we achieve meaningful breakthroughs for ourselves, our company, and our users. When we create and grow together, the possibilities are limitless. Join us.
-  
-  
-​
-  
-  
-​
-  
-  
-Diversity & Inclusion
-  
-  
-​
-  
-  
-TikTok is committed to creating an inclusive space where employees are valued for their skills, experiences, and unique perspectives. Our platform connects people from across the globe and so does our workplace. At TikTok, our mission is to inspire creativity and bring joy. To achieve that goal, we are committed to celebrating our diverse voices and to creating an environment that reflects the many communities we reach. We are passionate about this and hope you are too.
-  
-  
-​
-  
-  
-TikTok Accommodation
-  
-  
-TikTok is committed to providing reasonable accommodations in our recruitment processes for candidates with disabilities, pregnancy, sincerely held religious beliefs or other reasons protected by applicable laws. If you need assistance or a reasonable accommodation, please reach out to us at
-  
-  
-https://tinyurl.com/RA-request","","https://www.indeed.com/cmp/Tiktok","https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/83b6323a8116bb3e0e44be12781095c5","https://www.tiktok.com/","Los Angeles, CA","10,000+","Decline to state","TikTok is a destination for short-form mobile videos.","","","","","",""
-"in-430209e6c8245662","indeed","https://www.indeed.com/viewjob?jk=430209e6c8245662","https://click.appcast.io/t/ocCm0DHpxpLTq5wCzh9u1bzNhbsgiD5k4O-Fa6ui8kg=","Network Site Reliability Engineer","NVIDIA","Santa Clara, CA, US","2025-09-24","fulltime","direct_data","yearly",168000.0,264500.0,"USD",False,"","","","","NVIDIA has been transforming computer graphics, PC gaming, and accelerated computing for more than 25 years. It’s a unique legacy of innovation that’s fueled by great technology—and amazing people. Today, we’re tapping into the unlimited potential of AI to define the next era of computing. An era in which our GPU acts as the brains of computers, robots, and self-driving cars that can understand the world. Doing what’s never been done before takes vision, innovation, and the world’s best talent. As an NVIDIAN, you’ll be immersed in a diverse, supportive environment where everyone is inspired to do their best work. Come join the team and see how you can make a lasting impact on the world.
-
-We are seeking a highly skilled and experienced Network Site Reliability Engineer (SRE) to join our Enterprise Network Operations and SRE team. In this role, you will be pivotal in implementing our vision for a reliable and efficient network infrastructure. The ideal candidate is passionate about network operations and committed to enhancing the user experience. You'll have the opportunity to solve complex network challenges using hands-on debugging and by focusing on network automation, observability, documentation, and operational excellence. Your primary responsibilities will include minimizing manual operational tasks to achieve and maintain Service Level Objectives (SLOs), proactively identifying and mitigating network risks to promote continuous improvement, developing knowledge base articles for automation and bots, and conducting blameless postmortems & following through on Root Cause Analyses (RCAs). This is a critical position focused on ensuring user satisfaction and brilliance in network operations. The role requires a wealth of skills and experience in network operations.
-
-**What you will be doing:**
-
-* Owning the operational aspect of the network infrastructure, ensuring its high availability and reliability, actively working on network incidents and service requests.
-* Partnering with architecture and deployment teams to guarantee that new implementations are supportable and align with production standards.
-* Advocating for and implementing automation to reduce toil and improve operational efficiency.
-* Monitoring network performance, identifying areas for improvement, and collaborating with relevant teams to implement refinements.
-* Collaborating with domain experts across functions to resolve production issues swiftly and effectively, ensuring customer happiness.
-* Discovering opportunities for operational improvements and teaming up with colleagues to devise solutions that enhance excellence and sustainability in network operations.
-
-**What we need to see:**
-
-* BS degree in Computer Science, Electrical Engineering, or a related technical field, or equivalent experience.
-* A minimum of 10 years of industry practice in network operations or related fields concentrating on automation & site reliability engineering. Familiarity with both enterprise and the data center networks is critical.
-* Proficiency in network fundamentals & fixing complex network issues with expertise in network tech like TCP/UDP, IPv4/IPv6, Wireless, BGP, ISIS, VPN, L2 switching, Firewalls, Load Balancers, Data Center Network technologies, etc. Consistent track record in network operations.
-* Monitoring Tools: Familiarity with network management tools such as Prometheus, Grafana, Alert Manager, Nautobot/Netbox, BigPanda.
-* Network Automation: Expertise in automating networks using frameworks such as Salt, Ansible, or similar.
-* Process & Service Tooling: Skills with ServiceNow, Jira & foundational knowledge of ITIL framework
-* System Administration: Knowledge of Linux system fundamentals.
-* Problem-Solving and Communication: Detailed problem-solving approach, critical thinking, coupled with good interpersonal skills and a solid grasp of ownership and drive.
-
-**Ways to stand out from the crowd:**
-
-* Support Automation: Track record of taking operational signals through means such as SNMP, Syslog, Streaming Telemetry to solve operational challenges.
-* Platform Exposure: Experience with Mellanox/Cumulus Linux, Palo Alto firewalls, Netscalers and F5 load balancers.
-* Technical Proficiency in Programming and Scripting: Competence in Python, Go, or related programming languages. Skilled in constructing intricate systems to supervise and regulate network operations, surpassing elementary script development.
-* Network Technologies: Proficient knowledge of one or more of the following technologies: VXLAN/EVPN at Scale, MPLS, RSVP, Segment Routing, SDWAN, SASE Platforms
-
-NVIDIA is widely considered to be one of the technology world’s most desirable employers. We have some of the most forward-thinking and hardworking people in the world working for us. If you're creative, results-oriented and enjoy learning while having fun, then what are you waiting for? Apply today!
-
-#LI-Hybrid
-
-Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 168,000 USD - 264,500 USD.
-
-You will also be eligible for equity and benefits.
-
-Applications for this job will be accepted at least until September 27, 2025.NVIDIA is committed to fostering a diverse work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.","","https://www.indeed.com/cmp/Nvidia","https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/9cda2ebf26905efa812e1a5315c7a53d","http://www.nvidia.com","Santa Clara, CA","10,000+","$5B to $10B (USD)","Bringing superhuman capabilities to some of the world's toughest problems.","","","","","",""
-"in-b2448b3bfd9e2cf1","indeed","https://www.indeed.com/viewjob?jk=b2448b3bfd9e2cf1","https://click.appcast.io/t/TH6oTt_CmP7150_p_R_RYTNz829wAqbBwaBfRpXhrD8=","Senior Machine Learning Engineer","NVIDIA","Santa Clara, CA, US","2025-09-24","fulltime","direct_data","yearly",184000.0,287500.0,"USD",False,"","","","","As a Senior Machine Learning Engineer at NVIDIA, you will build the machine learning brain that keeps NVIDIA’s global DGX Cloud healthy, efficient and ready for the next waves of AI breakthroughs. DGX Cloud fuses NVIDIA GPUs, NVLink networking and the full AI software stack into elastic infrastructure powering large language models, drug discovery, autonomous driving and climate science. Your models will turn billions of telemetry signals into predictive insight. This frees customers to innovate while our platform runs smarter.
-
-**What you'll be doing:**
-
-* Ground breaking and developing innovative machine learning algorithms and models that propel our AI products.
-* Build production models for anomaly detection, predictive maintenance and usage optimization.
-* Develop tools surfacing real time telemetry, efficiency metrics and long term trends.
-* Develop forecasting and simulation models for global scale planning.
-* Analyzing complex datasets to determine the best approach for model training and optimization.
-* Translate findings into clear engineering actions with infrastructure, operations and product teams.
-* Participating in cross-functional projects to integrate machine learning capabilities into various NVIDIA products.
-
-**What we need to see:**
-
-* Master's degree or PhD in Mathematics, Statistics, Machine Learning or related quantitative field (or equivalent experience).
-* 8+ years experience applying Machine Learning to operational systems.
-* Proven track record of building and deploying Machine Learning models in production environments.
-* Experience with time series analysis and optimization algorithms.
-* Familiarity with distributed systems and cloud platforms such as AWS and Kubernetes.
-* Strong software engineering skills and proficiency in Python.
-* Effective verbal/written communication, and technical presentation skills.
-* Experience with machine learning frameworks such as TensorFlow, PyTorch, or similar.
-* A track record of delivering high-impact projects to compete in a fast-paced environment.
-
-**Ways to stand out from the crowd:**
-
-* Experience solving capacity planning problems.
-* Deep understanding of GPU performance metrics.
-* Familiarity with prometheus and PromQL.
-
-Your base salary will be determined based on your location, experience, and the pay of employees in similar positions. The base salary range is 184,000 USD - 287,500 USD.
-
-You will also be eligible for equity and benefits.
-
-Applications for this job will be accepted at least until September 27, 2025.NVIDIA is committed to fostering a diverse work environment and proud to be an equal opportunity employer. As we highly value diversity in our current and future employees, we do not discriminate (including in our hiring and promotion practices) on the basis of race, religion, color, national origin, gender, gender expression, sexual orientation, age, marital status, veteran status, disability status or any other characteristic protected by law.","","https://www.indeed.com/cmp/Nvidia","https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/9cda2ebf26905efa812e1a5315c7a53d","http://www.nvidia.com","Santa Clara, CA","10,000+","$5B to $10B (USD)","Bringing superhuman capabilities to some of the world's toughest problems.","","","","","",""
-"in-79cb4cb138e8956a","indeed","https://www.indeed.com/viewjob?jk=79cb4cb138e8956a","https://careers.usbank.com/global/en/job/UBNAGLOBAL20250020383EXTERNALENGLOBAL/Software-Engineer-2-Tandem-TAL-TACL-Developer?utm_source=indeed&utm_medium=phenom-feeds","Software Engineer 2 (Tandem TAL, TACL Developer)","U.S. Bank","San Francisco, CA, US","2025-09-23","fulltime","direct_data","yearly",105400.0,124000.0,"USD",False,"","","","","At U.S. Bank, we’re on a journey to do our best. Helping the customers and businesses we serve to make better and smarter financial decisions and enabling the communities we support to grow and succeed. We believe it takes all of us to bring our shared ambition to life, and each person is unique in their potential. A career with U.S. Bank gives you a wide, ever-growing range of opportunities to discover what makes you thrive at every stage of your career. Try new things, learn new skills and discover what you excel at—all from Day One.
-
-**Job Description**
--------------------
-
-This position will be responsible for the analysis, design, testing, development and maintenance of best in class software experiences. The candidate is a self-motivated individual who can collaborate with a team and across the organization. The candidate takes responsibility of the software artifacts produced adhering to U.S. Bank standards in order to ensure minimal impact to the customer experience. The candidate will be adept with the agile software development lifecycle and DevOps principles.  
-  
-**Essential Responsibilities:**
-
-* Responsible for designing, developing, testing, operating and maintaining products
-* Takes full stack ownership by consistently writing production-ready and testable code
-* Consistently creates optimal design adhering to architectural best practices; considers scalability, reliability and performance of systems/contexts affected when defining technical designs
-* L**everages expertise in web-based applications like Auto Attendant Web, RMBS, and Abacus, as well as various technical environments including Tandem, COBOL85, SCOBOL, Pathway Req/Servers, TACL, EXEC, Enscribe, KLIST, DDL, Control Net batch, Guardian, TEDIT, Axcel, BIND, Outside view, Inspect, FTP, and Connect :Direct.**
-* Makes sound design/coding decisions keeping customer experience in the forefront
-* Takes feedback from code review and apply changes to meet standards
-* Conducts code reviews to provide guidance on engineering best practices and compliance with development procedures
-* Accountable for ensuring all aspects of product development follow compliance and security best practices
-* Exhibits relentless focus in software reliability engineering standards embedded into development standards
-
-**Basic Qualifications**
-
-* Bachelor’s degree, or equivalent work experience
-* Three to five years of relevant experience
-
-**Preferred Skills/Experience:**
-
-* Hands-on experience in software development in an **HP Non-Stop** (legacy **Tandem**) environment, **using Guardian and/or OSS**, combination of **TAL**, **TACL**, SCOBOL, COBOL, **and tools such as C/C++, Java, Python, Eclipse IDE, Web Development, ICE Webgate, WFT/Paragon Products, SIM++/VTS/MDS INQ/Lexcel**
-* Coding skills in the **HP Non-Stop environment** using a combination of **TAL**, **TACL**, SCOBOL, COBOL - good to have
-* **knowledge in specialized applications like Base24 Classic Application, Base24 Business Analyst, Base24 ATM/POS Processing, and related areas such as Network Compares, Network Mandates, and Network Adjustment**
-* **Experience with Safeguard, MQ Series, and ACI Desktop TSS - big plus**
-* Previous experience with test automation tools and test case development
-* Development or support experience with wire transfer (**Fedwire**, CHIPS, SWIFT) applications
-* Strong problem-solving and analytical skills
-* Excellent communication and interpersonal skills
-
-***Location Expectations***
-
-***The role offers a hybrid/flexible schedule, which means there's an in-office expectation of 3 or more days per week and the flexibility to work outside the office location for the other days.***
-
-If there’s anything we can do to accommodate a disability during any portion of the application or hiring process, please refer to our disability accommodations for applicants.
-
-**Benefits:**
-
-Our approach to benefits and total rewards considers our team members’ whole selves and what may be needed to thrive in and outside work. That's why our benefits are designed to help you and your family boost your health, protect your financial security and give you peace of mind. Our benefits include the following (some may vary based on role, location or hours):
-
-* Healthcare (medical, dental, vision)
-* Basic term and optional term life insurance
-* Short-term and long-term disability
-* Pregnancy disability and parental leave
-* 401(k) and employer-funded retirement plan
-* Paid vacation (from two to five weeks depending on salary grade and tenure)
-* Up to 11 paid holiday opportunities
-* Adoption assistance
-* Sick and Safe Leave accruals of one hour for every 30 worked, up to 80 hours per calendar year unless otherwise provided by law
-
-U.S. Bank is an equal opportunity employer. We consider all qualified applicants without regard to race, religion, color, sex, national origin, age, sexual orientation, gender identity, disability or veteran status, and other factors protected under applicable law.
-
-**E-Verify**
-
-U.S. Bank participates in the U.S. Department of Homeland Security E-Verify program in all facilities located in the United States and certain U.S. territories. The E-Verify program is an Internet-based employment eligibility verification system operated by the U.S. Citizenship and Immigration Services.
-
-The salary range reflects figures based on the primary location, which is listed first. The actual range for the role may differ based on the location of the role. In addition to salary, U.S. Bank offers a comprehensive benefits package, including incentive and recognition programs, equity stock purchase 401(k) contribution and pension (all benefits are subject to eligibility requirements). Pay Range: $105,400.00 - $124,000.00
-
-U.S. Bank will consider qualified applicants with arrest or conviction records for employment. U.S. Bank conducts background checks consistent with applicable local laws, including the Los Angeles County Fair Chance Ordinance and the California Fair Chance Act as well as the San Francisco Fair Chance Ordinance. U.S. Bank is subject to, and conducts background checks consistent with the requirements of Section 19 of the Federal Deposit Insurance Act (FDIA). In addition, certain positions may also be subject to the requirements of FINRA, NMLS registration, Reg Z, Reg G, OFAC, the NFA, the FCPA, the Bank Secrecy Act, the SAFE Act, and/or federal guidelines applicable to an agreement, such as those related to ethics, safety, or operational procedures.
-
-Applicants must be able to comply with U.S. Bank policies and procedures including the Code of Ethics and Business Conduct and related workplace conduct and safety policies.
-
-**Posting may be closed earlier due to high volume of applicants.**","","https://www.indeed.com/cmp/U.S.-Bank","https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/de1f5c624998e42c8ae033733fd90c6a","http://www.usbank.com","Minneapolis, MN","10,000+","more than $10B (USD)","U.S. Bancorp is the parent company of U.S. Bank National Association, the fifth-largest commercial bank in the United States headquartered in Minneapolis.","","","","","",""
-"in-f31969832aa6513c","indeed","https://www.indeed.com/viewjob?jk=f31969832aa6513c","https://careers.usbank.com/global/en/job/UBNAGLOBAL20250020383EXTERNALENGLOBAL/Software-Engineer-2-Tandem-TAL-TACL-Developer?utm_source=indeed&utm_medium=phenom-feeds","Software Engineer 2 (Tandem TAL, TACL Developer)","U.S. Bank","Cupertino, CA, US","2025-09-23","fulltime","direct_data","yearly",105400.0,124000.0,"USD",False,"","","","","At U.S. Bank, we’re on a journey to do our best. Helping the customers and businesses we serve to make better and smarter financial decisions and enabling the communities we support to grow and succeed. We believe it takes all of us to bring our shared ambition to life, and each person is unique in their potential. A career with U.S. Bank gives you a wide, ever-growing range of opportunities to discover what makes you thrive at every stage of your career. Try new things, learn new skills and discover what you excel at—all from Day One.
-
-**Job Description**
--------------------
-
-This position will be responsible for the analysis, design, testing, development and maintenance of best in class software experiences. The candidate is a self-motivated individual who can collaborate with a team and across the organization. The candidate takes responsibility of the software artifacts produced adhering to U.S. Bank standards in order to ensure minimal impact to the customer experience. The candidate will be adept with the agile software development lifecycle and DevOps principles.  
-  
-**Essential Responsibilities:**
-
-* Responsible for designing, developing, testing, operating and maintaining products
-* Takes full stack ownership by consistently writing production-ready and testable code
-* Consistently creates optimal design adhering to architectural best practices; considers scalability, reliability and performance of systems/contexts affected when defining technical designs
-* L**everages expertise in web-based applications like Auto Attendant Web, RMBS, and Abacus, as well as various technical environments including Tandem, COBOL85, SCOBOL, Pathway Req/Servers, TACL, EXEC, Enscribe, KLIST, DDL, Control Net batch, Guardian, TEDIT, Axcel, BIND, Outside view, Inspect, FTP, and Connect :Direct.**
-* Makes sound design/coding decisions keeping customer experience in the forefront
-* Takes feedback from code review and apply changes to meet standards
-* Conducts code reviews to provide guidance on engineering best practices and compliance with development procedures
-* Accountable for ensuring all aspects of product development follow compliance and security best practices
-* Exhibits relentless focus in software reliability engineering standards embedded into development standards
-
-**Basic Qualifications**
-
-* Bachelor’s degree, or equivalent work experience
-* Three to five years of relevant experience
-
-**Preferred Skills/Experience:**
-
-* Hands-on experience in software development in an **HP Non-Stop** (legacy **Tandem**) environment, **using Guardian and/or OSS**, combination of **TAL**, **TACL**, SCOBOL, COBOL, **and tools such as C/C++, Java, Python, Eclipse IDE, Web Development, ICE Webgate, WFT/Paragon Products, SIM++/VTS/MDS INQ/Lexcel**
-* Coding skills in the **HP Non-Stop environment** using a combination of **TAL**, **TACL**, SCOBOL, COBOL - good to have
-* **knowledge in specialized applications like Base24 Classic Application, Base24 Business Analyst, Base24 ATM/POS Processing, and related areas such as Network Compares, Network Mandates, and Network Adjustment**
-* **Experience with Safeguard, MQ Series, and ACI Desktop TSS - big plus**
-* Previous experience with test automation tools and test case development
-* Development or support experience with wire transfer (**Fedwire**, CHIPS, SWIFT) applications
-* Strong problem-solving and analytical skills
-* Excellent communication and interpersonal skills
-
-***Location Expectations***
-
-***The role offers a hybrid/flexible schedule, which means there's an in-office expectation of 3 or more days per week and the flexibility to work outside the office location for the other days.***
-
-If there’s anything we can do to accommodate a disability during any portion of the application or hiring process, please refer to our disability accommodations for applicants.
-
-**Benefits:**
-
-Our approach to benefits and total rewards considers our team members’ whole selves and what may be needed to thrive in and outside work. That's why our benefits are designed to help you and your family boost your health, protect your financial security and give you peace of mind. Our benefits include the following (some may vary based on role, location or hours):
-
-* Healthcare (medical, dental, vision)
-* Basic term and optional term life insurance
-* Short-term and long-term disability
-* Pregnancy disability and parental leave
-* 401(k) and employer-funded retirement plan
-* Paid vacation (from two to five weeks depending on salary grade and tenure)
-* Up to 11 paid holiday opportunities
-* Adoption assistance
-* Sick and Safe Leave accruals of one hour for every 30 worked, up to 80 hours per calendar year unless otherwise provided by law
-
-U.S. Bank is an equal opportunity employer. We consider all qualified applicants without regard to race, religion, color, sex, national origin, age, sexual orientation, gender identity, disability or veteran status, and other factors protected under applicable law.
-
-**E-Verify**
-
-U.S. Bank participates in the U.S. Department of Homeland Security E-Verify program in all facilities located in the United States and certain U.S. territories. The E-Verify program is an Internet-based employment eligibility verification system operated by the U.S. Citizenship and Immigration Services.
-
-The salary range reflects figures based on the primary location, which is listed first. The actual range for the role may differ based on the location of the role. In addition to salary, U.S. Bank offers a comprehensive benefits package, including incentive and recognition programs, equity stock purchase 401(k) contribution and pension (all benefits are subject to eligibility requirements). Pay Range: $105,400.00 - $124,000.00
-
-U.S. Bank will consider qualified applicants with arrest or conviction records for employment. U.S. Bank conducts background checks consistent with applicable local laws, including the Los Angeles County Fair Chance Ordinance and the California Fair Chance Act as well as the San Francisco Fair Chance Ordinance. U.S. Bank is subject to, and conducts background checks consistent with the requirements of Section 19 of the Federal Deposit Insurance Act (FDIA). In addition, certain positions may also be subject to the requirements of FINRA, NMLS registration, Reg Z, Reg G, OFAC, the NFA, the FCPA, the Bank Secrecy Act, the SAFE Act, and/or federal guidelines applicable to an agreement, such as those related to ethics, safety, or operational procedures.
-
-Applicants must be able to comply with U.S. Bank policies and procedures including the Code of Ethics and Business Conduct and related workplace conduct and safety policies.
-
-**Posting may be closed earlier due to high volume of applicants.**","","https://www.indeed.com/cmp/U.S.-Bank","https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/de1f5c624998e42c8ae033733fd90c6a","http://www.usbank.com","Minneapolis, MN","10,000+","more than $10B (USD)","U.S. Bancorp is the parent company of U.S. Bank National Association, the fifth-largest commercial bank in the United States headquartered in Minneapolis.","","","","","",""
-"in-cfe6f865fa858e06","indeed","https://www.indeed.com/viewjob?jk=cfe6f865fa858e06","https://jobs.ashbyhq.com/gtv/d17dd0c3-cb91-4dcb-8543-37528074876d?utm_source=q5Bx5zK8aj","Software Engineer, Backend","gtv","San Francisco, CA, US","2025-09-23","fulltime","direct_data","yearly",200000.0,250000.0,"USD",False,"","","","","**About Unit**
---------------
-
-Unit is an AI video company. We’re building intelligent systems that combine creativity and automation to deliver next-generation video products. Our team includes senior people from Instagram, TikTok, and NVIDIA. We’re based in San Francisco and backed by Khosla Ventures, Air Street Capital, and other leaders in AI.
-
-**Role Overview**
------------------
-
-We're looking for an experienced Backend Software Engineer to join the GTV team. You'll work closely with engineers, designers, and creatives to build our core systems, including video generation pipelines, reinforcement learning infrastructure, real-time processing workflows, and more. This is a role for someone who loves building high-performance systems and wants to shape the future of media.
+Microsoft’s mission is to empower every person and every organization on the planet to achieve more. As employees we come together with a growth mindset, innovate to empower others, and collaborate to realize our shared goals. Each day we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond.**r**
 
 **Responsibilities**
 --------------------
 
-* Design and implement scalable backend systems that power the creative engine behind GTV
-* Partner with research engineers and data operators to productionize custom models, agentic workflows, and RL loops
-* Develop robust APIs to support internal tools and consumer-facing features, enabling rapid experimentation and testing
-* Drive system reliability and efficiency through rigorous testing, performance benchmarking, and end-to-end observability
-* Collaborate cross-functionally with engineers, researchers, and designers to develop and launch new product features
+* Architect and develop distributed systems and microservices using modern programming languages and cloud platforms.
+* Integrate AI capabilities such as natural language processing, semantic search, and intelligent agents using frameworks like Azure OpenAI, Semantic Kernel, or equivalent.
+* Drive performance, scalability, and cost\-efficiency through telemetry, asynchronous I/O, and system profiling.
+* Ensure robust data validation, schema enforcement, and compliance with privacy and security standards.
+* Collaborate across disciplines to define technical requirements, review designs, and deliver high\-quality software.
+* Mentor engineers and promote engineering best practices across the team.
+* Embody our culture and values
 
-**Requirements**
-----------------
+**Qualifications**
+------------------
 
-* Strong technical skills with proficiency in Python and NodeJS
-* Industry experience with AWS (S3, Lambda, RDS, SQS, ECS), Docker, CI/CD pipelines, and other infrastructure tools
-* Solid understanding of generative models, distributed systems, relational databases, real-time systems, and asynchronous workflows
-* Proven ability to debug complex systems, navigate ambiguity, and take ownership of challenging problems
-* Excellent collaboration and communication skills, with experience working across research, engineering, and design teams
+**Required Qualifications*** Bachelor's Degree in Computer Science or related technical field AND 2\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
+* + OR equivalent experience.
+* Proficient in C\#, Python, or JavaScript, and familiarity with cloud platforms like Azure or AWS.
 
-**Nice To Have**
-----------------
+**Other Requirements**  
 
-* Prior work experience at early-stage or high-growth startups
-* Familiarity with video processing, storage, and distribution at scale
-* Ability to build internal tools and dashboards
+Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check:* This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.
 
-**Compensation**
-----------------
+**Preferred Qualifications*** 3\+ years of experience in software engineering, preferably in cloud\-scale or AI\-enhanced services.
+* Experience with AI development tools and frameworks (e.g., OpenAI APIs, Transformers, Semantic Search).
+* Deep understanding of CI/CD pipelines, GitHub workflows, and infrastructure\-as\-code.
+* Demonstrated ability to lead design efforts and deliver production\-grade solutions.
+* Excellent problem\-solving, communication, and collaboration skills.
 
-* $200K-$250K base salary
-* Competitive equity grant
-* Top-tier benefits (medical, dental, and vision)
-* Daily dinner stipend
-* Relocation support
+**Software Engineering IC3** \- The typical base pay range for this role across the U.S. is USD $100,600 \- $199,000 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $131,400 \- $215,400 per year.  
 
-Compensation Range: $200K - $250K","","https://www.indeed.com/cmp/Gtv","","","","","","","","","","","",""
-"in-9a45345a976bdcd6","indeed","https://www.indeed.com/viewjob?jk=9a45345a976bdcd6","https://jobs.ashbyhq.com/Crusoe/90f86030-4073-449b-ba2b-f473d04177a6?utm_source=4MqBxxdA0Q","Senior Staff Software Engineer","CRUSOE","Sunnyvale, CA, US","2025-09-23","fulltime","direct_data","yearly",233000.0,282000.0,"USD",False,"","","","","Crusoe's mission is to accelerate the abundance of energy and intelligence. We’re crafting the engine that powers a world where people can create ambitiously with AI — without sacrificing scale, speed, or sustainability.
+  
 
-Be a part of the AI revolution with sustainable technology at Crusoe. Here, you'll drive meaningful innovation, make a tangible impact, and join a team that’s setting the pace for responsible, transformative cloud infrastructure.
+Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us\-corporate\-pay
+  
 
-**About This Role:**
+  
 
-We are looking for a highly skilled engineer with deep experience running Kubernetes at scale on bare metal. You will help design, build, and operate Crusoe’s next-generation Kubernetes platform across global datacenters, ensuring performance, reliability, and automation at every layer of the stack.
+Microsoft will accept applications for the role until September 29, 2025\.
 
-**What You’ll Be Working On:**
+  
 
-* Designing, building, and operating Kubernetes clusters on bare metal at scale
-* Engineering full cluster lifecycle management (Talos bootstrapping, upgrades, node reprovisioning, HA control planes, recovery workflows)
-* Architecting networking, load balancing, and service mesh solutions optimized for bare metal
-* Implementing performant CNIs (Calico, Cilium), integrating L2/L3 networking, routing (BGP/ECMP), and optimizing traffic across racks and datacenters
-* Automating provisioning via PXE/iPXE, Tinkerbell, MAAS, and managing BMCs/IPMI/Redfish with standardized BIOS/firmware across heterogeneous hardware fleets
-* Designing and operating persistent storage (local disks, block, object) including Ceph, Rook, and openEBS
-* Building automation and tooling (Go, Python, Bash) for provisioning, drift detection, upgrades, and incident response
-* Extending observability with Prometheus, Alertmanager, Grafana, OpenTelemetry, and defining SLOs for cluster health, latency, and workload availability
-* Implementing security best practices: Vault, cert-manager, RBAC hardening, network policies, and OS/K8s patch pipelines
-* Mentoring engineers and shaping technical direction for Crusoe’s Kubernetes platform
+\#azuredata
+\#azdata \#azuredata \#AI
+Microsoft is an equal opportunity employer. Consistent with applicable law, all qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",Internet And Software,https://www.indeed.com/cmp/Microsoft,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/88813b3f866a5b58c9685073e3b87e05,http://www.microsoft.com/,"One Microsoft Way Redmond, Washington 98052-6399","10,000+",more than $10B (USD),Our mission is to empower every person and every organization on the planet to achieve more.,,,,,,
+in-980e66aab4581828,indeed,https://www.indeed.com/viewjob?jk=980e66aab4581828,https://careers.microsoft.com/us/en/job/1879451/Software-Engineer-II?jobsource=indeed&utm_source=Job%20Board&utm_campaign=indeed-feed,Software Engineer II,Microsoft,"Redmond, WA, US",2025-09-24,fulltime,direct_data,yearly,100600.0,215400.0,USD,False,,,,,"Security represents the most critical priorities for our customers in a world awash in digital threats, regulatory scrutiny, and estate complexity. Microsoft Security aspires to make the world a safer place for all. We want to reshape security and empower every user, customer, and developer with a security cloud that protects them with end to end, simplified solutions.  
 
-**What You’ll Bring to the Team:**
+The Microsoft Security organization accelerates Microsoft’s mission and bold ambitions to ensure that our company and industry is securing digital technology platforms, devices, and clouds in our customers’ heterogeneous environments, as well as ensuring the security of our own internal estate. Our culture is centered on embracing a growth mindset, a theme of inspiring excellence, and encouraging teams and leaders to bring their best each day. In doing so, we create life\-changing innovations that impact billions of lives around the world.  
 
-* 10+ years in infrastructure engineering, including 3+ years operating Kubernetes in production
-* Strong experience running Kubernetes on bare metal (not just managed services)
-* Expert-level knowledge of Linux internals (cgroups, namespaces, kernel networking)
-* Deep experience with CNIs (Cilium, Calico), load balancers (Envoy, HAProxy, F5), and L3 networking (BGP, ECMP)
-* Proven track record provisioning and operating physical servers at scale (PXE/iPXE, Tinkerbell, MAAS, BMC/IPMI automation)
-* Strong programming skills in Go for building operators, controllers, and automation tooling
-* Hands-on experience with distributed storage systems (Ceph, MinIO, Rook, CSI drivers)
-* Strong background in observability (Prometheus, Alertmanager, metrics autoscaling, logging/ELK)
-* Familiarity with PKI, identity, and secrets management (Vault, cert-manager)
-* Excellent debugging skills for complex distributed systems
-* Strong communication and collaboration across cross-functional teams
+The COO organization at Microsoft plays a pivotal role in driving operational excellence and transformation across the company. Its mission centers on creating a blueprint for transforming Microsoft through AI and continuous improvement (CI). We’re seeking a forward‑thinking Software Engineer II with deep experience in AIOps‑centric, cloud data architecture. You’ll design and deliver the data foundations for semi and fully autonomous fraud and abuse detection, leveraging LLMs, agentic AI, retrieval‑augmented generation (RAG), semantic search, and low‑latency context retrieval. Your work will power real‑time decisioning and platform resilience by building scalable, high‑throughput systems that integrate diverse real‑time and near‑real‑time data sources, enabling agents to reason, adapt, and act in dynamic environments.  
 
-**Bonus Points:**
+Microsoft’s mission is to empower every person and every organization on the planet to achieve more. As employees we come together with a growth mindset, innovate to empower others and collaborate to realize our shared goals. Each day we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond.
 
-* Experience with hardware fleet management across multiple datacenters
-* Contributions to open source Kubernetes or related ecosystem projects
-* Experience implementing disaster recovery strategies at scale
-* Familiarity with GPUs, HPC clusters, or large-scale AI/ML workloads
+**Responsibilities**
+--------------------
 
-**Benefits:**
+* Architect and implement data systems that support Agentic AI workflows, including RAG pipelines and semantic memory.
+* Design and optimize vector database solutions for context\-aware retrieval and embedding storage.
+* Build real\-time and near\-real\-time data ingestion pipelines from diverse sources (e.g., telemetry, APIs, user interactions).
+* Develop automation frameworks for data processing, transformation, and enrichment.
+* Collaborate with data engineering, data science, and analytics teams to deliver seamless integration across data pipelines, model training, LLMs, inference services, MCP servers, and continuous feedback loops.
+* Implement semantic search capabilities using embeddings, transformers, and large dataset optimization techniques.
+* Ensure data quality, lineage, and governance across agentic systems.
+* Monitor and improve system performance, scalability, and reliability in production environments.
 
-* Industry competitive pay
-* Restricted Stock Units in a fast growing, well-funded technology company
-* Health insurance package options that include HDHP and PPO, vision, and dental for you and your dependents
-* Employer contributions to HSA accounts
-* Paid Parental Leave
-* Paid life insurance, short-term and long-term disability
-* Teladoc
-* 401(k) with a 100% match up to 4% of salary
-* Generous paid time off and holiday schedule
-* Cell phone reimbursement
-* Tuition reimbursement
-* Subscription to the Calm app
-* MetLife Legal
-* Company paid commuter benefit; $300 per month
 
-**Compensation:**
+Embody our Culture \& Values**Qualifications**
+------------------
 
-Compensation will be paid in the range of $233,000 - $282,000 + Bonus. Restricted Stock Units are included in all offers. Compensation to be determined by the applicant’s education, experience, knowledge, skills, and abilities, as well as internal equity and alignment with market data.
+**Required Qualifications**:
 
-Crusoe is an Equal Opportunity Employer. Employment decisions are made without regard to race, color, religion, disability, genetic information, pregnancy, citizenship, marital status, sex/gender, sexual preference/ orientation, gender identity, age, veteran status, national origin, or any other status protected by law or regulation.","","https://www.indeed.com/cmp/Crusoe","https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/e3e3cdbaa1eb6bbfd62d02fd091ea812","https://crusoe.ai/","Denver, CO","501 to 1,000","Decline to state","We design, build, and operate the infrastructure powering the next generation of artificial intelligence.","","","","","",""
-"in-53b2fef9cae9913d","indeed","https://www.indeed.com/viewjob?jk=53b2fef9cae9913d","https://jobs.ashbyhq.com/Crusoe/90f86030-4073-449b-ba2b-f473d04177a6?utm_source=4MqBxxdA0Q","Senior Staff Software Engineer","CRUSOE","San Francisco, CA, US","2025-09-23","fulltime","direct_data","yearly",233000.0,282000.0,"USD",False,"","","","","Crusoe's mission is to accelerate the abundance of energy and intelligence. We’re crafting the engine that powers a world where people can create ambitiously with AI — without sacrificing scale, speed, or sustainability.
+* Master's Degree in Computer Science, Math, Software Engineering, Computer Engineering, or related field AND 1\+ year(s) experience in business analytics, data science, software development, data modeling, or data engineering
+	+ OR Bachelor's Degree in Computer Science, Math, Software Engineering, Computer Engineering, or related field AND 2\+ years experience in business analytics, data science, software development, data modeling, or data engineering OR equivalent experience.
+* 3\+ years of experience in software engineering with a focus on data systems or AI infrastructure.
+* 1\+ years experience with distributed data processing (e.g., Spark, Flink) and real\-time streaming (e.g., Kafka, Pulsar).
+* 2\+ years experience of data modeling, ETL, and pipeline automation.
 
-Be a part of the AI revolution with sustainable technology at Crusoe. Here, you'll drive meaningful innovation, make a tangible impact, and join a team that’s setting the pace for responsible, transformative cloud infrastructure.
+ **Other Requirements:**
 
-**About This Role:**
 
-We are looking for a highly skilled engineer with deep experience running Kubernetes at scale on bare metal. You will help design, build, and operate Crusoe’s next-generation Kubernetes platform across global datacenters, ensuring performance, reliability, and automation at every layer of the stack.
+Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings:
+Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter. **Preferred qualifications:**
 
-**What You’ll Be Working On:**
+* Master's Degree in Computer Science, Math, Software Engineering, Computer Engineering, or related field AND 3\+ years experience in business analytics, data science, software development, data modeling, or data engineering
+	+ OR Bachelor's Degree in Computer Science, Math, Software Engineering, Computer Engineering, or related field AND 5\+ years experience in business analytics, data science, software development, data modeling, or data engineering OR equivalent experience.
+* Hands\-on experience with vector databases (e.g., FAISS, Weaviate, Pinecone) and semantic search.
+* Familiarity with LLM techniques, embeddings, and retrieval\-augmented generation.
+* Exposure to agentic AI concepts, autonomous systems, or reinforcement learning.
+* Experience with cloud\-native data architectures (Azure, AWS, GCP).
+* Contributions to open\-source AI or data infrastructure projects.
 
-* Designing, building, and operating Kubernetes clusters on bare metal at scale
-* Engineering full cluster lifecycle management (Talos bootstrapping, upgrades, node reprovisioning, HA control planes, recovery workflows)
-* Architecting networking, load balancing, and service mesh solutions optimized for bare metal
-* Implementing performant CNIs (Calico, Cilium), integrating L2/L3 networking, routing (BGP/ECMP), and optimizing traffic across racks and datacenters
-* Automating provisioning via PXE/iPXE, Tinkerbell, MAAS, and managing BMCs/IPMI/Redfish with standardized BIOS/firmware across heterogeneous hardware fleets
-* Designing and operating persistent storage (local disks, block, object) including Ceph, Rook, and openEBS
-* Building automation and tooling (Go, Python, Bash) for provisioning, drift detection, upgrades, and incident response
-* Extending observability with Prometheus, Alertmanager, Grafana, OpenTelemetry, and defining SLOs for cluster health, latency, and workload availability
-* Implementing security best practices: Vault, cert-manager, RBAC hardening, network policies, and OS/K8s patch pipelines
-* Mentoring engineers and shaping technical direction for Crusoe’s Kubernetes platform
 
-**What You’ll Bring to the Team:**
+Data Engineering IC3 \- The typical base pay range for this role across the U.S. is USD $100,600 \- $199,000 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $131,400 \- $215,400 per year.  
 
-* 10+ years in infrastructure engineering, including 3+ years operating Kubernetes in production
-* Strong experience running Kubernetes on bare metal (not just managed services)
-* Expert-level knowledge of Linux internals (cgroups, namespaces, kernel networking)
-* Deep experience with CNIs (Cilium, Calico), load balancers (Envoy, HAProxy, F5), and L3 networking (BGP, ECMP)
-* Proven track record provisioning and operating physical servers at scale (PXE/iPXE, Tinkerbell, MAAS, BMC/IPMI automation)
-* Strong programming skills in Go for building operators, controllers, and automation tooling
-* Hands-on experience with distributed storage systems (Ceph, MinIO, Rook, CSI drivers)
-* Strong background in observability (Prometheus, Alertmanager, metrics autoscaling, logging/ELK)
-* Familiarity with PKI, identity, and secrets management (Vault, cert-manager)
-* Excellent debugging skills for complex distributed systems
-* Strong communication and collaboration across cross-functional teams
+Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here:
+https://careers.microsoft.com/us/en/us\-corporate\-pay  
 
-**Bonus Points:**
+Microsoft will accept applications for the role until September 30, 2025  
 
-* Experience with hardware fleet management across multiple datacenters
-* Contributions to open source Kubernetes or related ecosystem projects
-* Experience implementing disaster recovery strategies at scale
-* Familiarity with GPUs, HPC clusters, or large-scale AI/ML workloads
 
-**Benefits:**
+Microsoft is an equal opportunity employer. Consistent with applicable law, all qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",Internet And Software,https://www.indeed.com/cmp/Microsoft,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/88813b3f866a5b58c9685073e3b87e05,http://www.microsoft.com/,"One Microsoft Way Redmond, Washington 98052-6399","10,000+",more than $10B (USD),Our mission is to empower every person and every organization on the planet to achieve more.,,,,,,
+in-5bca93c8aa45631e,indeed,https://www.indeed.com/viewjob?jk=5bca93c8aa45631e,https://careers.microsoft.com/us/en/job/1882817/Software-Engineering-II?jobsource=indeed&utm_source=Job%20Board&utm_campaign=indeed-feed,Software Engineering II,Microsoft,"Redmond, WA, US",2025-09-24,fulltime,direct_data,yearly,100600.0,215400.0,USD,False,,,,,"Are you passionate about working on Windows Operating System and building new features? Would you like to work on a team that brings continuous innovation to the world’s most popular desktop operating system? A team that enables new ways of developing and delivering features to the client, and ensuring the right features reach timely to millions of customers? If so, this is a wonderful and rare opportunity in the Windows Agility team that develops techniques for Windows Delivery management for retail audience.  
 
-* Industry competitive pay
-* Restricted Stock Units in a fast growing, well-funded technology company
-* Health insurance package options that include HDHP and PPO, vision, and dental for you and your dependents
-* Employer contributions to HSA accounts
-* Paid Parental Leave
-* Paid life insurance, short-term and long-term disability
-* Teladoc
-* 401(k) with a 100% match up to 4% of salary
-* Generous paid time off and holiday schedule
-* Cell phone reimbursement
-* Tuition reimbursement
-* Subscription to the Calm app
-* MetLife Legal
-* Company paid commuter benefit; $300 per month
+We play a key role in securing and shipping monthly features to our customers while keeping a healthy continuous experience that makes our customers love Windows. Our team is a full\-stack powerhouse that manages technologies ranging from Azure platforms, Build Pipelines, AI models, Kusto Query Language, Azure DevOps, feature code scans and analysis, and manipulating end\-user features through code flow efficiency.  
 
-**Compensation:**
+We are looking for an experienced **Software Engineer II** that has a passion for developing tools and services that enable the Windows organization to deliver new features. You will collaborate with other experienced engineers to deliver seamless feature updates to customers. You will be a meaningful part of a growing team that values diversity of thought and recognizes everyone for their personal strengths and desire to learn and grow.  
 
-Compensation will be paid in the range of $233,000 - $282,000 + Bonus. Restricted Stock Units are included in all offers. Compensation to be determined by the applicant’s education, experience, knowledge, skills, and abilities, as well as internal equity and alignment with market data.
+Microsoft’s mission is to empower every person and every organization on the planet to achieve more. As employees we come together with a growth mindset, innovate to empower others, and collaborate to realize our shared goals. Each day we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond.In alignment with our Microsoft values, we are committed to cultivating an inclusive work environment for all employees to positively impact our culture every day.**Responsibilities**
+--------------------
 
-Crusoe is an Equal Opportunity Employer. Employment decisions are made without regard to race, color, religion, disability, genetic information, pregnancy, citizenship, marital status, sex/gender, sexual preference/ orientation, gender identity, age, veteran status, national origin, or any other status protected by law or regulation.","","https://www.indeed.com/cmp/Crusoe","https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/e3e3cdbaa1eb6bbfd62d02fd091ea812","https://crusoe.ai/","Denver, CO","501 to 1,000","Decline to state","We design, build, and operate the infrastructure powering the next generation of artificial intelligence.","","","","","",""
-"in-ef6745142c275e73","indeed","https://www.indeed.com/viewjob?jk=ef6745142c275e73","https://jobs.ashbyhq.com/Crusoe/8a1d81bc-e4e1-418b-94f4-2eab0a460b40?utm_source=4MqBxxdA0Q","Senior Software Engineer","CRUSOE","Sunnyvale, CA, US","2025-09-23","fulltime","direct_data","yearly",166000.0,201000.0,"USD",False,"","","","","Crusoe's mission is to accelerate the abundance of energy and intelligence. We’re crafting the engine that powers a world where people can create ambitiously with AI — without sacrificing scale, speed, or sustainability.
+* Enhancing and innovating the tools relied upon by thousands of Windows engineers to deliver their features.
+* Facilitating teams for faster code to in market with new ideas swiftly and efficiently, collaborating with partners to revolutionize the way engineers deliver features and validate contentious assumptions.
+* Designing, implementing, and communicating code flow processes and workflows related to feature management.
+* Innovating and bringing cutting edge solutions to run AI models as applicable to team.
+* Reviewing current developments and proactively seek new knowledge that will improve the availability, reliability, efficiency, observability, and performance of products while also driving consistency in monitoring and operations at scale.
 
-Be a part of the AI revolution with sustainable technology at Crusoe. Here, you'll drive meaningful innovation, make a tangible impact, and join a team that’s setting the pace for responsible, transformative cloud infrastructure.
+**Qualifications**
+------------------
 
-**About This Role:**
+**Required Qualifications:*** Bachelor's Degree in Computer Science or related technical field AND 2\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, Python, WinUI or XAML
+* + OR equivalent experience.
 
-We are looking for a highly skilled engineer with deep experience running Kubernetes at scale on bare metal. You will help design, build, and operate Crusoe’s next-generation Kubernetes platform across global datacenters, ensuring performance, reliability, and automation at every layer of the stack.
+**Other Requirements:**
+Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings:* **Microsoft Cloud Background Check**: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.
 
-**What You’ll Be Working On:**
+**Preferred Qualifications:*** Bachelor's Degree in Computer Science or related technical field AND 8\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, Python, WinUI or XAML
+* + OR equivalent experience.
+* Master's Degree in Computer Science or related technical field AND 6\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, Python, WinUI or XAML
+* + OR equivalent experience.
+* Demonstrated excellence in coding and technical communication.
+* Demonstrated problem solving and debugging skills.
+* Experience in owning a responsibility of components or feature areas.
+* The ability to multi\-task while balancing short\-term and long\-term tasks.
+* Solid customer focus and data driven approach.
+* End\-to\-end Delivery and Innovation.
+* Adaptability in fast paced environment.
+* Great collaboration and team\-player skills.
 
-* Designing, building, and operating Kubernetes clusters on bare metal at scale
-* Engineering full cluster lifecycle management (Talos bootstrapping, upgrades, node reprovisioning, HA control planes, recovery workflows)
-* Architecting networking, load balancing, and service mesh solutions optimized for bare metal
-* Implementing performant CNIs (Calico, Cilium), integrating L2/L3 networking, routing (BGP/ECMP), and optimizing traffic across racks and datacenters
-* Automating provisioning via PXE/iPXE, Tinkerbell, MAAS, and managing BMCs/IPMI/Redfish with standardized BIOS/firmware across heterogeneous hardware fleets
-* Designing and operating persistent storage (local disks, block, object) including Ceph, Rook, and openEBS
-* Building automation and tooling (Go, Python, Bash) for provisioning, drift detection, upgrades, and incident response
-* Extending observability with Prometheus, Alertmanager, Grafana, OpenTelemetry, and defining SLOs for cluster health, latency, and workload availability
-* Implementing security best practices: Vault, cert-manager, RBAC hardening, network policies, and OS/K8s patch pipelines
-* Mentoring engineers and shaping technical direction for Crusoe’s Kubernetes platform
 
-**What You’ll Bring to the Team:**
+Software Engineering IC3 \- The typical base pay range for this role across the U.S. is USD $100,600 \- $199,000 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $131,400 \- $215,400 per year.  
 
-* 5+ years in infrastructure engineering, including 3+ years operating Kubernetes in production
-* Strong experience running Kubernetes on bare metal (not just managed services)
-* Expert-level knowledge of Linux internals (cgroups, namespaces, kernel networking)
-* Deep experience with CNIs (Cilium, Calico), load balancers (Envoy, HAProxy, F5), and L3 networking (BGP, ECMP)
-* Proven track record provisioning and operating physical servers at scale (PXE/iPXE, Tinkerbell, MAAS, BMC/IPMI automation)
-* Strong programming skills in Go for building operators, controllers, and automation tooling
-* Hands-on experience with distributed storage systems (Ceph, MinIO, Rook, CSI drivers)
-* Strong background in observability (Prometheus, Alertmanager, metrics autoscaling, logging/ELK)
-* Familiarity with PKI, identity, and secrets management (Vault, cert-manager)
-* Excellent debugging skills for complex distributed systems
-* Strong communication and collaboration across cross-functional teams
+  
 
-**Bonus Points:**
+Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us\-corporate\-pay  
 
-* Experience with hardware fleet management across multiple datacenters
-* Contributions to open source Kubernetes or related ecosystem projects
-* Experience implementing disaster recovery strategies at scale
-* Familiarity with GPUs, HPC clusters, or large-scale AI/ML workloads
+  
 
-**Benefits:**
+Microsoft will accept applications for the role until August 29, 2025\.  
 
-* Industry competitive pay
-* Restricted Stock Units in a fast growing, well-funded technology company
-* Health insurance package options that include HDHP and PPO, vision, and dental for you and your dependents
-* Employer contributions to HSA accounts
-* Paid Parental Leave
-* Paid life insurance, short-term and long-term disability
-* Teladoc
-* 401(k) with a 100% match up to 4% of salary
-* Generous paid time off and holiday schedule
-* Cell phone reimbursement
-* Tuition reimbursement
-* Subscription to the Calm app
-* MetLife Legal
-* Company paid commuter benefit; $300 per month
+\#W\+DJOBS
+Microsoft is an equal opportunity employer. Consistent with applicable law, all qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",Internet And Software,https://www.indeed.com/cmp/Microsoft,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/88813b3f866a5b58c9685073e3b87e05,http://www.microsoft.com/,"One Microsoft Way Redmond, Washington 98052-6399","10,000+",more than $10B (USD),Our mission is to empower every person and every organization on the planet to achieve more.,,,,,,
+in-e934c70df568044f,indeed,https://www.indeed.com/viewjob?jk=e934c70df568044f,https://careers.microsoft.com/us/en/job/1881111/Senior-Software-Engineer?jobsource=indeed&utm_source=Job%20Board&utm_campaign=indeed-feed,Senior Software Engineer,Microsoft,"Redmond, WA, US",2025-09-24,fulltime,direct_data,yearly,119800.0,258000.0,USD,False,,,,,"The Product teams in the Developer Division are focused on delivering core AI productivity features for developers building and maintaining apps across desktop, mobile, cloud, and web platforms. We take pride in creating tools and experiences that are widely adopted and highly effective. Our tools support a broad range of developers—including those in the community, education, open\-source, and enterprise spaces.  
 
-**Compensation:**
+The era of AI is transforming developer tools. The Data and Artificial Intelligence (Data\+AI) team in Microsoft’s Developer Division is shaping the future of AI for developers. We collaborate with GitHub to bring AI assistance to every stage of coding—writing, debugging, diagnosing, testing, committing, and reviewing. Our team is a diverse, multidisciplinary group of data scientists, researchers, and software engineers passionate about using AI to enhance developer productivity. Fine\-tuned AI models and intuitive user experiences are key to satisfaction, efficiency, and adoption. We’re building on foundational Copilot work with agentic systems to deliver end\-to\-end developer experiences, both locally and in the Azure cloud. Our work ships in GitHub, Visual Studio, VS Code, and beyond.  
 
-Compensation will be paid in the range of $166,000 - $201,000 + Bonus. Restricted Stock Units are included in all offers. Compensation to be determined by the applicant’s education, experience, knowledge, skills, and abilities, as well as internal equity and alignment with market data.
+This position is for a Senior Software Engineer excited to work on developer scenarios and passionate about the opportunities AI models create and the strategies that turn them into products. The role calls for creativity, persistence, and critical thinking to work with emerging technologies. You’ll collaborate with teams across IDEs, programming languages, data science, and internal and external LLM providers across geographies and time zones.  
 
-Crusoe is an Equal Opportunity Employer. Employment decisions are made without regard to race, color, religion, disability, genetic information, pregnancy, citizenship, marital status, sex/gender, sexual preference/ orientation, gender identity, age, veteran status, national origin, or any other status protected by law or regulation.","","https://www.indeed.com/cmp/Crusoe","https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/e3e3cdbaa1eb6bbfd62d02fd091ea812","https://crusoe.ai/","Denver, CO","501 to 1,000","Decline to state","We design, build, and operate the infrastructure powering the next generation of artificial intelligence.","","","","","",""
-"in-fd8e60d2d3b07504","indeed","https://www.indeed.com/viewjob?jk=fd8e60d2d3b07504","https://jobs.ashbyhq.com/Crusoe/8a1d81bc-e4e1-418b-94f4-2eab0a460b40?utm_source=4MqBxxdA0Q","Senior Software Engineer","CRUSOE","San Francisco, CA, US","2025-09-23","fulltime","direct_data","yearly",166000.0,201000.0,"USD",False,"","","","","Crusoe's mission is to accelerate the abundance of energy and intelligence. We’re crafting the engine that powers a world where people can create ambitiously with AI — without sacrificing scale, speed, or sustainability.
+The role focuses on two key areas: building tools and systems to measure and evaluate advanced AI productivity features at scale, and supporting forward\-looking exploration through rapid prototyping and delivery of cutting\-edge developer tools.  
 
-Be a part of the AI revolution with sustainable technology at Crusoe. Here, you'll drive meaningful innovation, make a tangible impact, and join a team that’s setting the pace for responsible, transformative cloud infrastructure.
+Microsoft’s mission is to empower every individual and every organization to achieve more. We come together with a growth mindset, innovate to support others, and collaborate to achieve shared goals. Every day, we build on our values of respect, integrity, and accountability to foster a culture of inclusion where everyone can thrive.**Responsibilities**
+--------------------
 
-**About This Role:**
+* Develop secure, maintainable code and conduct proactive debugging.
+* Review code for quality, test coverage, and compliance.
+* Contribute to architecture and design decisions.
+* Build and execute test strategies using AI tools.
+* Apply engineering best practices for performance and scalability.
+* Ensure security, privacy, and regulatory compliance.
+* Plan and deploy features safely with rollback strategies.
+* Run experiments and define success metrics.
+* Support live site operations and improve monitoring.
+* Collaborate to understand and meet user requirements.
+* Embody Microsoft's Culture and Values
 
-We are looking for a highly skilled engineer with deep experience running Kubernetes at scale on bare metal. You will help design, build, and operate Crusoe’s next-generation Kubernetes platform across global datacenters, ensuring performance, reliability, and automation at every layer of the stack.
+**Qualifications**
+------------------
 
-**What You’ll Be Working On:**
+**Required Qualifications**:* Bachelor's Degree in Computer Science or related technical field AND 4\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
+	+ OR equivalent experience.
+* Experience with at least one modern programming language such as TypeScript, Python, C\#, Java
+* Experience with AI LLM models, such as OpenAI, Azure AI, ML.
+* Experience working with or delivering AI\-assisted developer tools.
+* Experience running a 24/7 Azure based services
 
-* Designing, building, and operating Kubernetes clusters on bare metal at scale
-* Engineering full cluster lifecycle management (Talos bootstrapping, upgrades, node reprovisioning, HA control planes, recovery workflows)
-* Architecting networking, load balancing, and service mesh solutions optimized for bare metal
-* Implementing performant CNIs (Calico, Cilium), integrating L2/L3 networking, routing (BGP/ECMP), and optimizing traffic across racks and datacenters
-* Automating provisioning via PXE/iPXE, Tinkerbell, MAAS, and managing BMCs/IPMI/Redfish with standardized BIOS/firmware across heterogeneous hardware fleets
-* Designing and operating persistent storage (local disks, block, object) including Ceph, Rook, and openEBS
-* Building automation and tooling (Go, Python, Bash) for provisioning, drift detection, upgrades, and incident response
-* Extending observability with Prometheus, Alertmanager, Grafana, OpenTelemetry, and defining SLOs for cluster health, latency, and workload availability
-* Implementing security best practices: Vault, cert-manager, RBAC hardening, network policies, and OS/K8s patch pipelines
-* Mentoring engineers and shaping technical direction for Crusoe’s Kubernetes platform
+**Other Requirements:**
+Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings:* Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.
 
-**What You’ll Bring to the Team:**
+ **Preferred Qualifications**:* Master's Degree in Computer Science or related technical field AND 6\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python OR Bachelor's Degree in Computer Science or related technical field AND 5\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
+	+ OR equivalent experience.
+* Experience with object\-oriented design and programming, Test Driven Development approaches, distributed cloud architectures
+* Experience with interpersonal skills necessary to articulate design choices and the importance of our security deliverables
+* Experience working with experimentation systems, telemetry systems and data to drive engineering and product decision making
+* Customer focus and a deep commitment to delivering products that create customer value and delightful experiences
+* Experience with AI LLM models, such as OpenAI, Azure AI, ML.
+* Experience running 24/7 cloud services
+* Experience with object\-oriented design and programming, Test Driven Development approaches, distributed cloud architectures
+* Experience delivering AI\-assisted developer tools or relevant experience driving AI\-assisted products to ship quality.
 
-* 5+ years in infrastructure engineering, including 3+ years operating Kubernetes in production
-* Strong experience running Kubernetes on bare metal (not just managed services)
-* Expert-level knowledge of Linux internals (cgroups, namespaces, kernel networking)
-* Deep experience with CNIs (Cilium, Calico), load balancers (Envoy, HAProxy, F5), and L3 networking (BGP, ECMP)
-* Proven track record provisioning and operating physical servers at scale (PXE/iPXE, Tinkerbell, MAAS, BMC/IPMI automation)
-* Strong programming skills in Go for building operators, controllers, and automation tooling
-* Hands-on experience with distributed storage systems (Ceph, MinIO, Rook, CSI drivers)
-* Strong background in observability (Prometheus, Alertmanager, metrics autoscaling, logging/ELK)
-* Familiarity with PKI, identity, and secrets management (Vault, cert-manager)
-* Excellent debugging skills for complex distributed systems
-* Strong communication and collaboration across cross-functional teams
+  
 
-**Bonus Points:**
+Software Engineering IC4 \- The typical base pay range for this role across the U.S. is USD $119,800 \- $234,700 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $158,400 \- $258,000 per year.  
 
-* Experience with hardware fleet management across multiple datacenters
-* Contributions to open source Kubernetes or related ecosystem projects
-* Experience implementing disaster recovery strategies at scale
-* Familiarity with GPUs, HPC clusters, or large-scale AI/ML workloads
+  
 
-**Benefits:**
+Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us\-corporate\-pay  
 
-* Industry competitive pay
-* Restricted Stock Units in a fast growing, well-funded technology company
-* Health insurance package options that include HDHP and PPO, vision, and dental for you and your dependents
-* Employer contributions to HSA accounts
-* Paid Parental Leave
-* Paid life insurance, short-term and long-term disability
-* Teladoc
-* 401(k) with a 100% match up to 4% of salary
-* Generous paid time off and holiday schedule
-* Cell phone reimbursement
-* Tuition reimbursement
-* Subscription to the Calm app
-* MetLife Legal
-* Company paid commuter benefit; $300 per month
+Microsoft posts positions for a minimum of 5 days, with applications accepted on an ongoing basis until the position is filled.  
 
-**Compensation:**
+\#DDJL
 
-Compensation will be paid in the range of $166,000 - $201,000 + Bonus. Restricted Stock Units are included in all offers. Compensation to be determined by the applicant’s education, experience, knowledge, skills, and abilities, as well as internal equity and alignment with market data.
 
-Crusoe is an Equal Opportunity Employer. Employment decisions are made without regard to race, color, religion, disability, genetic information, pregnancy, citizenship, marital status, sex/gender, sexual preference/ orientation, gender identity, age, veteran status, national origin, or any other status protected by law or regulation.","","https://www.indeed.com/cmp/Crusoe","https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/e3e3cdbaa1eb6bbfd62d02fd091ea812","https://crusoe.ai/","Denver, CO","501 to 1,000","Decline to state","We design, build, and operate the infrastructure powering the next generation of artificial intelligence.","","","","","",""
-"li-4292439566","linkedin","https://www.linkedin.com/jobs/view/4292439566","","Frontend Engineer I","Twitch","San Francisco, CA","2025-09-19","","","","","","",False,"","","","","","","https://www.linkedin.com/company/twitch-tv","","","","","","","","","","","",""
-"li-4265604833","linkedin","https://www.linkedin.com/jobs/view/4265604833","","Software Engineer, Routing - New Grad","Nuro","Mountain View, CA","2025-09-14","","","","","","",False,"","","","","","","https://www.linkedin.com/company/nuro-inc.","","","","","","","","","","","",""
-"li-4191146990","linkedin","https://www.linkedin.com/jobs/view/4191146990","","Software Engineer, AI Platform - New Grad","Nuro","Mountain View, CA","2025-09-13","","","","","","",False,"","","","","","","https://www.linkedin.com/company/nuro-inc.","","","","","","","","","","","",""
-"li-4298408392","linkedin","https://www.linkedin.com/jobs/view/4298408392","","Software Engineer, Web Infrastructure","Notion","San Francisco, CA","2025-09-10","","","","","","",False,"","","","","","","https://www.linkedin.com/company/notionhq","","","","","","","","","","","",""
-"li-4287980146","linkedin","https://www.linkedin.com/jobs/view/4287980146","","Software Engineer, Infrastructure, Early Career","Notion","San Francisco, CA","2025-09-09","","","","","","",False,"","","","","","","https://www.linkedin.com/company/notionhq","","","","","","","","","","","",""
-"li-4296646591","linkedin","https://www.linkedin.com/jobs/view/4296646591","","Software Engineer, Fullstack, Early Career","Notion","San Francisco, CA","2025-09-06","","","","","","",False,"","","","","","","https://www.linkedin.com/company/notionhq","","","","","","","","","","","",""
-"li-4259593912","linkedin","https://www.linkedin.com/jobs/view/4259593912","","Software Engineer, Backend","Tinder","San Francisco, CA","2025-09-06","","","","","","",False,"","","","","","","https://www.linkedin.com/company/tinder-incorporated","","","","","","","","","","","",""
-"li-4259594855","linkedin","https://www.linkedin.com/jobs/view/4259594855","","Software Engineer, Backend","Tinder","Palo Alto, CA","2025-09-05","","","","","","",False,"","","","","","","https://www.linkedin.com/company/tinder-incorporated","","","","","","","","","","","",""
-"li-4202434314","linkedin","https://www.linkedin.com/jobs/view/4202434314","","Software Engineer 4 - Web Discovery","Netflix","Los Gatos, CA","2025-09-04","","","","","","",False,"","","","","","","https://www.linkedin.com/company/netflix","","","","","","","","","","","",""
-"li-4294691515","linkedin","https://www.linkedin.com/jobs/view/4294691515","","Software Engineer, New Grad","Stripe","San Francisco, CA","2025-09-03","","","","","","",False,"","","","","","","https://www.linkedin.com/company/stripe","","","","","","","","","","","",""
+Microsoft is an equal opportunity employer. Consistent with applicable law, all qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",Internet And Software,https://www.indeed.com/cmp/Microsoft,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/88813b3f866a5b58c9685073e3b87e05,http://www.microsoft.com/,"One Microsoft Way Redmond, Washington 98052-6399","10,000+",more than $10B (USD),Our mission is to empower every person and every organization on the planet to achieve more.,,,,,,
+in-70e9a2e60b02d70e,indeed,https://www.indeed.com/viewjob?jk=70e9a2e60b02d70e,https://careers.microsoft.com/us/en/job/1882147/Senior-Software-Engineer?jobsource=indeed&utm_source=Job%20Board&utm_campaign=indeed-feed,Senior Software Engineer,Microsoft,"Redmond, WA, US",2025-09-24,fulltime,direct_data,yearly,119800.0,258000.0,USD,False,,,,,"We are seeking a Senior Software Engineer to lead the design and development of scalable, resilient, and intelligent services that power mission\-critical commerce and risk systems. This role is ideal for engineers who thrive in complex, data\-driven environments and are passionate about architecting secure, AI\-powered systems at enterprise scale.  
+
+As a senior member of the team, you will drive technical direction, mentor peers, and collaborate across disciplines to deliver impactful solutions that prevent fraud, enhance customer experience, and support Microsoft’s global commerce ecosystem.  
+
+Microsoft’s mission is to empower every person and every organization on the planet to achieve more. As employees, we come together with a growth mindset, innovate to empower others, and collaborate to realize our shared goals. Each day, we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond.**Responsibilities**
+--------------------
+
+* **Architect and Develop:** Design, build, and validate high\-scale services that support near\-real\-time decision making.
+* **Risk \& Fraud Protection:** Implement intelligent systems and machine learning–driven workflows to detect and prevent fraud while minimizing customer friction.
+* **Quality \& Security:** Establish development practices that ensure service quality, integrity, and compliance with security standards.
+* **Collaboration:** Partner with cross\-functional engineering and product teams to deliver new capabilities that improve customer and partner experiences.
+* **Leadership:** Mentor engineers, lead design efforts, and foster a culture of technical excellence and continuous improvement.
+
+**Qualifications**
+------------------
+
+**Required Qualifications*** Bachelor's Degree in Computer Science or related technical field AND 4\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
+	+ OR equivalent experience.
+* 2\+ years experience working on system design, distributed computing, and performance optimization.
+* 2\+ years Experience building cloud\-scale services on platforms such as Azure or AWS.
+
+ **Preferred Qualifications*** Master's Degree in Computer Science or related technical field AND 6\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
+	+ OR Bachelor's Degree in Computer Science or related technical field AND 8\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
+	+ OR equivalent experience.
+* Experience with Azure cloud services, such as Azure App Service and Azure Kubernetes Service, or equivalent platforms.
+* Experience in e\-commerce fraud prevention or financial transaction systems.
+* Understanding of CI/CD pipelines, GitHub workflows, and infrastructure\-as\-code.
+* Excellent problem\-solving, cross\-group collaboration, and communication skills.
+
+**Other Requirements**
+Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.
+
+  
+
+Software Engineering IC4 \- The typical base pay range for this role across the U.S. is USD $119,800 \- $234,700 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $158,400 \- $258,000 per year.  
+
+  
+
+Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us\-corporate\-pay
+  
+
+  
+
+Microsoft will accept applications for the role until September 29, 2025\.
+
+  
+
+
+Microsoft is an equal opportunity employer. Consistent with applicable law, all qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",Internet And Software,https://www.indeed.com/cmp/Microsoft,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/88813b3f866a5b58c9685073e3b87e05,http://www.microsoft.com/,"One Microsoft Way Redmond, Washington 98052-6399","10,000+",more than $10B (USD),Our mission is to empower every person and every organization on the planet to achieve more.,,,,,,
+in-a857e846b62149b2,indeed,https://www.indeed.com/viewjob?jk=a857e846b62149b2,https://careers.microsoft.com/us/en/job/1881265/SENIOR-SOFTWARE-ENGINEER?jobsource=indeed&utm_source=Job%20Board&utm_campaign=indeed-feed,SENIOR SOFTWARE ENGINEER,Microsoft,"Redmond, WA, US",2025-09-24,fulltime,direct_data,yearly,119800.0,258000.0,USD,False,,,,,"Microsoft Intune is a comprehensive endpoint management solution that provides IT organizations with a cloud\-based platform to manage and secure their devices, applications, and data. Intune offers a wide range of features and capabilities that enable IT to deliver a seamless and secure computing experience to their users. We are seeking an experienced Senior Software Engineer to join our Resource Access and Cloud PKI team within Intune, to build cloud services that operate at high scale and availability, with opportunities for technical leadership. As a member of our team, you will lead the design, development, and deployment of highly scalable and reliable software components, drive technical strategy, and mentor engineers.  
+
+We're seeking someone who is driven to explore the application of AI in our everyday work, advocating for its use as a multiplier across teams, and identifying and driving continuous productivity improvements. *Microsoft’s mission is to empower every person and every organization on the planet to achieve more. As employees we come together with a growth mindset, innovate to empower others, and collaborate to realize our shared goals. Each day we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond.***Responsibilities**
+--------------------
+
+* + **Technical Leadership:**
+	+ - Lead technical design and architecture discussions for Ring 0 Services
+		- Drive technical roadmap and vision for Ring 0 Services, aligning with Intune's overall strategy
+		- Collaborate with product management to define and prioritize project backlogs
+	+ **Software Development:**
+	+ - Design, develop, and deploy distributed systems software components in Ring 0, ensuring high availability, scalability, and performance
+		- Write high\-quality, maintainable code, and review contributions from engineers
+	+ **Mentorship and Knowledge Sharing:**
+	+ - Mentor engineers, providing guidance and oversight on complex projects
+		- Develop and maintain technical documentation, ensuring knowledge sharing and best practices
+	+ **Innovation and R\&D:**
+	+ - Explore emerging technologies and trends, assessing their impact on our distributed systems and services
+		- Drive proof\-of\-concept projects, demonstrate innovative solutions and technical expertise
+	+ **Collaboration and Communication:**
+	+ - Work closely with cross\-functional teams, including product management, design, and operations
+		- Communicate technical vision and roadmap to stakeholders, both technical and non\-technical
+
+**Qualifications**
+------------------
+
+**Minimum Qualifications:*** Bachelor's Degree in Computer Science or related technical field AND
+* + 4\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python OR equivalent experience.
+* In\-depth knowledge of distributed systems design principles, scalability patterns, and high\-availability architectures
+* Hands\-on experience with cloud platforms (Azure, AWS, GCP)
+* Problem\-solving skills, with a data\-driven approach to debugging and performance optimization
+* Communication and collaboration skills, with experience working in agile teams and leading technical discussions
+
+ **Other Requirements:**
+Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings:* Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.
+
+ **Preferred Qualifications:*** Master's Degree in Computer Science or related technical field AND 6\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
+* + OR Bachelor's Degree in Computer Science or related technical field AND 8\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python OR equivalent experience
+* 6\+ years of experience in software development, with a focus on distributed systems, high\-scale engineering, and cloud computing
+
+  
+
+Software Engineering IC4 \- The typical base pay range for this role across the U.S. is USD $119,800 \- $234,700 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $158,400 \- $258,000 per year.
+
+Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us\-corporate\-pay
+
+Microsoft will accept applications for the role until October 5, 2025\.  
+
+
+Microsoft is an equal opportunity employer. Consistent with applicable law, all qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",Internet And Software,https://www.indeed.com/cmp/Microsoft,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/88813b3f866a5b58c9685073e3b87e05,http://www.microsoft.com/,"One Microsoft Way Redmond, Washington 98052-6399","10,000+",more than $10B (USD),Our mission is to empower every person and every organization on the planet to achieve more.,,,,,,
+in-29c425e155034c35,indeed,https://www.indeed.com/viewjob?jk=29c425e155034c35,https://careers.microsoft.com/us/en/job/1881923/Software-Engineer-II?jobsource=indeed&utm_source=Job%20Board&utm_campaign=indeed-feed,Software Engineer II,Microsoft,"Redmond, WA, US",2025-09-24,fulltime,direct_data,yearly,100600.0,215400.0,USD,False,,,,,"OneDrive and SharePoint are rapidly growing services at the center of Microsoft's cloud, interacting with almost every part of Microsoft. You would be a part of a team that is fundamentally changing the way that millions of people use their devices and interact with the most important content for their home, work, and school.  
+
+We are looking for a smart, agile, and intellectually curious **Software Engineer II** who love creating and building things that delight and protect our customers. You will be working with a team of amazing engineers, PMs, and designers, and work closely with other teams across Microsoft to deliver large scale, distributed architectures, and features to meet OneDrive and SharePoint's core service needs.  
+
+Microsoft’s mission is to empower every person and every organization on the planet to achieve more. As employees we come together with a growth mindset, innovate to empower others, and collaborate to realize our shared goals. Each day we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond.**Responsibilities**
+--------------------
+
+* You will work in large\-scale distributed systems that are critical for customers around the world.
+* You will design and deliver services that manage internet\-scale data stores, enable best\-in\-the\-world file and site browsing and editing performance, or add innovative features to how people manage and interact with their data.
+* You will contribute to and help shape the vibrant, inclusive engineering culture of OneDrive \& SharePoint.
+* You will be expected to do deep, data\-driven, collaborative design for additions and changes to our products.
+* You will write clean, efficient code and comprehensive tests.
+* You will build excellent coverage with metrics and telemetry to ensure we understand exactly what is happening with our services at all times.
+* You will deliver features that will support and serve hundreds of millions of customers around the world.
+* Embody our culture and values
+
+**Qualifications**
+------------------
+
+**Required Qualifications:*** Bachelor's Degree in Computer Science or related technical field AND 2\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
+	+ OR equivalent experience.
+* 1\+ years' experience with cloud\-scale services and server/service management features OR equivalent experience.
+
+**Other Requirements:**  
+
+Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings:* **Microsoft Cloud Background Check:** This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.
+
+**Preferred Qualifications:*** Experience with building cloud\-scale infrastructure components.
+* Awareness, passion, and experience related to cloud scale distributed design and patterns.
+* Familiarity with secure software design concepts.
+* Proven track record of delivering projects that include multiple components.
+* Ability and eagerness to work across and partner with multiple engineering teams to achieve business goals.
+* Experience collaborating with peers and partner teams to meet joint engineering goals.
+* Solid coding, debugging, algorithm design, and problem\-solving skills.
+* Able to learn new systems quickly and adapt new methodologies to our services.
+
+
+Software Engineering IC3 \- The typical base pay range for this role across the U.S. is USD $100,600 \- $199,000 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $131,400 \- $215,400 per year.  
+
+  
+
+Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us\-corporate\-pay  
+
+Microsoft will accept applications for the role until October 3, 2025\.  
+
+\#ODSPEng
+Microsoft is an equal opportunity employer. Consistent with applicable law, all qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",Internet And Software,https://www.indeed.com/cmp/Microsoft,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/88813b3f866a5b58c9685073e3b87e05,http://www.microsoft.com/,"One Microsoft Way Redmond, Washington 98052-6399","10,000+",more than $10B (USD),Our mission is to empower every person and every organization on the planet to achieve more.,,,,,,
+in-906d95849dc9ecd5,indeed,https://www.indeed.com/viewjob?jk=906d95849dc9ecd5,https://careers.microsoft.com/us/en/job/1880656/Senior-Software-Engineer?jobsource=indeed&utm_source=Job%20Board&utm_campaign=indeed-feed,Senior Software Engineer,Microsoft,"Redmond, WA, US",2025-09-24,fulltime,direct_data,yearly,119800.0,258000.0,USD,False,,,,,"CoreAI is at the forefront of Microsoft’s mission to redefine how software is built and experienced. We are responsible for building the foundational platforms, services, programming models, and developer experiences that power the next generation of applications using Generative Artificial Intelligence (AI). Our work enables developers and enterprises to harness the full potential of AI to create intelligent, adaptive, and transformative software.  
+
+The Azure Managed Grafana (AMG) team is responsible for redefining the standard for cloud service monitoring. Our mission is to bring Grafana, the industry\-leading data visualization platform, to every Azure developer \- delivering rich, intelligent dashboards at the push of a button and freeing developers from the complexity of managing their own observability infrastructure.  
+
+In this role, you will work as a software engineer building and operating the Azure Managed Grafana and Azure Monitor Dashboards with Grafana services. Your responsibilities will include designing and maintaining highly available cloud services, developing seamless integrations with other Azure offerings, and creating scalable, secure infrastructure that powers world\-class data visualization. You will also leverage AI to enhance observability \- such as building anomaly detection, predictive alerting, and intelligent insights that help developers detect service health changes and resolve issues before they impact customers. This role provides the opportunity to work across Azure technologies such as Azure Kubernetes Service, Virtual Machine Scale Sets, Load Balancer, PostgreSQL DB, Azure Monitor, and Azure Active Directory, while collaborating closely with Grafana Labs to empower developers with AI\-driven analytics and actionable insights.  
+
+At Microsoft, we prioritize people and cultivate an open, inclusive work environment. Our global team comprises developers from diverse backgrounds and varying levels of experience. We are seeking experienced engineers with a deep passion for cloud developer tools and services to join us in tackling this exciting challenge. Strong experience in programming languages such as C\#, C\+\+, or Java, a proven track record of solving complex technical problems, and the ability to collaborate effectively with partner teams are essential requirements. Knowledge and hands\-on experience with Azure or cloud development are highly desirable. **Microsoft Culture**  
+
+Microsoft’s mission is to empower every person and every organization on the planet to achieve more. As employees, we come together with a growth mindset, innovate to empower others, and collaborate to realize our shared goals. Each day we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond.  
+
+  
+
+In alignment with our Microsoft values, we are committed to cultivating an inclusive work environment for all employees to positively impact our culture every day.**Responsibilities**
+--------------------
+
+* You will work with other engineers in the team to design and build a highly secure and highly available large\-scaled global service that millions of customers can depend on. You will also
+* Collaborate with multiple partner teams to integrate our offerings with other Azure services, driving cross\-functional initiatives and ensuring seamless interoperability
+* Drive the creation of feature designs and lead design discussions with team members, leveraging your expertise to make informed decisions that align with the overall product vision
+* Lead and participate in code reviews to maintain a high standard of code quality and consistency across the codebase, providing constructive feedback and guidance to team members
+* Implement comprehensive unit and functional tests, ensuring robust test coverage and reliability of the codebase, and deploy production bits to the Azure environment with a focus on automation and scalability
+* Establish and maintain telemetry to monitor usage and performance, proactively identifying and addressing potential issues to ensure optimal service delivery and customer satisfaction
+* Respond to incidents in a timely manner, working with cross\-functional teams to mitigate impact and restore service availability, and contribute to the ongoing operation of the services in a cost\-effective manner
+* Contribute to and collaborate on open\-source projects, sharing knowledge and expertise with the broader developer community, and leveraging external contributions to enhance our offerings
+* Collaborate with Grafana Labs to enhance security and enrich features based on customer scenarios, leveraging their expertise to drive continuous improvement and innovation in our offerings
+* MS Culture \& Values: Embody our Culture and Values
+
+**Qualifications**
+------------------
+
+**Required Qualifications:*** Bachelor's Degree in Computer Science or related technical field AND 4\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
+	+ OR equivalent experience.
+* 3\+ years of experience with building testable, distributed and highly scalable online services on Azure or similar cloud platform
+* 6\+ months of experience using AI\-assisted development tools (e.g., GitHub Copilot, or similar) to enhance productivity and code quality
+
+**Other Requirements:**
+Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings:* Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.
+
+**Preferred Qualifications:*** Master's Degree in Computer Science or related technical field AND 6\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python OR Bachelor's Degree in Computer Science or related technical field AND 8\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
+	+ OR equivalent experience.
+* Detail oriented design, coding, debugging and problem\-solving skills
+* Experience with Open Source Software development
+* Effective communication, collaboration, and problem\-solving skills
+* A growth mindset and a willingness to learn new things and take on challenges
+* Passion for quality with strong customer empathy
+
+
+Software Engineering IC4 \- The typical base pay range for this role across the U.S. is USD $119,800 \- $234,700 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $158,400 \- $258,000 per year.  
+
+Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us\-corporate\-pay **Microsoft posts positions for a minimum of 5 days, with applications accepted on an ongoing basis until the position is filled.** **\#CoreAI**  
+
+**\#DevDiv**  
+
+**\#DDJL**
+Microsoft is an equal opportunity employer. Consistent with applicable law, all qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",Internet And Software,https://www.indeed.com/cmp/Microsoft,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/88813b3f866a5b58c9685073e3b87e05,http://www.microsoft.com/,"One Microsoft Way Redmond, Washington 98052-6399","10,000+",more than $10B (USD),Our mission is to empower every person and every organization on the planet to achieve more.,,,,,,
+in-5aa21e213667c4db,indeed,https://www.indeed.com/viewjob?jk=5aa21e213667c4db,https://careers.microsoft.com/us/en/job/1879811/Senior-Software-Engineer?jobsource=indeed&utm_source=Job%20Board&utm_campaign=indeed-feed,Senior Software Engineer,Microsoft,"Redmond, WA, US",2025-09-24,fulltime,direct_data,yearly,119800.0,258000.0,USD,False,,,,,"CoreAI is at the forefront of Microsoft’s mission to redefine how software is built and experienced. We are responsible for building the foundational platforms, services, programming models, and developer experiences that power the next generation of applications using Generative Artificial Intelligence (AI). Our work enables developers and enterprises to harness the full potential of AI to create intelligent, adaptive, and transformative software.  
+
+The 1ES (One Engineering System) team is responsible for enabling the world's best engineering teams with world\-class tools and systems that help them ship products their customers love.  
+
+We are seeking a Senior Software Engineer within the 1ES Engineering team, who will play a key role in shaping the direction of engineering systems and enhancing developer productivity. The responsibilities will include developing scalable distributed services for development environment migration and security services, analysis, and alerting. Additionally, design advanced tooling that is compatible with emerging ecosystems, deliver improved performance and accuracy, and incorporate AI\-driven features. Understanding how hosted source control and project management services operate would be very useful.  
+
+Microsoft’s mission is to empower every person and every organization on the planet to achieve more. As employees we come together with a growth mindset, innovate to empower others, and collaborate to realize our shared goals. Each day we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond.**Responsibilities**
+--------------------
+
+* Collaborates with appropriate stakeholders to determine user requirements for a scenario.
+* Drives identification of dependencies and the development of design documents for a product, application, service, or platform.
+* Creates, implements, optimizes, debugs, refactors, and reuses code to establish and improve performance and maintainability, effectiveness, and return on investment (ROI).
+* Leverages subject\-matter expertise of product features and partners with appropriate stakeholders (e.g., project managers) to drive a workgroup's project plans, release plans, and work items.
+* Acts as a Designated Responsible Individual (DRI) and guides other engineers by developing and following the playbook, working on call to monitor system/product/service for degradation, downtime, or interruptions, alerting stakeholders about status and initiates actions to restore system/product/service for simple and complex problems when appropriate.
+* Proactively seeks new knowledge and adapts to new trends, technical solutions, and patterns that will improve the availability, reliability, efficiency, observability, and performance of products while also driving consistency in monitoring and operations at scale.
+* MS Culture \& Values: Embody our Culture and Values
+
+**Qualifications**
+------------------
+
+**Required Qualifications:*** Bachelor's Degree in Computer Science or related technical field AND 4\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
+	+ OR equivalent experience
+* 6\+ months of experience using AI\-assisted development tools (e.g., GitHub Copilot, or similar) to enhance productivity and code quality
+
+**Other Requirements:**
+Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings:  
+
+Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter **Preferred Qualifications:*** Master's Degree in Computer Science or related technical field AND 6\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python OR Bachelor's Degree in Computer Science or related technical field AND 8\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
+	+ OR equivalent experience.
+* Familiarity with versions control systems like Git (Github, Azure DevOps)
+
+
+Software Engineering IC4 \- The typical base pay range for this role across the U.S. is USD $119,800 \- $234,700 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $158,400 \- $258,000 per year.  
+
+Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us\-corporate\-pay **Microsoft posts positions for a minimum of 5 days, with applications accepted on an ongoing basis until the position is filled.** **\#CoreAI****\#1ES**
+Microsoft is an equal opportunity employer. Consistent with applicable law, all qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",Internet And Software,https://www.indeed.com/cmp/Microsoft,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/88813b3f866a5b58c9685073e3b87e05,http://www.microsoft.com/,"One Microsoft Way Redmond, Washington 98052-6399","10,000+",more than $10B (USD),Our mission is to empower every person and every organization on the planet to achieve more.,,,,,,
+in-1d68d6dcbe881177,indeed,https://www.indeed.com/viewjob?jk=1d68d6dcbe881177,https://careers.microsoft.com/us/en/job/1881919/Software-Engineer-II?jobsource=indeed&utm_source=Job%20Board&utm_campaign=indeed-feed,Software Engineer II,Microsoft,"Redmond, WA, US",2025-09-24,fulltime,direct_data,yearly,100600.0,215400.0,USD,False,,,,,"Are you passionate about working on a product that impacts billions of people worldwide? Do you want to shape the future of Windows Search? Excited about transforming ideas from inception to production, measuring real user impact, and connecting them to business outcomes? If so, this could be the perfect career move for you!  
+
+The Windows Shell and Services team is leading the charge in driving revenue growth within Windows. Our commitment is to enhance customer lifetime value by designing experiences that are insight\-driven and genuinely resonate with user needs and aspirations. We're searching for a passionate **Software Engineer II** eager to delve into Windows technologies, grow in a collaborative and inclusive environment, and help shape seamless search experiences.  
+
+Our team:* Develops robust, user\-focused Windows experiences
+* Collaborates with various Microsoft teams (e.g., Bing, Office, Edge)
+* Employs experimentation and feedback to enhance features
+* Fosters a modern, agile, and inclusive engineering culture
+* Enjoys solving challenging problems and learning from one another
+
+
+You will be empowered to make rapid changes to Windows features and experiences. Our goal is to boost customer preference and satisfaction with Windows Search and enhance Microsoft's integration. If you're eager to accelerate your career, this is your opportunity to make a global impact – quickly.  
+
+Microsoft's mission is to empower every individual and organization on the planet to achieve more. Our employees unite with a growth mindset, innovate to empower others, and collaborate to achieve our shared goals. Every day, we build on our values of respect, integrity, and accountability, fostering a culture of inclusion where everyone can thrive both at work and beyond.**Responsibilities**
+--------------------
+
+* Collaborate with relevant stakeholders to identify user requirements for features.
+* Assist in identifying dependencies and developing design documents for product features under supervision.
+* Learn and implement code for products, services, or features, reusing code where applicable, with guidance.
+* Help break down work items into tasks and provide estimations.
+* Serve as a Designated Responsible Individual (DRI), monitoring systems/products/features/services for issues like degradation, downtime, or interruptions, and recommend actions to restore functionality as per the playbook.
+* Stay updated on current developments and proactively seek knowledge to improve the availability, reliability, efficiency, observability, and performance of products, while ensuring consistency in monitoring and operations at scale.
+
+**Qualifications**
+------------------
+
+**Required Qualifications:*** Bachelor's Degree in Computer Science or related technical field AND 2\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
+	+ OR equivalent experience.
+* Equivalent experience with 2\+ year(s) of experience in development, planning, scheduling, and delivering quality software.
+
+**Other Requirements****:**
+Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings:* **Microsoft Cloud Background Check**: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.
+
+**Preferred Qualifications**:* Understanding of Windows architecture, API design, interfaces, COM, and WinRT API is a plus.
+* Experience in creating apps and building on SDKs.
+* Web development expertise.
+
+
+The typical base pay range for this role across the U.S. is USD $100,600 \- $199,000 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $131,400 \- $215,400 per year.  
+
+  
+
+Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us\-corporate\-pay
+  
+
+  
+
+Microsoft will accept applications for the role until October 3, 2025\.  
+
+\#W\+DJOBS
+Microsoft is an equal opportunity employer. Consistent with applicable law, all qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",Internet And Software,https://www.indeed.com/cmp/Microsoft,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/88813b3f866a5b58c9685073e3b87e05,http://www.microsoft.com/,"One Microsoft Way Redmond, Washington 98052-6399","10,000+",more than $10B (USD),Our mission is to empower every person and every organization on the planet to achieve more.,,,,,,
+li-4304041530,linkedin,https://www.linkedin.com/jobs/view/4304041530,,"Software Engineer, Full Stack, Google Workspace",Google,"Seattle, WA",2025-09-23,,,,,,,False,,,,,,,https://www.linkedin.com/company/google,,,,,,,,,,,,
+li-4304182522,linkedin,https://www.linkedin.com/jobs/view/4304182522,,Software Engineer University Grad,Pinterest,"Seattle, WA",2025-09-22,,,,,,,False,,,,,,,https://www.linkedin.com/company/pinterest,,,,,,,,,,,,
+li-4201888976,linkedin,https://www.linkedin.com/jobs/view/4201888976,,"Software Engineer, Backend",OpenAI,"Seattle, WA",2025-09-21,,,,,,,False,,,,,,,https://www.linkedin.com/company/openai,,,,,,,,,,,,
+li-4303235350,linkedin,https://www.linkedin.com/jobs/view/4303235350,,Software Engineer,Microsoft,"Redmond, WA",2025-09-20,,,,,,,False,,,,,,,https://www.linkedin.com/company/microsoft,,,,,,,,,,,,
+li-4302834414,linkedin,https://www.linkedin.com/jobs/view/4302834414,,Software Engineer,Microsoft,"Redmond, WA",2025-09-19,,,,,,,False,,,,,,,https://www.linkedin.com/company/microsoft,,,,,,,,,,,,
+li-4302474827,linkedin,https://www.linkedin.com/jobs/view/4302474827,,"Software Engineer, Front End, Geo",Google,"Seattle, WA",2025-09-19,,,,,,,False,,,,,,,https://www.linkedin.com/company/google,,,,,,,,,,,,
+li-4299547478,linkedin,https://www.linkedin.com/jobs/view/4299547478,,"Software Engineer, Intern/Co-op",Meta,"Bellevue, WA",2025-09-16,,,,,,,False,,,,,,,https://www.linkedin.com/company/meta,,,,,,,,,,,,
+li-4299541509,linkedin,https://www.linkedin.com/jobs/view/4299541509,,"Software Engineer, Intern/Co-op",Meta,"Seattle, WA",2025-09-16,,,,,,,False,,,,,,,https://www.linkedin.com/company/meta,,,,,,,,,,,,
+li-4187599010,linkedin,https://www.linkedin.com/jobs/view/4187599010,,"Software Engineer 5, Data Clean Room",Netflix,"California, United States",2025-09-09,,,,,,,False,,,,,,,https://www.linkedin.com/company/netflix,,,,,,,,,,,,
+li-4294691514,linkedin,https://www.linkedin.com/jobs/view/4294691514,,"Software Engineer, New Grad",Stripe,"Seattle, WA",,,,,,,,False,,,,,,,https://www.linkedin.com/company/stripe,,,,,,,,,,,,
