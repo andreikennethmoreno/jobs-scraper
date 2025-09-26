@@ -1,512 +1,448 @@
 id,site,job_url,job_url_direct,title,company,location,date_posted,job_type,salary_source,interval,min_amount,max_amount,currency,is_remote,job_level,job_function,listing_type,emails,description,company_industry,company_url,company_logo,company_url_direct,company_addresses,company_num_employees,company_revenue,company_description,skills,experience_range,company_rating,company_reviews_count,vacancy_count,work_from_home_type
-in-b6372018b1bcf9ee,indeed,https://www.indeed.com/viewjob?jk=b6372018b1bcf9ee,https://careers.microsoft.com/us/en/job/1879479/Software-Engineer-II?jobsource=indeed&utm_source=Job%20Board&utm_campaign=indeed-feed,Software Engineer II,Microsoft,"Redmond, WA, US",2025-09-24,fulltime,direct_data,yearly,100600.0,215400.0,USD,False,,,,,"We are looking for a Software Engineer to join our team focused on building intelligent, scalable, and secure systems. This role involves designing and implementing AI\-enhanced services that support enterprise\-scale applications and customer\-facing experiences. You will contribute to architecture, development, and optimization of cloud\-native solutions, with emphasis on responsible AI practices.  
+in-eb4981bbe3c5fd92,indeed,https://ph.indeed.com/viewjob?jk=eb4981bbe3c5fd92,http://ph.indeed.com/job/full-stack-developer-eb4981bbe3c5fd92,Full Stack Developer,OLVRO Co.Ltd.,"Quezon City, P00, PH",2025-09-26,fulltime,,,,,,False,,,,,"**Key Role:**
 
-Microsoft’s mission is to empower every person and every organization on the planet to achieve more. As employees we come together with a growth mindset, innovate to empower others, and collaborate to realize our shared goals. Each day we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond.**r**
+Support the development of both website and a mobile application
 
-**Responsibilities**
---------------------
+**Job Qualifications:**
 
-* Architect and develop distributed systems and microservices using modern programming languages and cloud platforms.
-* Integrate AI capabilities such as natural language processing, semantic search, and intelligent agents using frameworks like Azure OpenAI, Semantic Kernel, or equivalent.
-* Drive performance, scalability, and cost\-efficiency through telemetry, asynchronous I/O, and system profiling.
-* Ensure robust data validation, schema enforcement, and compliance with privacy and security standards.
-* Collaborate across disciplines to define technical requirements, review designs, and deliver high\-quality software.
-* Mentor engineers and promote engineering best practices across the team.
-* Embody our culture and values
+Bachelor's Degree
 
-**Qualifications**
-------------------
+At least 3 years related experience in C\#.Net and SQL
 
-**Required Qualifications*** Bachelor's Degree in Computer Science or related technical field AND 2\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
-* + OR equivalent experience.
-* Proficient in C\#, Python, or JavaScript, and familiarity with cloud platforms like Azure or AWS.
+Must have experience in both web and mobile development
 
-**Other Requirements**  
+Flutter (preferred but not required)
 
-Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check:* This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.
+ReactJS
 
-**Preferred Qualifications*** 3\+ years of experience in software engineering, preferably in cloud\-scale or AI\-enhanced services.
-* Experience with AI development tools and frameworks (e.g., OpenAI APIs, Transformers, Semantic Search).
-* Deep understanding of CI/CD pipelines, GitHub workflows, and infrastructure\-as\-code.
-* Demonstrated ability to lead design efforts and deliver production\-grade solutions.
+C\# .NET Core
+
+MSSQL
+
+PostgreSQL
+
+Must be willing to work onsite in Bagumbayan, Quezon City
+
+Job Type: Full\-time
+
+Experience:
+
+* .NET: 3 years (Preferred)
+
+Work Location: In person",,https://ph.indeed.com/cmp/Olvro-Co.ltd.-1,,,,,,,,,,,,
+in-1496106df666ae5d,indeed,https://ph.indeed.com/viewjob?jk=1496106df666ae5d,http://ph.indeed.com/job/website-developer-1496106df666ae5d,Website Developer,Tan Group of Companies Inc,"Quezon City, P00, PH",2025-09-26,fulltime,,,,,,False,,,,,"eeking a skilled **Shopify Website Developer** who can **build, customize, and maintain** our Shopify eCommerce website. The ideal candidate has strong experience working with the Shopify platform, is fluent in HTML/CSS/JavaScript, and can provide long\-term support, updates, and technical improvements as needed.
+
+* Implement responsive design and ensure cross\-device compatibility
+* Customize product pages, cart, and checkout flows
+* Optimize site performance, speed, and mobile usability
+* Monitor website uptime, functionality, and performance
+* Regularly update themes, plugins, and integrations
+* Troubleshoot and fix bugs or issues as they arise
+* Ensure security updates and backups are maintained
+* Support marketing and sales campaigns (landing pages, banners, popups)
+* Analyze site data (via Google Analytics / Shopify reports) and suggest improvements
+* Recommend and implement UI/UX improvements
+
+Job Types: Full\-time, Fresh graduate
+
+Pay: From Php18,500\.00 per month
+
+Benefits:
+
+* Employee discount
+* Opportunities for promotion
+* Paid training
+* Promotion to permanent employee
+
+Work Location: In person",,https://ph.indeed.com/cmp/Tan-Group-of-Companies-Inc-1,,,,,,,,,,,,
+in-595f20eae35b65db,indeed,https://ph.indeed.com/viewjob?jk=595f20eae35b65db,http://ph.indeed.com/job/ai-engineer-python-595f20eae35b65db,AI Engineer {Python},Yondu,"Taguig, P00, PH",2025-09-26,fulltime,,,,,,True,,,,,"* Converts technical component design into a working back\-end code and/or front\-end code.
+* Deliver projects on time and budget consistently.
+* Applies generally accepted programming standards and techniques to assure efficient program logic and data manipulation consistently.
+* Creates and maintains Unit tests before endorsing the application for QA Test.
+* Diagnose and resolve software problems quickly and efficiently.
+* Participates in reviewing project requirements.
+* Manages the deployment of the application to different staging environments.
+* Maintains and handles project source code repositories.
+* Provides an accurate project status report to the Project Manager.
+* Keep abreast of technology trends with relation to system or software development trends as much as possible.
+* Other job\-related activities that may be assigned from time to time.
+
+**Minimum Qualifications**
+
+* **AI Engineer: Must\-have**
+* **LangGraph**
+* **LangChain**
+* **Python**
+* **Retrieval\-Augmented Generation (RAG)**
+* **LLM (Large Language Model) or Natural Language Processing (NLP).**
+* Education – At least graduate with a Bachelor’s Degree in IT, Computer Science, Engineering or any related course.
+* Related Work Experience in developing websites, web applications, web services, or mobile applications.
+* In\-depth understanding of Software Development Life Cycle (SDLC) and Object\-Oriented Programming.
+* In\-depth experience in Object\-Oriented design and programming skills.
+* In\-depth experience in HTML5, CSS3, and Javascript frameworks.
+* In\-depth experience in MySQL, MongoDB, or similar database management systems.
+* In\-depth experience in web service integration (SOAP, REST, JSON, XML).
+
+Job Type: Full\-time
+
+Pay: Php80,000\.00 \- Php100,000\.00 per month
+
+Benefits:
+
+* Additional leave
+* Health insurance
+* Life insurance
+* Opportunities for promotion
+* Pay raise
+* Promotion to permanent employee
+* Work from home
+
+Work Location: In person",,https://ph.indeed.com/cmp/Yondu-1,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/f0c32bf63ca430e2d3068e6a5a7b514b,http://www.yondu.com,Taguig,"501 to 1,000",$500M to $1B (USD),,,,,,,
+in-d66e475274afd4c2,indeed,https://ph.indeed.com/viewjob?jk=d66e475274afd4c2,https://jsv3.recruitics.com/redirect?rx_cid=3436&rx_jobId=R-01329414_1001&rx_url=https%3A%2F%2Fjobs.thermofisher.com%2Fglobal%2Fen%2Fjob%2FR-01329414%2FSr-Systems-Developer%3Frx_a%3D0%26rx_c%3D%26rx_ch%3Djobp4p%26rx_group%3D123525%26rx_id%3D7bc47524-9a27-11f0-8ea5-5795b88b3699%26rx_job%3DR-01329414_1001%26rx_medium%3Dcpc%26rx_r%3Dnone%26rx_source%3Dindeed%26rx_ts%3D20250926T040418Z%26rx_vp%3Dcpc%26utm_medium%3Dppc%26utm_source%3Drecruitics_indeedorganic,Sr Systems Developer,Thermo Fisher Scientific,"Manila, P00, PH",2025-09-25,fulltime,,,,,,False,,,,,"**Work Schedule**
+
+
+Other**Environmental Conditions**
+
+
+Office**Job Description**
+
+**Summarized Purpose:**
+-----------------------
+
+
+We are presenting an outstanding opportunity to join Thermo Fisher Scientific as a Sr Systems Developer. In this role, you will play a crucial part in performing the systems analysis, building, development, testing, and support of highly complex technical information system components.
+
+**Education/Experience:**
+-------------------------
+
+* Bachelor's degree or equivalent experience and relevant formal academic/vocational qualification
+* Previous roles showcasing the proficiencies necessary to fulfill the job responsibilities (similar to 5\+ years’) or an equivalent blend of education, training, \& experience
+
+**Major Job Responsibilities:**
+-------------------------------
+
+* Develop cost and resource estimates for systems development projects
+* Provide recommendations and compose robust database architectures for enterprise applications
+* Develop and code system components according to specifications
+* Lead database development efforts including schema construction, stored procedures, and performance tuning
+* Prepare and approve system documentation including requirements, specifications, test plans, and user manuals
+* Perform unit, system, and validation testing
+* Coordinate with Operations staff for application deployment
+* Collaborate with cross\-functional IT teams for product support and deployment
+* Work with business partners to analyze and address support requests
+* Guarantee all development tasks adhere to quality and compliance requirements
+* Implement and maintain backup, recovery, and security protocols
+* Troubleshoot complex database and application issues to ensure high availability
+* Mentor junior developers and guide guidelines in systems and database development
+* Stay current with new technologies and recommend improvements
+
+**Knowledge, Skills, and Abilities:**
+-------------------------------------
+
+* Client\-focused approach with strong interpersonal and communication skills
+* Ability to multitask and prioritize with attention to detail
+* Strong logic, analytical thinking, and problem\-solving capabilities
+* Proficiency in web development and scripting languages like Python and Shell
+* Capable in SQL and relational database schema
+* Expertise in relational database platforms: Oracle, SQL Server, MySQL, PostgreSQL
+* Familiarity with server environments (Windows, Linux/Unix), Apache, IIS
+* Familiarity with data governance, security, and compliance standards
+* Experience with validated systems and clinical industry (preferred)
+* Project management and leadership experience
+
+**Must Have Skills:**
+---------------------
+
+* Proficient in SQL and relational database advancement
+* Experience with Oracle and SQL Server
+* Strong problem\-solving and analytical skills
+* Excellent documentation and communication abilities
+* Performance tuning and query optimization
+* Leadership and mentoring capabilities
+
+**Good to Have Skills:**
+------------------------
+
+* Experience with MySQL and PostgreSQL
+* Scripting and automation skills (e.g., Python, Shell)
+* Familiarity with Apache, IIS, and server environments
+* Validated system experience
+* Clinical industry knowledge
+* Project management experience
+* Awareness of emerging database technologies
+
+**Working Hours:**
+
+**India:** 05:30 PM to 02:30 AM IST
+
+**Philippines:** 08:00 PM to 05:00 AM PST",Industrial Manufacturing,https://ph.indeed.com/cmp/Thermo-Fisher-Scientific,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/65bd2e4bebb79b1432ac3277ffd57ae7,https://www.thermofisher.com/,"168 Third Avenue, Waltham, MA USA 02451","10,000+",more than $10B (USD),"At Thermo Fisher Scientific, our professionals develop critical solutions—and build rewarding careers.",,,,,,
+in-83affb2944297539,indeed,https://ph.indeed.com/viewjob?jk=83affb2944297539,http://ph.indeed.com/job/senior-back-end-developer-php-or-python-83affb2944297539,Senior Back End Developer (PHP or Python),CXC Philippines,"Pasig, P00, PH",2025-09-25,fulltime,,,,,,True,,,,,"We are seeking a talented and motivated Back End Developer proficient in PHP or Python to join our dynamic team. The ideal candidate will work on building and maintaining robust, scalable back\-end systems, ensuring high performance and responsiveness to requests from the front end.
+
+**Key Responsibilities:**
+
+* Develop and maintain server\-side applications and APIs in PHP or Python.
+* Design, implement, and manage databases to support web applications and services.
+* Ensure the performance, quality, and responsiveness of applications by identifying and fixing bottlenecks.
+* Collaborate with front\-end developers to integrate user\-facing elements with server\-side logic.
+* Create and maintain efficient, reusable, and reliable code.
+* Troubleshoot and debug issues to optimize application performance.
+* Stay up\-to\-date with the latest industry trends and technologies to ensure innovative development practices.
+* Write unit and integration tests to ensure the quality and reliability of code.
+* Participate in code reviews and collaborate with team members to improve development processes.
+
+**Requirements:**
+
+* Proven experience as a Back End Developer, with solid expertise in PHP or Python.
+* Strong understanding of web technologies such as RESTful APIs, web services, and MVC frameworks (e.g., Laravel for PHP, Django/Flask for Python).
+* Experience working with databases (MySQL, PostgreSQL, or similar).
+* Familiarity with version control tools like Git.
+* Knowledge of cloud services and server management is a plus.
+* Strong problem\-solving skills and attention to detail.
+* Ability to work effectively in a collaborative, fast\-paced environment.
+
+Job Types: Full\-time, Permanent, Fixed term  
+Contract length: 12 months
+
+Pay: Php60,000\.00 \- Php150,000\.00 per month
+
+Benefits:
+
+* Health insurance
+* Life insurance
+* Work from home
+
+Experience:
+
+* PHP or Python: 5 years (Required)
+
+Work Location: In person",,https://ph.indeed.com/cmp/Cxc-Philippines,,,,,,,,,,,,
+in-850fbec14f7c9d17,indeed,https://ph.indeed.com/viewjob?jk=850fbec14f7c9d17,http://ph.indeed.com/job/senior-developer-digital-knowledge-management-850fbec14f7c9d17,Senior Developer (Digital Knowledge Management),CXC Philippines,"Pasig, P00, PH",2025-09-25,fulltime,,,,,,True,,,,,"e are seeking a forward\-thinking and technically skilled **Senior Developer (Digital Knowledge Management)** to lead the development and optimization of digital platforms that support enterprise knowledge sharing, collaboration, and content accessibility. This role is ideal for professionals who are passionate about transforming how organizations capture, manage, and deliver knowledge through intelligent systems and user\-centric design.
+
+As a Senior Developer, you will be responsible for building and maintaining digital knowledge management solutions using modern technologies and frameworks. You will work closely with content owners, business analysts, and IT teams to design scalable platforms that integrate with intranet portals, search engines, document repositories, and collaboration tools. Your work will enable employees to access accurate, timely, and relevant information that supports decision\-making and operational efficiency.
+
+**Key Responsibilities:**
+
+* Design and develop digital knowledge management systems and tools.
+* Integrate content repositories, metadata frameworks, and enterprise search capabilities.
+* Collaborate with stakeholders to gather requirements and translate them into technical solutions.
+* Implement automation and AI\-driven features to enhance content discovery and relevance.
+* Ensure platform scalability, security, and compliance with governance standards.
+* Provide technical leadership and mentorship to junior developers.
+* Monitor system performance and continuously improve user experience.
+
+**Qualifications:**
+
+* Bachelor’s or Master’s degree in Computer Science, Information Systems, or related field.
+* 5\+ years of experience in software development, preferably in knowledge management or content systems.
+* Proficiency in web development technologies (e.g., JavaScript, React, .NET), APIs, and cloud platforms.
+* Experience with enterprise content management systems (e.g., SharePoint, Confluence) and search technologies.
+* Strong understanding of metadata, taxonomy, and information architecture.
 * Excellent problem\-solving, communication, and collaboration skills.
 
-**Software Engineering IC3** \- The typical base pay range for this role across the U.S. is USD $100,600 \- $199,000 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $131,400 \- $215,400 per year.  
+Job Types: Full\-time, Fixed term  
+Contract length: 6 months
 
-  
+Pay: Php80,000\.00 \- Php140,000\.00 per month
 
-Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us\-corporate\-pay
-  
+Benefits:
 
-  
+* Health insurance
+* Life insurance
+* Work from home
 
-Microsoft will accept applications for the role until September 29, 2025\.
+Experience:
 
-  
+* developing and implementing large\-scale IT systems: 5 years (Required)
+* M365: 2 years (Required)
+* Sharepoint : 2 years (Required)
 
-\#azuredata
-\#azdata \#azuredata \#AI
-Microsoft is an equal opportunity employer. Consistent with applicable law, all qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",Internet And Software,https://www.indeed.com/cmp/Microsoft,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/88813b3f866a5b58c9685073e3b87e05,http://www.microsoft.com/,"One Microsoft Way Redmond, Washington 98052-6399","10,000+",more than $10B (USD),Our mission is to empower every person and every organization on the planet to achieve more.,,,,,,
-in-980e66aab4581828,indeed,https://www.indeed.com/viewjob?jk=980e66aab4581828,https://careers.microsoft.com/us/en/job/1879451/Software-Engineer-II?jobsource=indeed&utm_source=Job%20Board&utm_campaign=indeed-feed,Software Engineer II,Microsoft,"Redmond, WA, US",2025-09-24,fulltime,direct_data,yearly,100600.0,215400.0,USD,False,,,,,"Security represents the most critical priorities for our customers in a world awash in digital threats, regulatory scrutiny, and estate complexity. Microsoft Security aspires to make the world a safer place for all. We want to reshape security and empower every user, customer, and developer with a security cloud that protects them with end to end, simplified solutions.  
+Work Location: In person",,https://ph.indeed.com/cmp/Cxc-Philippines,,,,,,,,,,,,
+in-1c0a5dc6214fee30,indeed,https://ph.indeed.com/viewjob?jk=1c0a5dc6214fee30,http://ph.indeed.com/job/full-stack-web-developer-1c0a5dc6214fee30,Full Stack Web Developer,B1G Corporation,"Muntinlupa, P00, PH",2025-09-25,fulltime,,,,,,False,,,,,"**Job Summary:**  
+We are looking for a skilled Full Stack Web Developer who can design, build, and maintain dynamic web applications from front\-end interfaces to back\-end systems. You will collaborate with cross\-functional teams to deliver high\-quality, scalable, and user\-friendly solutions.
 
-The Microsoft Security organization accelerates Microsoft’s mission and bold ambitions to ensure that our company and industry is securing digital technology platforms, devices, and clouds in our customers’ heterogeneous environments, as well as ensuring the security of our own internal estate. Our culture is centered on embracing a growth mindset, a theme of inspiring excellence, and encouraging teams and leaders to bring their best each day. In doing so, we create life\-changing innovations that impact billions of lives around the world.  
+**Duties and Responsibilities:**
 
-The COO organization at Microsoft plays a pivotal role in driving operational excellence and transformation across the company. Its mission centers on creating a blueprint for transforming Microsoft through AI and continuous improvement (CI). We’re seeking a forward‑thinking Software Engineer II with deep experience in AIOps‑centric, cloud data architecture. You’ll design and deliver the data foundations for semi and fully autonomous fraud and abuse detection, leveraging LLMs, agentic AI, retrieval‑augmented generation (RAG), semantic search, and low‑latency context retrieval. Your work will power real‑time decisioning and platform resilience by building scalable, high‑throughput systems that integrate diverse real‑time and near‑real‑time data sources, enabling agents to reason, adapt, and act in dynamic environments.  
+* Assist in the design, development, testing, and deployment of web applications.
+* Write and maintain technical documentation for software projects (e.g., system architecture, user guides, API references, change logs).
+* Create and manage user manuals, installation guides, and other end\-user documentation.
+* Collaborate with development teams to ensure documentation stays updated throughout the software lifecycle.
+* Provide basic IT support for hardware/software issues and troubleshoot network devices.
+* Perform basic switching, network cabling, and device configuration as needed.
+* Support on\-site IT tasks and hardware setup in field operations.
+* Assist in preparing procurement documentation for IT hardware, software licenses, and services:
+* Draft technical specifications, RFQs/RFPs, and vendor comparison sheets.
+* Coordinate with vendors and suppliers for quotations and lead times.
+* Maintain inventory lists and track sourcing status.
+* Ensure all IT purchases comply with company standards and budget requirements.
 
-Microsoft’s mission is to empower every person and every organization on the planet to achieve more. As employees we come together with a growth mindset, innovate to empower others and collaborate to realize our shared goals. Each day we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond.
+**Internal Responsibilities** 
 
-**Responsibilities**
---------------------
+**Software Documentation**
 
-* Architect and implement data systems that support Agentic AI workflows, including RAG pipelines and semantic memory.
-* Design and optimize vector database solutions for context\-aware retrieval and embedding storage.
-* Build real\-time and near\-real\-time data ingestion pipelines from diverse sources (e.g., telemetry, APIs, user interactions).
-* Develop automation frameworks for data processing, transformation, and enrichment.
-* Collaborate with data engineering, data science, and analytics teams to deliver seamless integration across data pipelines, model training, LLMs, inference services, MCP servers, and continuous feedback loops.
-* Implement semantic search capabilities using embeddings, transformers, and large dataset optimization techniques.
-* Ensure data quality, lineage, and governance across agentic systems.
-* Monitor and improve system performance, scalability, and reliability in production environments.
+* System overview documents
+* API documentation (Swagger, Postman collections, etc.)
+* Version control \& release notes
+* Change management logs
 
+**IT Procurement \& Sourcing Documents**
 
-Embody our Culture \& Values**Qualifications**
-------------------
+* IT asset inventory template
+* Purchase request form
+* Request for Quotation (RFQ) template
 
-**Required Qualifications**:
+Job Type: Full\-time
 
-* Master's Degree in Computer Science, Math, Software Engineering, Computer Engineering, or related field AND 1\+ year(s) experience in business analytics, data science, software development, data modeling, or data engineering
-	+ OR Bachelor's Degree in Computer Science, Math, Software Engineering, Computer Engineering, or related field AND 2\+ years experience in business analytics, data science, software development, data modeling, or data engineering OR equivalent experience.
-* 3\+ years of experience in software engineering with a focus on data systems or AI infrastructure.
-* 1\+ years experience with distributed data processing (e.g., Spark, Flink) and real\-time streaming (e.g., Kafka, Pulsar).
-* 2\+ years experience of data modeling, ETL, and pipeline automation.
+Benefits:
 
- **Other Requirements:**
+* Additional leave
+* Discounted lunch
+* Health insurance
+* Opportunities for promotion
+* Promotion to permanent employee
 
+Application Question(s):
 
-Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings:
-Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud Background Check upon hire/transfer and every two years thereafter. **Preferred qualifications:**
+* How much is your salary expectation?
 
-* Master's Degree in Computer Science, Math, Software Engineering, Computer Engineering, or related field AND 3\+ years experience in business analytics, data science, software development, data modeling, or data engineering
-	+ OR Bachelor's Degree in Computer Science, Math, Software Engineering, Computer Engineering, or related field AND 5\+ years experience in business analytics, data science, software development, data modeling, or data engineering OR equivalent experience.
-* Hands\-on experience with vector databases (e.g., FAISS, Weaviate, Pinecone) and semantic search.
-* Familiarity with LLM techniques, embeddings, and retrieval\-augmented generation.
-* Exposure to agentic AI concepts, autonomous systems, or reinforcement learning.
-* Experience with cloud\-native data architectures (Azure, AWS, GCP).
-* Contributions to open\-source AI or data infrastructure projects.
+Willingness to travel:
 
+* 100% (Required)
 
-Data Engineering IC3 \- The typical base pay range for this role across the U.S. is USD $100,600 \- $199,000 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $131,400 \- $215,400 per year.  
+Work Location: In person",,https://ph.indeed.com/cmp/B1g-Corporation,,,,,,,,,,,,
+in-f584ce7539457b60,indeed,https://ph.indeed.com/viewjob?jk=f584ce7539457b60,http://ph.indeed.com/job/senior-java-developer-f584ce7539457b60,Senior Java Developer,CXC Philippines,"Pasig, P00, PH",2025-09-25,fulltime,,,,,,True,,,,,"We are seeking a talented Senior Java Developer to join our dynamic team. As a crucial member of our development team, you will be responsible for designing, developing, and maintaining innovative software solutions that meet our clients' needs. Your role will involve collaborating with cross\-functional teams to understand requirements, architecting scalable solutions, and implementing robust backend and frontend components using Java technologies.
 
-Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here:
-https://careers.microsoft.com/us/en/us\-corporate\-pay  
+Key Responsibilities:
 
-Microsoft will accept applications for the role until September 30, 2025  
+* Designing, developing, and testing scalable backend solutions using Java, Spring Boot, and Hibernate.
+* Developing dynamic and responsive frontend interfaces using HTML, CSS, JavaScript, and modern frameworks like Angular or React.
+* Collaborating with UX/UI designers to ensure seamless user experiences.
+* Integrating third\-party APIs and services.
+* Troubleshooting and debugging applications to optimize performance and reliability.
+* Participating in code reviews and providing constructive feedback.
+* Staying updated on emerging technologies and best practices in software development.
 
+Requirements:
 
-Microsoft is an equal opportunity employer. Consistent with applicable law, all qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",Internet And Software,https://www.indeed.com/cmp/Microsoft,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/88813b3f866a5b58c9685073e3b87e05,http://www.microsoft.com/,"One Microsoft Way Redmond, Washington 98052-6399","10,000+",more than $10B (USD),Our mission is to empower every person and every organization on the planet to achieve more.,,,,,,
-in-5bca93c8aa45631e,indeed,https://www.indeed.com/viewjob?jk=5bca93c8aa45631e,https://careers.microsoft.com/us/en/job/1882817/Software-Engineering-II?jobsource=indeed&utm_source=Job%20Board&utm_campaign=indeed-feed,Software Engineering II,Microsoft,"Redmond, WA, US",2025-09-24,fulltime,direct_data,yearly,100600.0,215400.0,USD,False,,,,,"Are you passionate about working on Windows Operating System and building new features? Would you like to work on a team that brings continuous innovation to the world’s most popular desktop operating system? A team that enables new ways of developing and delivering features to the client, and ensuring the right features reach timely to millions of customers? If so, this is a wonderful and rare opportunity in the Windows Agility team that develops techniques for Windows Delivery management for retail audience.  
+* Bachelor's degree in Computer Science or related field.
+* Proven experience as a Full Stack Developer with expertise in Java technologies.
+* Strong understanding of web development principles and best practices.
+* Proficiency in frontend development tools and frameworks.
+* Excellent problem\-solving and communication skills.
+* Ability to work independently and in a team environment.
+* Experience with Agile development methodologies is a plus.
 
-We play a key role in securing and shipping monthly features to our customers while keeping a healthy continuous experience that makes our customers love Windows. Our team is a full\-stack powerhouse that manages technologies ranging from Azure platforms, Build Pipelines, AI models, Kusto Query Language, Azure DevOps, feature code scans and analysis, and manipulating end\-user features through code flow efficiency.  
+Job Types: Full\-time, Fixed term  
+Contract length: 12 months
 
-We are looking for an experienced **Software Engineer II** that has a passion for developing tools and services that enable the Windows organization to deliver new features. You will collaborate with other experienced engineers to deliver seamless feature updates to customers. You will be a meaningful part of a growing team that values diversity of thought and recognizes everyone for their personal strengths and desire to learn and grow.  
+Pay: Php80,000\.00 \- Php140,000\.00 per month
 
-Microsoft’s mission is to empower every person and every organization on the planet to achieve more. As employees we come together with a growth mindset, innovate to empower others, and collaborate to realize our shared goals. Each day we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond.In alignment with our Microsoft values, we are committed to cultivating an inclusive work environment for all employees to positively impact our culture every day.**Responsibilities**
---------------------
+Benefits:
 
-* Enhancing and innovating the tools relied upon by thousands of Windows engineers to deliver their features.
-* Facilitating teams for faster code to in market with new ideas swiftly and efficiently, collaborating with partners to revolutionize the way engineers deliver features and validate contentious assumptions.
-* Designing, implementing, and communicating code flow processes and workflows related to feature management.
-* Innovating and bringing cutting edge solutions to run AI models as applicable to team.
-* Reviewing current developments and proactively seek new knowledge that will improve the availability, reliability, efficiency, observability, and performance of products while also driving consistency in monitoring and operations at scale.
+* Health insurance
+* Life insurance
+* Work from home
 
-**Qualifications**
-------------------
+Experience:
 
-**Required Qualifications:*** Bachelor's Degree in Computer Science or related technical field AND 2\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, Python, WinUI or XAML
-* + OR equivalent experience.
+* Master Data Management development: 3 years (Preferred)
+* Java: 5 years (Required)
 
-**Other Requirements:**
-Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings:* **Microsoft Cloud Background Check**: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.
+Work Location: In person",,https://ph.indeed.com/cmp/Cxc-Philippines,,,,,,,,,,,,
+in-decda6d3442b6dc0,indeed,https://ph.indeed.com/viewjob?jk=decda6d3442b6dc0,http://ph.indeed.com/job/senior-full-stack-developer-decda6d3442b6dc0,Senior Full Stack Developer,CXC Philippines,"Pasig, P00, PH",2025-09-25,fulltime,,,,,,True,,,,,"We are seeking a highly skilled and experienced **Senior Full Stack Developer** to join our dynamic team. You will play a critical role in designing, developing, and maintaining scalable web applications, driving technical solutions from concept to deployment.
 
-**Preferred Qualifications:*** Bachelor's Degree in Computer Science or related technical field AND 8\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, Python, WinUI or XAML
-* + OR equivalent experience.
-* Master's Degree in Computer Science or related technical field AND 6\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, Python, WinUI or XAML
-* + OR equivalent experience.
-* Demonstrated excellence in coding and technical communication.
-* Demonstrated problem solving and debugging skills.
-* Experience in owning a responsibility of components or feature areas.
-* The ability to multi\-task while balancing short\-term and long\-term tasks.
-* Solid customer focus and data driven approach.
-* End\-to\-end Delivery and Innovation.
-* Adaptability in fast paced environment.
-* Great collaboration and team\-player skills.
+As a Senior Full Stack Developer, you will work closely with product managers, UX/UI designers, and other developers to deliver high\-quality software. You’ll lead architecture decisions, mentor junior team members, and ensure best practices in code quality, testing, and performance.
 
+**Key Responsibilities:**
 
-Software Engineering IC3 \- The typical base pay range for this role across the U.S. is USD $100,600 \- $199,000 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $131,400 \- $215,400 per year.  
+* Design and develop robust, scalable, and secure web applications using modern frameworks.
+* Lead full lifecycle software development – from technical design to deployment and maintenance.
+* Collaborate with cross\-functional teams to define project requirements and deliverables.
+* Maintain and improve existing codebases and peer\-review code changes.
+* Identify and resolve performance and scalability issues.
+* Implement best practices in testing, CI/CD, and version control.
+* Mentor junior developers and promote continuous learning.
 
-  
+**Requirements:**
 
-Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us\-corporate\-pay  
+* 5\+ years of experience as a Full Stack Developer.
+* Strong proficiency in front\-end technologies (e.g., React, Angular, HTML/CSS, JavaScript).
+* Solid back\-end expertise with Node.js, Python, Java, or similar.
+* Experience with RESTful APIs, microservices, and relational/non\-relational databases (e.g., PostgreSQL, MongoDB).
+* Familiarity with DevOps tools and cloud platforms (e.g., AWS, Azure, Docker).
+* Excellent problem\-solving skills and attention to detail.
+* Strong communication and leadership skills.
 
-  
+Job Types: Full\-time, Fixed term  
+Contract length: 12 months
 
-Microsoft will accept applications for the role until August 29, 2025\.  
+Pay: Php80,000\.00 \- Php130,000\.00 per month
 
-\#W\+DJOBS
-Microsoft is an equal opportunity employer. Consistent with applicable law, all qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",Internet And Software,https://www.indeed.com/cmp/Microsoft,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/88813b3f866a5b58c9685073e3b87e05,http://www.microsoft.com/,"One Microsoft Way Redmond, Washington 98052-6399","10,000+",more than $10B (USD),Our mission is to empower every person and every organization on the planet to achieve more.,,,,,,
-in-e934c70df568044f,indeed,https://www.indeed.com/viewjob?jk=e934c70df568044f,https://careers.microsoft.com/us/en/job/1881111/Senior-Software-Engineer?jobsource=indeed&utm_source=Job%20Board&utm_campaign=indeed-feed,Senior Software Engineer,Microsoft,"Redmond, WA, US",2025-09-24,fulltime,direct_data,yearly,119800.0,258000.0,USD,False,,,,,"The Product teams in the Developer Division are focused on delivering core AI productivity features for developers building and maintaining apps across desktop, mobile, cloud, and web platforms. We take pride in creating tools and experiences that are widely adopted and highly effective. Our tools support a broad range of developers—including those in the community, education, open\-source, and enterprise spaces.  
+Benefits:
 
-The era of AI is transforming developer tools. The Data and Artificial Intelligence (Data\+AI) team in Microsoft’s Developer Division is shaping the future of AI for developers. We collaborate with GitHub to bring AI assistance to every stage of coding—writing, debugging, diagnosing, testing, committing, and reviewing. Our team is a diverse, multidisciplinary group of data scientists, researchers, and software engineers passionate about using AI to enhance developer productivity. Fine\-tuned AI models and intuitive user experiences are key to satisfaction, efficiency, and adoption. We’re building on foundational Copilot work with agentic systems to deliver end\-to\-end developer experiences, both locally and in the Azure cloud. Our work ships in GitHub, Visual Studio, VS Code, and beyond.  
+* Health insurance
+* Life insurance
+* Work from home
 
-This position is for a Senior Software Engineer excited to work on developer scenarios and passionate about the opportunities AI models create and the strategies that turn them into products. The role calls for creativity, persistence, and critical thinking to work with emerging technologies. You’ll collaborate with teams across IDEs, programming languages, data science, and internal and external LLM providers across geographies and time zones.  
+Experience:
 
-The role focuses on two key areas: building tools and systems to measure and evaluate advanced AI productivity features at scale, and supporting forward\-looking exploration through rapid prototyping and delivery of cutting\-edge developer tools.  
+* ReactJs or AngularJs: 5 years (Required)
+* Node.js or Java: 5 years (Required)
 
-Microsoft’s mission is to empower every individual and every organization to achieve more. We come together with a growth mindset, innovate to support others, and collaborate to achieve shared goals. Every day, we build on our values of respect, integrity, and accountability to foster a culture of inclusion where everyone can thrive.**Responsibilities**
---------------------
+Work Location: In person",,https://ph.indeed.com/cmp/Cxc-Philippines,,,,,,,,,,,,
+in-37078c96d34a0a26,indeed,https://ph.indeed.com/viewjob?jk=37078c96d34a0a26,http://ph.indeed.com/job/front-end-game-developer-37078c96d34a0a26,Front End Game Developer,Beyond Horizon Group,"Fort Bonifacio, P00, PH",2025-09-25,fulltime,,,,,,False,,,,,"**Job Summary:**
 
-* Develop secure, maintainable code and conduct proactive debugging.
-* Review code for quality, test coverage, and compliance.
-* Contribute to architecture and design decisions.
-* Build and execute test strategies using AI tools.
-* Apply engineering best practices for performance and scalability.
-* Ensure security, privacy, and regulatory compliance.
-* Plan and deploy features safely with rollback strategies.
-* Run experiments and define success metrics.
-* Support live site operations and improve monitoring.
-* Collaborate to understand and meet user requirements.
-* Embody Microsoft's Culture and Values
+We’re looking for a skilled **Front\-End Game Developer** with strong JavaScript experience to develop and optimize web applications for lottery systems like Lotto, Keno, and scratch card games. You’ll work closely with product, design, and back\-end teams to deliver high\-quality, interactive features and ensure top\-notch performance and maintainability. Experience in gaming or lottery projects is a plus.
 
-**Qualifications**
-------------------
+**Job Description:**
 
-**Required Qualifications**:* Bachelor's Degree in Computer Science or related technical field AND 4\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
-	+ OR equivalent experience.
-* Experience with at least one modern programming language such as TypeScript, Python, C\#, Java
-* Experience with AI LLM models, such as OpenAI, Azure AI, ML.
-* Experience working with or delivering AI\-assisted developer tools.
-* Experience running a 24/7 Azure based services
+* Develop and maintain web front\-end projects related to lottery systems, including Lotto, Keno, scratch card games, etc.
+* Collaborate closely with product, design, and back\-end teams to independently deliver complex business pages and interactive features.
+* Continuously optimize front\-end architecture, code quality, and performance, driving technological improvements within projects.
+* Develop modules and components according to requirements, ensuring high maintainability and excellent user experience.
+* Participate in technical reviews, code audits, and mentor team members to overcome technical challenges.
 
-**Other Requirements:**
-Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings:* Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.
+**Requirements:**
 
- **Preferred Qualifications**:* Master's Degree in Computer Science or related technical field AND 6\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python OR Bachelor's Degree in Computer Science or related technical field AND 5\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
-	+ OR equivalent experience.
-* Experience with object\-oriented design and programming, Test Driven Development approaches, distributed cloud architectures
-* Experience with interpersonal skills necessary to articulate design choices and the importance of our security deliverables
-* Experience working with experimentation systems, telemetry systems and data to drive engineering and product decision making
-* Customer focus and a deep commitment to delivering products that create customer value and delightful experiences
-* Experience with AI LLM models, such as OpenAI, Azure AI, ML.
-* Experience running 24/7 cloud services
-* Experience with object\-oriented design and programming, Test Driven Development approaches, distributed cloud architectures
-* Experience delivering AI\-assisted developer tools or relevant experience driving AI\-assisted products to ship quality.
+* At least 5 years of experience in web front\-end development with strong proficiency in JavaScript (ES6\+), HTML5, and CSS3\.
+* Familiar with modern front\-end frameworks (such as React, Vue, or Angular), with mandatory proficiency in **React**.
+* Prior experience in lottery, Keno, scratch card, or related projects is highly preferred.
+* Familiar with front\-end engineering, modular development, and build tools (e.g., Webpack, Vite, Babel, npm/yarn).
+* In\-depth understanding of front\-end performance optimization, security, and best practices.
+* Excellent communication skills, teamwork, and problem\-solving abilities.
+* Good command of English for reading and writing technical documentation.
 
-  
+**Bonus Skills:**
 
-Software Engineering IC4 \- The typical base pay range for this role across the U.S. is USD $119,800 \- $234,700 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $158,400 \- $258,000 per year.  
+* Experience with TypeScript.
+* Familiarity with state management tools (such as Redux, Vuex, or Recoil).
+* Knowledge of WebSocket, real\-time communication, and front\-end challenges in high\-concurrency scenarios.
+* Proficiency in using AI\-assisted development tools such as Cursor, Deepseek, ChatGPT, Copilot, etc.
 
-  
+Job Type: Full\-time
 
-Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us\-corporate\-pay  
+Pay: Php80,000\.00 \- Php150,000\.00 per month
 
-Microsoft posts positions for a minimum of 5 days, with applications accepted on an ongoing basis until the position is filled.  
+Ability to commute/relocate:
 
-\#DDJL
+* Fort Bonifacio 1201 P00: Reliably commute or planning to relocate before starting work (Preferred)
 
+Application Question(s):
 
-Microsoft is an equal opportunity employer. Consistent with applicable law, all qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",Internet And Software,https://www.indeed.com/cmp/Microsoft,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/88813b3f866a5b58c9685073e3b87e05,http://www.microsoft.com/,"One Microsoft Way Redmond, Washington 98052-6399","10,000+",more than $10B (USD),Our mission is to empower every person and every organization on the planet to achieve more.,,,,,,
-in-70e9a2e60b02d70e,indeed,https://www.indeed.com/viewjob?jk=70e9a2e60b02d70e,https://careers.microsoft.com/us/en/job/1882147/Senior-Software-Engineer?jobsource=indeed&utm_source=Job%20Board&utm_campaign=indeed-feed,Senior Software Engineer,Microsoft,"Redmond, WA, US",2025-09-24,fulltime,direct_data,yearly,119800.0,258000.0,USD,False,,,,,"We are seeking a Senior Software Engineer to lead the design and development of scalable, resilient, and intelligent services that power mission\-critical commerce and risk systems. This role is ideal for engineers who thrive in complex, data\-driven environments and are passionate about architecting secure, AI\-powered systems at enterprise scale.  
+* Do you have experience working on betting or gaming projects such as lottery or scratch cards?
+* Could you share your portfolio, particularly any projects related to gaming? You may include links for reference.
 
-As a senior member of the team, you will drive technical direction, mentor peers, and collaborate across disciplines to deliver impactful solutions that prevent fraud, enhance customer experience, and support Microsoft’s global commerce ecosystem.  
+Experience:
 
-Microsoft’s mission is to empower every person and every organization on the planet to achieve more. As employees, we come together with a growth mindset, innovate to empower others, and collaborate to realize our shared goals. Each day, we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond.**Responsibilities**
---------------------
+* Front End Development: 5 years (Preferred)
 
-* **Architect and Develop:** Design, build, and validate high\-scale services that support near\-real\-time decision making.
-* **Risk \& Fraud Protection:** Implement intelligent systems and machine learning–driven workflows to detect and prevent fraud while minimizing customer friction.
-* **Quality \& Security:** Establish development practices that ensure service quality, integrity, and compliance with security standards.
-* **Collaboration:** Partner with cross\-functional engineering and product teams to deliver new capabilities that improve customer and partner experiences.
-* **Leadership:** Mentor engineers, lead design efforts, and foster a culture of technical excellence and continuous improvement.
-
-**Qualifications**
-------------------
-
-**Required Qualifications*** Bachelor's Degree in Computer Science or related technical field AND 4\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
-	+ OR equivalent experience.
-* 2\+ years experience working on system design, distributed computing, and performance optimization.
-* 2\+ years Experience building cloud\-scale services on platforms such as Azure or AWS.
-
- **Preferred Qualifications*** Master's Degree in Computer Science or related technical field AND 6\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
-	+ OR Bachelor's Degree in Computer Science or related technical field AND 8\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
-	+ OR equivalent experience.
-* Experience with Azure cloud services, such as Azure App Service and Azure Kubernetes Service, or equivalent platforms.
-* Experience in e\-commerce fraud prevention or financial transaction systems.
-* Understanding of CI/CD pipelines, GitHub workflows, and infrastructure\-as\-code.
-* Excellent problem\-solving, cross\-group collaboration, and communication skills.
-
-**Other Requirements**
-Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings: Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.
-
-  
-
-Software Engineering IC4 \- The typical base pay range for this role across the U.S. is USD $119,800 \- $234,700 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $158,400 \- $258,000 per year.  
-
-  
-
-Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us\-corporate\-pay
-  
-
-  
-
-Microsoft will accept applications for the role until September 29, 2025\.
-
-  
-
-
-Microsoft is an equal opportunity employer. Consistent with applicable law, all qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",Internet And Software,https://www.indeed.com/cmp/Microsoft,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/88813b3f866a5b58c9685073e3b87e05,http://www.microsoft.com/,"One Microsoft Way Redmond, Washington 98052-6399","10,000+",more than $10B (USD),Our mission is to empower every person and every organization on the planet to achieve more.,,,,,,
-in-a857e846b62149b2,indeed,https://www.indeed.com/viewjob?jk=a857e846b62149b2,https://careers.microsoft.com/us/en/job/1881265/SENIOR-SOFTWARE-ENGINEER?jobsource=indeed&utm_source=Job%20Board&utm_campaign=indeed-feed,SENIOR SOFTWARE ENGINEER,Microsoft,"Redmond, WA, US",2025-09-24,fulltime,direct_data,yearly,119800.0,258000.0,USD,False,,,,,"Microsoft Intune is a comprehensive endpoint management solution that provides IT organizations with a cloud\-based platform to manage and secure their devices, applications, and data. Intune offers a wide range of features and capabilities that enable IT to deliver a seamless and secure computing experience to their users. We are seeking an experienced Senior Software Engineer to join our Resource Access and Cloud PKI team within Intune, to build cloud services that operate at high scale and availability, with opportunities for technical leadership. As a member of our team, you will lead the design, development, and deployment of highly scalable and reliable software components, drive technical strategy, and mentor engineers.  
-
-We're seeking someone who is driven to explore the application of AI in our everyday work, advocating for its use as a multiplier across teams, and identifying and driving continuous productivity improvements. *Microsoft’s mission is to empower every person and every organization on the planet to achieve more. As employees we come together with a growth mindset, innovate to empower others, and collaborate to realize our shared goals. Each day we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond.***Responsibilities**
---------------------
-
-* + **Technical Leadership:**
-	+ - Lead technical design and architecture discussions for Ring 0 Services
-		- Drive technical roadmap and vision for Ring 0 Services, aligning with Intune's overall strategy
-		- Collaborate with product management to define and prioritize project backlogs
-	+ **Software Development:**
-	+ - Design, develop, and deploy distributed systems software components in Ring 0, ensuring high availability, scalability, and performance
-		- Write high\-quality, maintainable code, and review contributions from engineers
-	+ **Mentorship and Knowledge Sharing:**
-	+ - Mentor engineers, providing guidance and oversight on complex projects
-		- Develop and maintain technical documentation, ensuring knowledge sharing and best practices
-	+ **Innovation and R\&D:**
-	+ - Explore emerging technologies and trends, assessing their impact on our distributed systems and services
-		- Drive proof\-of\-concept projects, demonstrate innovative solutions and technical expertise
-	+ **Collaboration and Communication:**
-	+ - Work closely with cross\-functional teams, including product management, design, and operations
-		- Communicate technical vision and roadmap to stakeholders, both technical and non\-technical
-
-**Qualifications**
-------------------
-
-**Minimum Qualifications:*** Bachelor's Degree in Computer Science or related technical field AND
-* + 4\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python OR equivalent experience.
-* In\-depth knowledge of distributed systems design principles, scalability patterns, and high\-availability architectures
-* Hands\-on experience with cloud platforms (Azure, AWS, GCP)
-* Problem\-solving skills, with a data\-driven approach to debugging and performance optimization
-* Communication and collaboration skills, with experience working in agile teams and leading technical discussions
-
- **Other Requirements:**
-Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include, but are not limited to the following specialized security screenings:* Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.
-
- **Preferred Qualifications:*** Master's Degree in Computer Science or related technical field AND 6\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
-* + OR Bachelor's Degree in Computer Science or related technical field AND 8\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python OR equivalent experience
-* 6\+ years of experience in software development, with a focus on distributed systems, high\-scale engineering, and cloud computing
-
-  
-
-Software Engineering IC4 \- The typical base pay range for this role across the U.S. is USD $119,800 \- $234,700 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $158,400 \- $258,000 per year.
-
-Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us\-corporate\-pay
-
-Microsoft will accept applications for the role until October 5, 2025\.  
-
-
-Microsoft is an equal opportunity employer. Consistent with applicable law, all qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",Internet And Software,https://www.indeed.com/cmp/Microsoft,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/88813b3f866a5b58c9685073e3b87e05,http://www.microsoft.com/,"One Microsoft Way Redmond, Washington 98052-6399","10,000+",more than $10B (USD),Our mission is to empower every person and every organization on the planet to achieve more.,,,,,,
-in-29c425e155034c35,indeed,https://www.indeed.com/viewjob?jk=29c425e155034c35,https://careers.microsoft.com/us/en/job/1881923/Software-Engineer-II?jobsource=indeed&utm_source=Job%20Board&utm_campaign=indeed-feed,Software Engineer II,Microsoft,"Redmond, WA, US",2025-09-24,fulltime,direct_data,yearly,100600.0,215400.0,USD,False,,,,,"OneDrive and SharePoint are rapidly growing services at the center of Microsoft's cloud, interacting with almost every part of Microsoft. You would be a part of a team that is fundamentally changing the way that millions of people use their devices and interact with the most important content for their home, work, and school.  
-
-We are looking for a smart, agile, and intellectually curious **Software Engineer II** who love creating and building things that delight and protect our customers. You will be working with a team of amazing engineers, PMs, and designers, and work closely with other teams across Microsoft to deliver large scale, distributed architectures, and features to meet OneDrive and SharePoint's core service needs.  
-
-Microsoft’s mission is to empower every person and every organization on the planet to achieve more. As employees we come together with a growth mindset, innovate to empower others, and collaborate to realize our shared goals. Each day we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond.**Responsibilities**
---------------------
-
-* You will work in large\-scale distributed systems that are critical for customers around the world.
-* You will design and deliver services that manage internet\-scale data stores, enable best\-in\-the\-world file and site browsing and editing performance, or add innovative features to how people manage and interact with their data.
-* You will contribute to and help shape the vibrant, inclusive engineering culture of OneDrive \& SharePoint.
-* You will be expected to do deep, data\-driven, collaborative design for additions and changes to our products.
-* You will write clean, efficient code and comprehensive tests.
-* You will build excellent coverage with metrics and telemetry to ensure we understand exactly what is happening with our services at all times.
-* You will deliver features that will support and serve hundreds of millions of customers around the world.
-* Embody our culture and values
-
-**Qualifications**
-------------------
-
-**Required Qualifications:*** Bachelor's Degree in Computer Science or related technical field AND 2\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
-	+ OR equivalent experience.
-* 1\+ years' experience with cloud\-scale services and server/service management features OR equivalent experience.
-
-**Other Requirements:**  
-
-Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings:* **Microsoft Cloud Background Check:** This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.
-
-**Preferred Qualifications:*** Experience with building cloud\-scale infrastructure components.
-* Awareness, passion, and experience related to cloud scale distributed design and patterns.
-* Familiarity with secure software design concepts.
-* Proven track record of delivering projects that include multiple components.
-* Ability and eagerness to work across and partner with multiple engineering teams to achieve business goals.
-* Experience collaborating with peers and partner teams to meet joint engineering goals.
-* Solid coding, debugging, algorithm design, and problem\-solving skills.
-* Able to learn new systems quickly and adapt new methodologies to our services.
-
-
-Software Engineering IC3 \- The typical base pay range for this role across the U.S. is USD $100,600 \- $199,000 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $131,400 \- $215,400 per year.  
-
-  
-
-Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us\-corporate\-pay  
-
-Microsoft will accept applications for the role until October 3, 2025\.  
-
-\#ODSPEng
-Microsoft is an equal opportunity employer. Consistent with applicable law, all qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",Internet And Software,https://www.indeed.com/cmp/Microsoft,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/88813b3f866a5b58c9685073e3b87e05,http://www.microsoft.com/,"One Microsoft Way Redmond, Washington 98052-6399","10,000+",more than $10B (USD),Our mission is to empower every person and every organization on the planet to achieve more.,,,,,,
-in-906d95849dc9ecd5,indeed,https://www.indeed.com/viewjob?jk=906d95849dc9ecd5,https://careers.microsoft.com/us/en/job/1880656/Senior-Software-Engineer?jobsource=indeed&utm_source=Job%20Board&utm_campaign=indeed-feed,Senior Software Engineer,Microsoft,"Redmond, WA, US",2025-09-24,fulltime,direct_data,yearly,119800.0,258000.0,USD,False,,,,,"CoreAI is at the forefront of Microsoft’s mission to redefine how software is built and experienced. We are responsible for building the foundational platforms, services, programming models, and developer experiences that power the next generation of applications using Generative Artificial Intelligence (AI). Our work enables developers and enterprises to harness the full potential of AI to create intelligent, adaptive, and transformative software.  
-
-The Azure Managed Grafana (AMG) team is responsible for redefining the standard for cloud service monitoring. Our mission is to bring Grafana, the industry\-leading data visualization platform, to every Azure developer \- delivering rich, intelligent dashboards at the push of a button and freeing developers from the complexity of managing their own observability infrastructure.  
-
-In this role, you will work as a software engineer building and operating the Azure Managed Grafana and Azure Monitor Dashboards with Grafana services. Your responsibilities will include designing and maintaining highly available cloud services, developing seamless integrations with other Azure offerings, and creating scalable, secure infrastructure that powers world\-class data visualization. You will also leverage AI to enhance observability \- such as building anomaly detection, predictive alerting, and intelligent insights that help developers detect service health changes and resolve issues before they impact customers. This role provides the opportunity to work across Azure technologies such as Azure Kubernetes Service, Virtual Machine Scale Sets, Load Balancer, PostgreSQL DB, Azure Monitor, and Azure Active Directory, while collaborating closely with Grafana Labs to empower developers with AI\-driven analytics and actionable insights.  
-
-At Microsoft, we prioritize people and cultivate an open, inclusive work environment. Our global team comprises developers from diverse backgrounds and varying levels of experience. We are seeking experienced engineers with a deep passion for cloud developer tools and services to join us in tackling this exciting challenge. Strong experience in programming languages such as C\#, C\+\+, or Java, a proven track record of solving complex technical problems, and the ability to collaborate effectively with partner teams are essential requirements. Knowledge and hands\-on experience with Azure or cloud development are highly desirable. **Microsoft Culture**  
-
-Microsoft’s mission is to empower every person and every organization on the planet to achieve more. As employees, we come together with a growth mindset, innovate to empower others, and collaborate to realize our shared goals. Each day we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond.  
-
-  
-
-In alignment with our Microsoft values, we are committed to cultivating an inclusive work environment for all employees to positively impact our culture every day.**Responsibilities**
---------------------
-
-* You will work with other engineers in the team to design and build a highly secure and highly available large\-scaled global service that millions of customers can depend on. You will also
-* Collaborate with multiple partner teams to integrate our offerings with other Azure services, driving cross\-functional initiatives and ensuring seamless interoperability
-* Drive the creation of feature designs and lead design discussions with team members, leveraging your expertise to make informed decisions that align with the overall product vision
-* Lead and participate in code reviews to maintain a high standard of code quality and consistency across the codebase, providing constructive feedback and guidance to team members
-* Implement comprehensive unit and functional tests, ensuring robust test coverage and reliability of the codebase, and deploy production bits to the Azure environment with a focus on automation and scalability
-* Establish and maintain telemetry to monitor usage and performance, proactively identifying and addressing potential issues to ensure optimal service delivery and customer satisfaction
-* Respond to incidents in a timely manner, working with cross\-functional teams to mitigate impact and restore service availability, and contribute to the ongoing operation of the services in a cost\-effective manner
-* Contribute to and collaborate on open\-source projects, sharing knowledge and expertise with the broader developer community, and leveraging external contributions to enhance our offerings
-* Collaborate with Grafana Labs to enhance security and enrich features based on customer scenarios, leveraging their expertise to drive continuous improvement and innovation in our offerings
-* MS Culture \& Values: Embody our Culture and Values
-
-**Qualifications**
-------------------
-
-**Required Qualifications:*** Bachelor's Degree in Computer Science or related technical field AND 4\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
-	+ OR equivalent experience.
-* 3\+ years of experience with building testable, distributed and highly scalable online services on Azure or similar cloud platform
-* 6\+ months of experience using AI\-assisted development tools (e.g., GitHub Copilot, or similar) to enhance productivity and code quality
-
-**Other Requirements:**
-Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings:* Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.
-
-**Preferred Qualifications:*** Master's Degree in Computer Science or related technical field AND 6\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python OR Bachelor's Degree in Computer Science or related technical field AND 8\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
-	+ OR equivalent experience.
-* Detail oriented design, coding, debugging and problem\-solving skills
-* Experience with Open Source Software development
-* Effective communication, collaboration, and problem\-solving skills
-* A growth mindset and a willingness to learn new things and take on challenges
-* Passion for quality with strong customer empathy
-
-
-Software Engineering IC4 \- The typical base pay range for this role across the U.S. is USD $119,800 \- $234,700 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $158,400 \- $258,000 per year.  
-
-Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us\-corporate\-pay **Microsoft posts positions for a minimum of 5 days, with applications accepted on an ongoing basis until the position is filled.** **\#CoreAI**  
-
-**\#DevDiv**  
-
-**\#DDJL**
-Microsoft is an equal opportunity employer. Consistent with applicable law, all qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",Internet And Software,https://www.indeed.com/cmp/Microsoft,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/88813b3f866a5b58c9685073e3b87e05,http://www.microsoft.com/,"One Microsoft Way Redmond, Washington 98052-6399","10,000+",more than $10B (USD),Our mission is to empower every person and every organization on the planet to achieve more.,,,,,,
-in-5aa21e213667c4db,indeed,https://www.indeed.com/viewjob?jk=5aa21e213667c4db,https://careers.microsoft.com/us/en/job/1879811/Senior-Software-Engineer?jobsource=indeed&utm_source=Job%20Board&utm_campaign=indeed-feed,Senior Software Engineer,Microsoft,"Redmond, WA, US",2025-09-24,fulltime,direct_data,yearly,119800.0,258000.0,USD,False,,,,,"CoreAI is at the forefront of Microsoft’s mission to redefine how software is built and experienced. We are responsible for building the foundational platforms, services, programming models, and developer experiences that power the next generation of applications using Generative Artificial Intelligence (AI). Our work enables developers and enterprises to harness the full potential of AI to create intelligent, adaptive, and transformative software.  
-
-The 1ES (One Engineering System) team is responsible for enabling the world's best engineering teams with world\-class tools and systems that help them ship products their customers love.  
-
-We are seeking a Senior Software Engineer within the 1ES Engineering team, who will play a key role in shaping the direction of engineering systems and enhancing developer productivity. The responsibilities will include developing scalable distributed services for development environment migration and security services, analysis, and alerting. Additionally, design advanced tooling that is compatible with emerging ecosystems, deliver improved performance and accuracy, and incorporate AI\-driven features. Understanding how hosted source control and project management services operate would be very useful.  
-
-Microsoft’s mission is to empower every person and every organization on the planet to achieve more. As employees we come together with a growth mindset, innovate to empower others, and collaborate to realize our shared goals. Each day we build on our values of respect, integrity, and accountability to create a culture of inclusion where everyone can thrive at work and beyond.**Responsibilities**
---------------------
-
-* Collaborates with appropriate stakeholders to determine user requirements for a scenario.
-* Drives identification of dependencies and the development of design documents for a product, application, service, or platform.
-* Creates, implements, optimizes, debugs, refactors, and reuses code to establish and improve performance and maintainability, effectiveness, and return on investment (ROI).
-* Leverages subject\-matter expertise of product features and partners with appropriate stakeholders (e.g., project managers) to drive a workgroup's project plans, release plans, and work items.
-* Acts as a Designated Responsible Individual (DRI) and guides other engineers by developing and following the playbook, working on call to monitor system/product/service for degradation, downtime, or interruptions, alerting stakeholders about status and initiates actions to restore system/product/service for simple and complex problems when appropriate.
-* Proactively seeks new knowledge and adapts to new trends, technical solutions, and patterns that will improve the availability, reliability, efficiency, observability, and performance of products while also driving consistency in monitoring and operations at scale.
-* MS Culture \& Values: Embody our Culture and Values
-
-**Qualifications**
-------------------
-
-**Required Qualifications:*** Bachelor's Degree in Computer Science or related technical field AND 4\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
-	+ OR equivalent experience
-* 6\+ months of experience using AI\-assisted development tools (e.g., GitHub Copilot, or similar) to enhance productivity and code quality
-
-**Other Requirements:**
-Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings:  
-
-Microsoft Cloud Background Check: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter **Preferred Qualifications:*** Master's Degree in Computer Science or related technical field AND 6\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python OR Bachelor's Degree in Computer Science or related technical field AND 8\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
-	+ OR equivalent experience.
-* Familiarity with versions control systems like Git (Github, Azure DevOps)
-
-
-Software Engineering IC4 \- The typical base pay range for this role across the U.S. is USD $119,800 \- $234,700 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $158,400 \- $258,000 per year.  
-
-Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us\-corporate\-pay **Microsoft posts positions for a minimum of 5 days, with applications accepted on an ongoing basis until the position is filled.** **\#CoreAI****\#1ES**
-Microsoft is an equal opportunity employer. Consistent with applicable law, all qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",Internet And Software,https://www.indeed.com/cmp/Microsoft,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/88813b3f866a5b58c9685073e3b87e05,http://www.microsoft.com/,"One Microsoft Way Redmond, Washington 98052-6399","10,000+",more than $10B (USD),Our mission is to empower every person and every organization on the planet to achieve more.,,,,,,
-in-1d68d6dcbe881177,indeed,https://www.indeed.com/viewjob?jk=1d68d6dcbe881177,https://careers.microsoft.com/us/en/job/1881919/Software-Engineer-II?jobsource=indeed&utm_source=Job%20Board&utm_campaign=indeed-feed,Software Engineer II,Microsoft,"Redmond, WA, US",2025-09-24,fulltime,direct_data,yearly,100600.0,215400.0,USD,False,,,,,"Are you passionate about working on a product that impacts billions of people worldwide? Do you want to shape the future of Windows Search? Excited about transforming ideas from inception to production, measuring real user impact, and connecting them to business outcomes? If so, this could be the perfect career move for you!  
-
-The Windows Shell and Services team is leading the charge in driving revenue growth within Windows. Our commitment is to enhance customer lifetime value by designing experiences that are insight\-driven and genuinely resonate with user needs and aspirations. We're searching for a passionate **Software Engineer II** eager to delve into Windows technologies, grow in a collaborative and inclusive environment, and help shape seamless search experiences.  
-
-Our team:* Develops robust, user\-focused Windows experiences
-* Collaborates with various Microsoft teams (e.g., Bing, Office, Edge)
-* Employs experimentation and feedback to enhance features
-* Fosters a modern, agile, and inclusive engineering culture
-* Enjoys solving challenging problems and learning from one another
-
-
-You will be empowered to make rapid changes to Windows features and experiences. Our goal is to boost customer preference and satisfaction with Windows Search and enhance Microsoft's integration. If you're eager to accelerate your career, this is your opportunity to make a global impact – quickly.  
-
-Microsoft's mission is to empower every individual and organization on the planet to achieve more. Our employees unite with a growth mindset, innovate to empower others, and collaborate to achieve our shared goals. Every day, we build on our values of respect, integrity, and accountability, fostering a culture of inclusion where everyone can thrive both at work and beyond.**Responsibilities**
---------------------
-
-* Collaborate with relevant stakeholders to identify user requirements for features.
-* Assist in identifying dependencies and developing design documents for product features under supervision.
-* Learn and implement code for products, services, or features, reusing code where applicable, with guidance.
-* Help break down work items into tasks and provide estimations.
-* Serve as a Designated Responsible Individual (DRI), monitoring systems/products/features/services for issues like degradation, downtime, or interruptions, and recommend actions to restore functionality as per the playbook.
-* Stay updated on current developments and proactively seek knowledge to improve the availability, reliability, efficiency, observability, and performance of products, while ensuring consistency in monitoring and operations at scale.
-
-**Qualifications**
-------------------
-
-**Required Qualifications:*** Bachelor's Degree in Computer Science or related technical field AND 2\+ years technical engineering experience with coding in languages including, but not limited to, C, C\+\+, C\#, Java, JavaScript, or Python
-	+ OR equivalent experience.
-* Equivalent experience with 2\+ year(s) of experience in development, planning, scheduling, and delivering quality software.
-
-**Other Requirements****:**
-Ability to meet Microsoft, customer and/or government security screening requirements are required for this role. These requirements include but are not limited to the following specialized security screenings:* **Microsoft Cloud Background Check**: This position will be required to pass the Microsoft Cloud background check upon hire/transfer and every two years thereafter.
-
-**Preferred Qualifications**:* Understanding of Windows architecture, API design, interfaces, COM, and WinRT API is a plus.
-* Experience in creating apps and building on SDKs.
-* Web development expertise.
-
-
-The typical base pay range for this role across the U.S. is USD $100,600 \- $199,000 per year. There is a different range applicable to specific work locations, within the San Francisco Bay area and New York City metropolitan area, and the base pay range for this role in those locations is USD $131,400 \- $215,400 per year.  
-
-  
-
-Certain roles may be eligible for benefits and other compensation. Find additional benefits and pay information here: https://careers.microsoft.com/us/en/us\-corporate\-pay
-  
-
-  
-
-Microsoft will accept applications for the role until October 3, 2025\.  
-
-\#W\+DJOBS
-Microsoft is an equal opportunity employer. Consistent with applicable law, all qualified applicants will receive consideration for employment without regard to age, ancestry, citizenship, color, family or medical care leave, gender identity or expression, genetic information, immigration status, marital status, medical condition, national origin, physical or mental disability, political affiliation, protected veteran or military status, race, ethnicity, religion, sex (including pregnancy), sexual orientation, or any other characteristic protected by applicable local laws, regulations and ordinances. If you need assistance and/or a reasonable accommodation due to a disability during the application process, read more about requesting accommodations.",Internet And Software,https://www.indeed.com/cmp/Microsoft,https://d2q79iu7y748jz.cloudfront.net/s/_squarelogo/256x256/88813b3f866a5b58c9685073e3b87e05,http://www.microsoft.com/,"One Microsoft Way Redmond, Washington 98052-6399","10,000+",more than $10B (USD),Our mission is to empower every person and every organization on the planet to achieve more.,,,,,,
-li-4304041530,linkedin,https://www.linkedin.com/jobs/view/4304041530,,"Software Engineer, Full Stack, Google Workspace",Google,"Seattle, WA",2025-09-23,,,,,,,False,,,,,,,https://www.linkedin.com/company/google,,,,,,,,,,,,
-li-4304182522,linkedin,https://www.linkedin.com/jobs/view/4304182522,,Software Engineer University Grad,Pinterest,"Seattle, WA",2025-09-22,,,,,,,False,,,,,,,https://www.linkedin.com/company/pinterest,,,,,,,,,,,,
-li-4201888976,linkedin,https://www.linkedin.com/jobs/view/4201888976,,"Software Engineer, Backend",OpenAI,"Seattle, WA",2025-09-21,,,,,,,False,,,,,,,https://www.linkedin.com/company/openai,,,,,,,,,,,,
-li-4303235350,linkedin,https://www.linkedin.com/jobs/view/4303235350,,Software Engineer,Microsoft,"Redmond, WA",2025-09-20,,,,,,,False,,,,,,,https://www.linkedin.com/company/microsoft,,,,,,,,,,,,
-li-4302834414,linkedin,https://www.linkedin.com/jobs/view/4302834414,,Software Engineer,Microsoft,"Redmond, WA",2025-09-19,,,,,,,False,,,,,,,https://www.linkedin.com/company/microsoft,,,,,,,,,,,,
-li-4302474827,linkedin,https://www.linkedin.com/jobs/view/4302474827,,"Software Engineer, Front End, Geo",Google,"Seattle, WA",2025-09-19,,,,,,,False,,,,,,,https://www.linkedin.com/company/google,,,,,,,,,,,,
-li-4299547478,linkedin,https://www.linkedin.com/jobs/view/4299547478,,"Software Engineer, Intern/Co-op",Meta,"Bellevue, WA",2025-09-16,,,,,,,False,,,,,,,https://www.linkedin.com/company/meta,,,,,,,,,,,,
-li-4299541509,linkedin,https://www.linkedin.com/jobs/view/4299541509,,"Software Engineer, Intern/Co-op",Meta,"Seattle, WA",2025-09-16,,,,,,,False,,,,,,,https://www.linkedin.com/company/meta,,,,,,,,,,,,
-li-4187599010,linkedin,https://www.linkedin.com/jobs/view/4187599010,,"Software Engineer 5, Data Clean Room",Netflix,"California, United States",2025-09-09,,,,,,,False,,,,,,,https://www.linkedin.com/company/netflix,,,,,,,,,,,,
-li-4294691514,linkedin,https://www.linkedin.com/jobs/view/4294691514,,"Software Engineer, New Grad",Stripe,"Seattle, WA",,,,,,,,False,,,,,,,https://www.linkedin.com/company/stripe,,,,,,,,,,,,
+Work Location: In person",,https://ph.indeed.com/cmp/Beyond-Horizon-Group,,,,,,,,,,,,
+li-4303940947,linkedin,https://www.linkedin.com/jobs/view/4303940947,,Web Developer,Aclan Group of Companies,"Cavite, Calabarzon, Philippines",2025-09-22,,,,,,,False,,,,,,,https://ph.linkedin.com/company/aclangroup,,,,,,,,,,,,
+li-4303954751,linkedin,https://www.linkedin.com/jobs/view/4303954751,,Web Developer,Aclan Group of Companies,"Manila, National Capital Region, Philippines",2025-09-22,,,,,,,False,,,,,,,https://ph.linkedin.com/company/aclangroup,,,,,,,,,,,,
+li-4300561292,linkedin,https://www.linkedin.com/jobs/view/4300561292,,Junior Software Developer (Web & Mobile Application),Trends Group Inc.,"Manila, National Capital Region, Philippines",2025-09-14,,,,,,,False,,,,,,,https://ph.linkedin.com/company/trendsgroupinc,,,,,,,,,,,,
+li-4298823655,linkedin,https://www.linkedin.com/jobs/view/4298823655,,Part-Time Web Developer (Hybrid),Lennor Group,"Pasig, National Capital Region, Philippines",2025-09-11,,,,,,,False,,,,,,,https://ph.linkedin.com/company/lennorgroup,,,,,,,,,,,,
+li-4298292332,linkedin,https://www.linkedin.com/jobs/view/4298292332,,Frontend Developer,Webcast Technologies Inc.,"Quezon City, National Capital Region, Philippines",2025-09-09,,,,,,,False,,,,,,,https://ph.linkedin.com/company/webcast-technologies,,,,,,,,,,,,
+li-4267528604,linkedin,https://www.linkedin.com/jobs/view/4267528604,,Front End Developer I Web & Application Integration,Media Meter Inc.,"Quezon City, National Capital Region, Philippines",2025-07-16,,,,,,,False,,,,,,,https://ph.linkedin.com/company/media-meter-inc-,,,,,,,,,,,,
+li-4169020706,linkedin,https://www.linkedin.com/jobs/view/4169020706,,Junior Front End Web Developer,M2.0 Communications Inc.,"Quezon City, National Capital Region, Philippines",2025-02-27,,,,,,,False,,,,,,,https://ph.linkedin.com/company/m20communications-inc,,,,,,,,,,,,
+li-4109060680,linkedin,https://www.linkedin.com/jobs/view/4109060680,,Front End Developer,Media Meter Inc.,"Quezon City, National Capital Region, Philippines",2024-12-23,,,,,,,False,,,,,,,https://ph.linkedin.com/company/media-meter-inc-,,,,,,,,,,,,
+li-4095500416,linkedin,https://www.linkedin.com/jobs/view/4095500416,,Frontend Developer,Make Technology Inc.,"Makati, National Capital Region, Philippines",2024-12-12,,,,,,,False,,,,,,,https://ph.linkedin.com/company/make-technology-inc.,,,,,,,,,,,,
+li-4088317248,linkedin,https://www.linkedin.com/jobs/view/4088317248,,Junior Front End Developer,Media Meter Inc.,"Quezon City, National Capital Region, Philippines",2024-11-29,,,,,,,False,,,,,,,https://ph.linkedin.com/company/media-meter-inc-,,,,,,,,,,,,
