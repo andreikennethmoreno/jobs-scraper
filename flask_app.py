@@ -39,27 +39,42 @@ def extract_salary(job: dict):
     max_amt = job.get("compensation_max")
     currency = job.get("compensation_currency")
 
+    currency_map = {
+        "USD": "$",
+        "PHP": "₱",
+        "EUR": "€",
+        "GBP": "£",
+    }
+
+    symbol = currency_map.get(currency, currency or "")
+
     if min_amt and max_amt:
-        return f"{currency} {min_amt:,} - {max_amt:,}"
+        return f"{symbol}{min_amt:,.0f} - {symbol}{max_amt:,.0f}"
     elif min_amt:
-        return f"{currency} {min_amt:,}+"
+        return f"{symbol}{min_amt:,.0f}+"
 
     # --- Fallback: parse salary mention from description ---
     desc = job.get("description", "")
     if not desc:
         return None
 
-    # e.g. "$122,100 - $134,400"
-    match = re.search(r"\$[\d,]+(?:\s*-\s*\$[\d,]+)?", desc)
-    if match:
-        return match.group(0)
+    # Try PHP patterns (e.g. ₱20,000 - ₱40,000 or PHP 25,000/month)
+    peso_match = re.search(r"(?:₱|PHP\s?)\s?[\d,]+(?:\s*-\s*(?:₱|PHP\s?)?[\d,]+)?", desc, re.I)
+    if peso_match:
+        return peso_match.group(0)
 
-    # e.g. "salary range is $80,000"
-    match = re.search(r"(salary|compensation|pay).{0,50}\$[\d,]+", desc, re.I)
-    if match:
-        return match.group(0)
+    # USD fallback (e.g. $122,100 - $134,400)
+    usd_match = re.search(r"\$[\d,]+(?:\s*-\s*\$[\d,]+)?", desc)
+    if usd_match:
+        return usd_match.group(0)
+
+    # Generic "salary/compensation/pay ... $/₱"
+    generic_match = re.search(r"(salary|compensation|pay).{0,50}(?:₱|PHP\s?|\$)[\d,]+", desc, re.I)
+    if generic_match:
+        return generic_match.group(0)
 
     return None
+
 
 @app.route("/", methods=["GET", "POST"])
 def home():
