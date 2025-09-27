@@ -19,7 +19,6 @@ from jobspy.util import (
     convert_to_annual,
     desired_order,
 )
-from jobspy.ziprecruiter import ZipRecruiter
 
 
 # Update the SCRAPER_MAPPING dictionary in the scrape_jobs function
