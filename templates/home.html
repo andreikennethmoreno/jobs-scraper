@@ -3,11 +3,35 @@
 <head>
     <title>JobSpy Web</title>
     <style>
+        body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
         table { border-collapse: collapse; width: 100%; }
-        th, td { border: 1px solid #ddd; padding: 8px; }
+        th, td { border: 1px solid #ddd; padding: 8px; vertical-align: top; }
         th { background-color: #f2f2f2; }
         form { margin-bottom: 20px; }
         input, select, button { margin: 5px; padding: 8px; }
+
+        /* For description formatting */
+        .job-description {
+            white-space: pre-wrap; /* keeps line breaks */
+            max-height: 200px;
+            overflow-y: auto;
+            background: #fafafa;
+            padding: 10px;
+            border-radius: 6px;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        details {
+            margin-top: 5px;
+        }
+        details summary {
+            cursor: pointer;
+            font-weight: bold;
+            color: #0073e6;
+        }
     </style>
 </head>
 <body>
@@ -35,21 +59,32 @@
         <table>
             <thead>
                 <tr>
-                    <th>Site</th>
+                    <th>Source</th>
                     <th>Title</th>
                     <th>Company</th>
                     <th>Location</th>
-                    <th>Job URL</th>
+                    <th>Date Posted</th>
+                    <th>Type</th>
+                    <th>Details</th>
                 </tr>
             </thead>
             <tbody>
                 {% for job in jobs %}
                 <tr>
-                    <td>{{ job['site'] }}</td>
-                    <td>{{ job['title'] }}</td>
-                    <td>{{ job['company'] }}</td>
-                    <td>{{ job['location'] }}</td>
-                    <td><a href="{{ job['job_url'] }}" target="_blank">Link</a></td>
+                    <td>{{ job.site }}</td>
+                    <td><a href="{{ job.job_url }}" target="_blank">{{ job.title }}</a></td>
+                    <td>{{ job.company }}</td>
+                    <td>{{ job.location }}</td>
+                    <td>{{ job.date_posted }}</td>
+                    <td>{{ job.job_type }}</td>
+                    <td>
+                        <details>
+                            <summary>View Description</summary>
+                            <div class="job-description">
+                                {{ job.description|safe }}
+                            </div>
+                        </details>
+                    </td>
                 </tr>
                 {% endfor %}
             </tbody>

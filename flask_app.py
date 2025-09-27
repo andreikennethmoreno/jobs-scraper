@@ -19,11 +19,12 @@ def home():
 
         # run the scraper dynamically
         jobs_df = scrape_jobs(
-            site_name=["indeed", "linkedin"],  # choose which sites
+            site_name=["linkedin"],  # choose which sites
             search_term=search_term,
             location=location,
             results_wanted=results_wanted,
-            country_indeed=country
+            country_indeed=country, 
+            linkedin_fetch_description=True 
         )
 
         # save to CSV (optional)
@@ -34,7 +35,7 @@ def home():
 
     return render_template("home.html", jobs=jobs, countries=countries)
 
-    
+
 
 if __name__ == "__main__":
     app.run(debug=True)
