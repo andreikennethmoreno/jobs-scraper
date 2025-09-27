@@ -1,5 +1,5 @@
 id,site,job_url,job_url_direct,title,company,location,date_posted,job_type,salary_source,interval,min_amount,max_amount,currency,is_remote,job_level,job_function,listing_type,emails,description,company_industry,company_url,company_logo,company_url_direct,company_addresses,company_num_employees,company_revenue,company_description,skills,experience_range,company_rating,company_reviews_count,vacancy_count,work_from_home_type
-li-4294691515,linkedin,https://www.linkedin.com/jobs/view/4294691515,,"Software Engineer, New Grad",Stripe,"San Francisco, CA",2025-09-24,fulltime,,,,,,False,entry level,Engineering and Information Technology,,,"Who we are
+li-4294691515,linkedin,https://www.linkedin.com/jobs/view/4294691515,https://stripe.com/jobs/listing/software-engineer-new-grad/7210112?gh_src=73vnei&urlHash=kaXv,"Software Engineer, New Grad",Stripe,"San Francisco, CA",2025-09-24,fulltime,,,,,,False,entry level,Engineering and Information Technology,,,"Who we are
    
 
   
@@ -77,7 +77,7 @@ li-4294691515,linkedin,https://www.linkedin.com/jobs/view/4294691515,,"Software 
   
 
  Additional benefits for this role may include: equity, company bonus or sales commissions/bonuses; 401(k) plan; medical, dental, and vision benefits; and wellness stipends.","Software Development, Financial Services, and Technology, Information and Internet",https://www.linkedin.com/company/stripe,https://media.licdn.com/dms/image/v2/D560BAQE2ZfJyfn-VCg/company-logo_100_100/B56ZlyKwpUKIAQ-/0/1758557047806/stripe_logo?e=2147483647&v=beta&t=fRMcaMGPJNFUMq_l1f2zzyX4PaK3yg-MRicyUuY3qSI,,,,,,,,,,,
-li-4304605717,linkedin,https://www.linkedin.com/jobs/view/4304605717,,Software Engineer I,Twitch,"San Francisco, CA",2025-09-23,fulltime,description,yearly,99500.0,200000.0,USD,False,not applicable,Engineering and Information Technology,,,"**About Us**
+li-4304605717,linkedin,https://www.linkedin.com/jobs/view/4304605717,https://job-boards.greenhouse.io/twitch/jobs/8180140002?gh_src=0c4ebc182&urlHash=nZbk,Software Engineer I,Twitch,"San Francisco, CA",2025-09-23,fulltime,description,yearly,99500.0,200000.0,USD,False,not applicable,Engineering and Information Technology,,,"**About Us**
  Twitch is the world’s biggest live streaming service, with global communities built around gaming, entertainment, music, sports, cooking, and more. It is where thousands of communities come together for whatever, every day.
    
 
@@ -221,7 +221,7 @@ li-4292439566,linkedin,https://www.linkedin.com/jobs/view/4292439566,,Frontend E
 
 *Twitch is an equal opportunity employer and does not discriminate on the basis of protected veteran status, disability, or other legally protected status.*
 *Twitch values your privacy. Please consult our Candidate Privacy Notice, for information about how we collect, use, and disclose personal information of our candidates.*","Technology, Information and Internet",https://www.linkedin.com/company/twitch-tv,https://media.licdn.com/dms/image/v2/D560BAQHbYCvrNGC17g/company-logo_100_100/company-logo_100_100/0/1695062101897/twitch_tv_logo?e=2147483647&v=beta&t=uqZASN7sr7mZBei_6o-tFrTEho8x-ttcnGLk4zejrSg,,,,,,,,,,,
-li-4265604833,linkedin,https://www.linkedin.com/jobs/view/4265604833,https://nuro.ai/careersitem?gh_jid=7066706&gh_src=bcd22a501us&urlHash=lPaG,"Software Engineer, Routing - New Grad",Nuro,"Mountain View, CA",2025-09-14,fulltime,,,,,,False,entry level,Engineering and Information Technology,,,"**Who We Are**
+li-4265604833,linkedin,https://www.linkedin.com/jobs/view/4265604833,,"Software Engineer, Routing - New Grad",Nuro,"Mountain View, CA",2025-09-14,fulltime,,,,,,False,entry level,Engineering and Information Technology,,,"**Who We Are**
  Nuro is a self\-driving technology company on a mission to make autonomy accessible to all. Founded in 2016, Nuro is building the world’s most scalable driver, combining cutting\-edge AI with automotive\-grade hardware. Nuro licenses its core technology, the Nuro Driver™, to support a wide range of applications, from robotaxis and commercial fleets to personally owned vehicles. With technology proven over years of self\-driving deployments, Nuro gives the automakers and mobility platforms a clear path to AVs at commercial scale—empowering a safer, richer, and more connected future.
    
 
@@ -312,7 +312,7 @@ li-4191146990,linkedin,https://www.linkedin.com/jobs/view/4191146990,,"Software 
   
 
 *At Nuro, we celebrate differences and are committed to a diverse workplace that fosters inclusion and psychological safety for all employees. Nuro is proud to be an equal opportunity employer and expressly prohibits any form of workplace discrimination based on race, color, religion, gender, sexual orientation, gender identity or expression, national origin, age, genetic information, disability, veteran status, or any other legally protected characteristics.*",Software Development,https://www.linkedin.com/company/nuro-inc.,https://media.licdn.com/dms/image/v2/C560BAQHahNycmNp6Gg/company-logo_100_100/company-logo_100_100/0/1630638403898/nuro_inc_logo?e=2147483647&v=beta&t=3FVrqvduIGtnaH7-fVEnLalZbqxzzCLA1ALuQ76cgmc,,,,,,,,,,,
-li-4287980146,linkedin,https://www.linkedin.com/jobs/view/4287980146,https://jobs.ashbyhq.com/notion/add58865-8b9f-4cf7-9720-2908ba5f4d80?source=LinkedIn&urlHash=c28D,"Software Engineer, Infrastructure, Early Career",Notion,"San Francisco, CA",2025-09-09,fulltime,,,,,,False,entry level,Engineering and Information Technology,,,"**About Us**
+li-4287980146,linkedin,https://www.linkedin.com/jobs/view/4287980146,,"Software Engineer, Infrastructure, Early Career",Notion,"San Francisco, CA",2025-09-09,fulltime,,,,,,False,entry level,Engineering and Information Technology,,,"**About Us**
  Notion helps you build beautiful tools for your life’s work. In today's world of endless apps and tabs, Notion provides one place for teams to get everything done, seamlessly connecting docs, notes, projects, calendar, and email—with AI built in to find answers and automate work. Millions of users, from individuals to large organizations like Toyota, Figma, and OpenAI, love Notion for its flexibility and choose it because it helps them save time and money.
    
 
@@ -447,7 +447,7 @@ li-4298196787,linkedin,https://www.linkedin.com/jobs/view/4298196787,,Software E
   
 
  We are Cisco, and our power starts with you.","Computer Hardware Manufacturing, Software Development, and Computer Networking Products",https://www.linkedin.com/company/cisco,https://media.licdn.com/dms/image/v2/D560BAQGo0LANKsqgCg/company-logo_100_100/B56ZaSzDOOGoAQ-/0/1746219578583/cisco_logo?e=2147483647&v=beta&t=VmfFHLCvKOWxN3CHvyJevf1xFV-2x-CaTvalFnsWpN8,,,,,,,,,,,
-li-4296646591,linkedin,https://www.linkedin.com/jobs/view/4296646591,https://jobs.ashbyhq.com/notion/f7399542-9122-481a-bf64-43bf8093748b?source=LinkedIn&urlHash=b0Cn,"Software Engineer, Fullstack, Early Career",Notion,"San Francisco, CA",2025-09-06,fulltime,,,,,,False,entry level,Engineering and Information Technology,,,"**About Us**
+li-4296646591,linkedin,https://www.linkedin.com/jobs/view/4296646591,,"Software Engineer, Fullstack, Early Career",Notion,"San Francisco, CA",2025-09-06,fulltime,,,,,,False,entry level,Engineering and Information Technology,,,"**About Us**
  Notion helps you build beautiful tools for your life’s work. In today's world of endless apps and tabs, Notion provides one place for teams to get everything done, seamlessly connecting docs, notes, projects, calendar, and email—with AI built in to find answers and automate work. Millions of users, from individuals to large organizations like Toyota, Figma, and OpenAI, love Notion for its flexibility and choose it because it helps them save time and money.
    
 
