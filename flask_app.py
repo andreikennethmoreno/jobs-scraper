@@ -2,63 +2,108 @@ from flask import Flask, render_template, request, jsonify
 from jobspy import scrape_jobs
 from jobspy.model import Country
 from flasgger import Swagger
+import re
 
 app = Flask(__name__)
 
 # Setup Swagger UI
 swagger = Swagger(app)
 
+# --- Tech dictionary ---
+TECH_LINKS = {
+    "C#": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+    "Java": "https://docs.oracle.com/javase/tutorial/",
+    "JavaScript": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+    "React": "https://react.dev/",
+    "Python": "https://docs.python.org/3/",
+    "Go": "https://go.dev/doc/",
+    "Ruby": "https://www.ruby-lang.org/en/documentation/",
+    "Scala": "https://docs.scala-lang.org/"
+}
+
+def extract_tech(desc: str):
+    """Extract keywords and map them to links."""
+    if not desc:
+        return []
+    found = []
+    for tech, url in TECH_LINKS.items():
+        pattern = r"\b" + re.escape(tech) + r"\b"
+        if re.search(pattern, desc, flags=re.IGNORECASE):
+            found.append({"tech": tech, "url": url})
+    return found
+
+def extract_salary(job: dict):
+    """Pull salary info from structured fields or description text."""
+    # --- First try JobSpy structured fields ---
+    min_amt = job.get("compensation_min")
+    max_amt = job.get("compensation_max")
+    currency = job.get("compensation_currency")
+
+    if min_amt and max_amt:
+        return f"{currency} {min_amt:,} - {max_amt:,}"
+    elif min_amt:
+        return f"{currency} {min_amt:,}+"
+
+    # --- Fallback: parse salary mention from description ---
+    desc = job.get("description", "")
+    if not desc:
+        return None
+
+    # e.g. "$122,100 - $134,400"
+    match = re.search(r"\$[\d,]+(?:\s*-\s*\$[\d,]+)?", desc)
+    if match:
+        return match.group(0)
+
+    # e.g. "salary range is $80,000"
+    match = re.search(r"(salary|compensation|pay).{0,50}\$[\d,]+", desc, re.I)
+    if match:
+        return match.group(0)
+
+    return None
+
 @app.route("/", methods=["GET", "POST"])
 def home():
     jobs = None
-    countries = [c.name for c in Country]  # pass country names to template 
+    countries = [c.name for c in Country]
 
     if request.method == "POST":
-        # get values from the form
         search_term = request.form.get("search_term")
         location = request.form.get("location")
         results_wanted = int(request.form.get("results_wanted", 10))
         country = request.form.get("country", "USA")
 
         jobs_df = scrape_jobs(
-            site_name=["linkedin"],
+            site_name=["linkedin", "indeed"],
             search_term=search_term,
             location=location,
             results_wanted=results_wanted,
             country_indeed=country,
-            linkedin_fetch_description=True 
+            linkedin_fetch_description=True
         )
 
-        jobs_df.to_csv("jobs.csv", index=False)
         jobs = jobs_df.to_dict(orient="records")
+
+        # annotate each job with tech stack + salary
+        for job in jobs:
+            job["tech_mentions"] = extract_tech(job.get("description", ""))
+            job["salary_display"] = extract_salary(job)
 
     return render_template("home.html", jobs=jobs, countries=countries)
 
-
 @app.route("/api/countries", methods=["GET"])
 def get_countries():
-    """
-    Get Supported Countries
+    """Get Supported Countries
     ---
     responses:
       200:
         description: List of available countries
-        schema:
-          type: object
-          properties:
-            countries:
-              type: array
-              items:
-                type: string
     """
     countries = [c.name for c in Country]
     return jsonify({"countries": countries})
 
-
 @app.route("/api/jobs", methods=["POST"])
 def get_jobs():
-    """
-    Scrape Jobs
+    """Scrape Jobs
     ---
     parameters:
       - name: body
@@ -72,48 +117,17 @@ def get_jobs():
           properties:
             search_term:
               type: string
-              example: "Software Engineer"
             location:
               type: string
-              example: "New York"
             results_wanted:
               type: integer
-              example: 5
             country:
               type: string
-              example: "USA"
     responses:
       200:
         description: Job results
-        schema:
-          type: object
-          properties:
-            count:
-              type: integer
-            jobs:
-              type: array
-              items:
-                type: object
-                properties:
-                  site:
-                    type: string
-                  title:
-                    type: string
-                  company:
-                    type: string
-                  location:
-                    type: string
-                  date_posted:
-                    type: string
-                  job_type:
-                    type: string
-                  description:
-                    type: string
-                  job_url:
-                    type: string
     """
     data = request.get_json()
-
     search_term = data.get("search_term")
     location = data.get("location")
     results_wanted = int(data.get("results_wanted", 10))
@@ -122,21 +136,23 @@ def get_jobs():
     if not search_term or not location:
         return jsonify({"error": "search_term and location are required"}), 400
 
-    try:
-        jobs_df = scrape_jobs(
-            site_name=["linkedin"],
-            search_term=search_term,
-            location=location,
-            results_wanted=results_wanted,
-            country_indeed=country,
-            linkedin_fetch_description=True
-        )
-    except Exception as e:
-        return jsonify({"error": str(e)}), 500
+    jobs_df = scrape_jobs(
+        site_name=["linkedin"],
+        search_term=search_term,
+        location=location,
+        results_wanted=results_wanted,
+        country_indeed=country,
+        linkedin_fetch_description=True
+    )
 
     jobs = jobs_df.to_dict(orient="records")
-    return jsonify({"jobs": jobs, "count": len(jobs)})
 
+    # add tech + salary info
+    for job in jobs:
+        job["tech_mentions"] = extract_tech(job.get("description", ""))
+        job["salary_display"] = extract_salary(job)
+
+    return jsonify({"jobs": jobs, "count": len(jobs)})
 
 if __name__ == "__main__":
     app.run(debug=True)

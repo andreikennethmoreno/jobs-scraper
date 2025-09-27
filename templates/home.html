@@ -35,6 +35,11 @@
     </style>
 </head>
 <body>
+    <div style="background:#f2f2f2; padding:8px; border-radius:6px; margin-bottom:12px;">
+    📘 Swagger API docs available here 👉 
+    <a href="/apidocs" >/apidocs</a>
+</div>
+
     <h1>JobSpy Scraper</h1>
 
     <!-- Form to take user input -->
@@ -58,36 +63,45 @@
         <h2>Results</h2>
         <table>
             <thead>
-                <tr>
-                    <th>Source</th>
-                    <th>Title</th>
-                    <th>Company</th>
-                    <th>Location</th>
-                    <th>Date Posted</th>
-                    <th>Type</th>
-                    <th>Details</th>
-                </tr>
-            </thead>
-            <tbody>
-                {% for job in jobs %}
-                <tr>
-                    <td>{{ job.site }}</td>
-                    <td><a href="{{ job.job_url }}" target="_blank">{{ job.title }}</a></td>
-                    <td>{{ job.company }}</td>
-                    <td>{{ job.location }}</td>
-                    <td>{{ job.date_posted }}</td>
-                    <td>{{ job.job_type }}</td>
-                    <td>
-                        <details>
-                            <summary>View Description</summary>
-                            <div class="job-description">
-                                {{ job.description|safe }}
-                            </div>
-                        </details>
-                    </td>
-                </tr>
-                {% endfor %}
-            </tbody>
+    <tr>
+        <th>Source</th>
+        <th>Title</th>
+        <th>Company</th>
+        <th>Location</th>
+        <th>Date Posted</th>
+        <th>Type</th>
+        <th>Salary</th>
+        <th>Technologies</th>
+        <th>Details</th>
+    </tr>
+</thead>
+<tbody>
+    {% for job in jobs %}
+    <tr>
+        <td>{{ job.site }}</td>
+        <td><a href="{{ job.job_url }}" target="_blank">{{ job.title }}</a></td>
+        <td>{{ job.company }}</td>
+        <td>{{ job.location }}</td>
+        <td>{{ job.date_posted }}</td>
+        <td>{{ job.job_type }}</td>
+        <td>{{ job.salary_display or "N/A" }}</td>
+        <td>
+            {% for tech in job.tech_mentions %}
+                <a href="{{ tech.url }}" target="_blank">{{ tech.tech }}</a>{% if not loop.last %}, {% endif %}
+            {% endfor %}
+        </td>
+        <td>
+            <details>
+                <summary>View Description</summary>
+                <div class="job-description">
+                    {{ job.description|safe }}
+                </div>
+            </details>
+        </td>
+    </tr>
+    {% endfor %}
+</tbody>
+
         </table>
     {% endif %}
 </body>
