@@ -5,13 +5,9 @@ from typing import Tuple
 
 import pandas as pd
 
-from jobspy.bayt import BaytScraper
-from jobspy.bdjobs import BDJobs
-from jobspy.glassdoor import Glassdoor
-from jobspy.google import Google
+
 from jobspy.indeed import Indeed
 from jobspy.linkedin import LinkedIn
-from jobspy.naukri import Naukri
 from jobspy.model import JobType, Location, JobResponse, Country
 from jobspy.model import SalarySource, ScraperInput, Site
 from jobspy.util import (
@@ -58,12 +54,7 @@ def scrape_jobs(
     SCRAPER_MAPPING = {
         Site.LINKEDIN: LinkedIn,
         Site.INDEED: Indeed,
-        Site.ZIP_RECRUITER: ZipRecruiter,
-        Site.GLASSDOOR: Glassdoor,
-        Site.GOOGLE: Google,
-        Site.BAYT: BaytScraper,
-        Site.NAUKRI: Naukri,
-        Site.BDJOBS: BDJobs,  # Add BDJobs to the scraper mapping
+        
     }
     set_logger_level(verbose)
     job_type = get_enum_from_value(job_type) if job_type else None
