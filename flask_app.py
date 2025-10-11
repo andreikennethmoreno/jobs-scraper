@@ -2,22 +2,45 @@ from flask import Flask, request, jsonify, redirect
 from jobspy import scrape_jobs
 from jobspy.model import Country
 from flasgger import Swagger
+from duckduckgo_search import DDGS
+import os
+from dotenv import load_dotenv
+from googleapiclient.discovery import build
 import re
 
 app = Flask(__name__)
 swagger = Swagger(app)
 
-# --- Tech dictionary ---
-TECH_LINKS = {
-    "C#": "https://learn.microsoft.com/en-us/dotnet/csharp/",
-    "Java": "https://docs.oracle.com/javase/tutorial/",
-    "JavaScript": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    "React": "https://react.dev/",
-    "Python": "https://docs.python.org/3/",
-    "Go": "https://go.dev/doc/",
-    "Ruby": "https://www.ruby-lang.org/en/documentation/",
-    "Scala": "https://docs.scala-lang.org/"
-}
+# Load .env variables
+load_dotenv()
+
+API_KEY = os.getenv("GOOGLE_API_KEY")
+CSE_ID = os.getenv("GOOGLE_CSE_ID")
+
+# Start with just a list of technologies
+TECH_LIST = [
+    "HTML", "CSS", "JavaScript", "TypeScript", "PHP", "Python", "Ruby", "SQL", "Node.js",
+    "React", "Vue.js", "Angular", "Svelte", "Bootstrap", "Tailwind CSS",
+    "Express.js", "Django", "Flask", "Laravel", "Ruby on Rails", "ASP.NET Core",
+    "MySQL", "PostgreSQL", "SQLite", "MongoDB", "Firebase",
+    "Git", "npm", "Yarn", "Webpack", "Vite", "REST API", "GraphQL"
+]
+
+def get_doc_link_google(tech):
+    """Fetch the first Google search result for <tech> documentation"""
+    service = build("customsearch", "v1", developerKey=API_KEY)
+    res = service.cse().list(q=f"{tech} documentation", cx=CSE_ID).execute()
+    if "items" in res:
+        return res["items"][0]["link"]
+    return None
+
+# Build the dictionary dynamically
+TECH_LINKS = {}
+for tech in TECH_LIST:
+    link = get_doc_link_google(tech)
+    TECH_LINKS[tech] = link
+    print(f"{tech} -> {link}")
+
 
 def extract_tech(desc: str):
     """Extract keywords and map them to links."""
