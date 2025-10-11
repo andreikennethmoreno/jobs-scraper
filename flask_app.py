@@ -6,6 +6,8 @@ from duckduckgo_search import DDGS
 import os
 from dotenv import load_dotenv
 from googleapiclient.discovery import build
+import google.generativeai as genai
+import json
 import re
 
 app = Flask(__name__)
@@ -14,32 +16,59 @@ swagger = Swagger(app)
 # Load .env variables
 load_dotenv()
 
-API_KEY = os.getenv("GOOGLE_API_KEY")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 CSE_ID = os.getenv("GOOGLE_CSE_ID")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
-# Start with just a list of technologies
-TECH_LIST = [
-    "HTML", "CSS", "JavaScript", "TypeScript", "PHP", "Python", "Ruby", "SQL", "Node.js",
-    "React", "Vue.js", "Angular", "Svelte", "Bootstrap", "Tailwind CSS",
-    "Express.js", "Django", "Flask", "Laravel", "Ruby on Rails", "ASP.NET Core",
-    "MySQL", "PostgreSQL", "SQLite", "MongoDB", "Firebase",
-    "Git", "npm", "Yarn", "Webpack", "Vite", "REST API", "GraphQL"
-]
+
+# Initialize Gemini client
+genai.configure(api_key=GEMINI_API_KEY)
+gemini_client = genai.GenerativeModel("gemini-2.5-flash")
+
+def extract_tech_from_gemini(desc: str):
+    """Use Gemini to extract technologies mentioned in a job description."""
+    if not desc:
+        return []
+
+    prompt = (
+        "Extract all programming languages, frameworks, databases, tools, and cloud services "
+        "mentioned in the following job description. "
+        "Output ONLY a valid JSON array of technology names, e.g. [\"Python\", \"AWS\", \"React\"]. "
+        "No explanations, no code blocks, just the JSON array.\n\n"
+        f"Job Description:\n{desc}"
+    )
+
+    try:
+        response = gemini_client.generate_content(prompt)
+        text = response.text.strip()
+
+        # Clean any code fences or garbage
+        text = re.sub(r"^```(json)?|```$", "", text).strip()
+
+        try:
+            tech_list = json.loads(text)
+        except json.JSONDecodeError:
+            # fallback if not JSON, split by comma/newline
+            tech_list = [t.strip().strip('"') for t in re.split(r"[,\\n]+", text) if t.strip()]
+
+        # Clean duplicates
+        tech_list = list(dict.fromkeys(tech_list))
+        return tech_list
+
+    except Exception as e:
+        print("Gemini error:", e)
+        return []
 
 def get_doc_link_google(tech):
-    """Fetch the first Google search result for <tech> documentation"""
-    service = build("customsearch", "v1", developerKey=API_KEY)
-    res = service.cse().list(q=f"{tech} documentation", cx=CSE_ID).execute()
-    if "items" in res:
-        return res["items"][0]["link"]
+    """Fetch the first Google search result for <tech> documentation."""
+    try:
+        service = build("customsearch", "v1", developerKey=GOOGLE_API_KEY)
+        res = service.cse().list(q=f"{tech} documentation", cx=CSE_ID, num=1).execute()
+        if "items" in res:
+            return res["items"][0]["link"]
+    except Exception as e:
+        print(f"Google search failed for {tech}: {e}")
     return None
-
-# Build the dictionary dynamically
-TECH_LINKS = {}
-for tech in TECH_LIST:
-    link = get_doc_link_google(tech)
-    TECH_LINKS[tech] = link
-    print(f"{tech} -> {link}")
 
 
 def extract_tech(desc: str):
@@ -143,7 +172,10 @@ def get_jobs():
     jobs = jobs_df.to_dict(orient="records")
 
     for job in jobs:
-        job["tech_mentions"] = extract_tech(job.get("description", ""))
+        desc = job.get("description", "")
+        techs = extract_tech_from_gemini(desc)
+        tech_mentions = [{"tech": t, "url": get_doc_link_google(t)} for t in techs]
+        job["tech_mentions"] = tech_mentions
         job["salary_display"] = extract_salary(job)
 
     return jsonify({"jobs": jobs, "count": len(jobs)})
