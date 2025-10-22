@@ -161,7 +161,7 @@ def get_jobs():
         return jsonify({"error": "search_term and location are required"}), 400
 
     jobs_df = scrape_jobs(
-        site_name=["linkedin"],
+        site_name=["linkedin", "indeed"],
         search_term=search_term,
         location=location,
         results_wanted=results_wanted,
