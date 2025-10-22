@@ -1,9 +1,8 @@
 {
-  "builds": [
-    {
-      "src": "flask_app.py",
-      "use": "@vercel/python"
+  "functions": {
+    "api/flask_app.py": {
+      "runtime": "python3.11"
     }
-  ],
-  "routes": [{ "src": "/(.*)", "dest": "flask_app.py" }]
+  },
+  "routes": [{ "src": "/(.*)", "dest": "/api/flask_app.py" }]
 }
