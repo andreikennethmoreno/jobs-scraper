@@ -1,66 +1,10 @@
-from flask import Flask, request, jsonify, redirect  
+from flask import Flask, request, jsonify, redirect
 from jobspy import scrape_jobs
 from jobspy.model import Country
 from flasgger import Swagger
-import re
 
 app = Flask(__name__)
 swagger = Swagger(app)
-
-# --- Tech dictionary ---
-TECH_LINKS = {
-    "C#": "https://learn.microsoft.com/en-us/dotnet/csharp/",
-    "Java": "https://docs.oracle.com/javase/tutorial/",
-    "JavaScript": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-    "React": "https://react.dev/",
-    "Python": "https://docs.python.org/3/",
-    "Go": "https://go.dev/doc/",
-    "Ruby": "https://www.ruby-lang.org/en/documentation/",
-    "Scala": "https://docs.scala-lang.org/"
-}
-
-def extract_tech(desc: str):
-    """Extract keywords and map them to links."""
-    if not desc:
-        return []
-    found = []
-    for tech, url in TECH_LINKS.items():
-        pattern = r"\b" + re.escape(tech) + r"\b"
-        if re.search(pattern, desc, flags=re.IGNORECASE):
-            found.append({"tech": tech, "url": url})
-    return found
-
-def extract_salary(job: dict):
-    """Pull salary info from structured fields or description text."""
-    min_amt = job.get("compensation_min")
-    max_amt = job.get("compensation_max")
-    currency = job.get("compensation_currency")
-
-    currency_map = {"USD": "$", "PHP": "₱", "EUR": "€", "GBP": "£"}
-    symbol = currency_map.get(currency, currency or "")
-
-    if min_amt and max_amt:
-        return f"{symbol}{min_amt:,.0f} - {symbol}{max_amt:,.0f}"
-    elif min_amt:
-        return f"{symbol}{min_amt:,.0f}+"
-
-    desc = job.get("description", "")
-    if not desc:
-        return None
-
-    peso_match = re.search(r"(?:₱|PHP\s?)\s?[\d,]+(?:\s*-\s*(?:₱|PHP\s?)?[\d,]+)?", desc, re.I)
-    if peso_match:
-        return peso_match.group(0)
-
-    usd_match = re.search(r"\$[\d,]+(?:\s*-\s*\$[\d,]+)?", desc)
-    if usd_match:
-        return usd_match.group(0)
-
-    generic_match = re.search(r"(salary|compensation|pay).{0,50}(?:₱|PHP\s?|\$)[\d,]+", desc, re.I)
-    if generic_match:
-        return generic_match.group(0)
-
-    return None
 
 @app.route("/api/countries", methods=["GET"])
 def get_countries():
@@ -89,12 +33,21 @@ def get_jobs():
           properties:
             search_term:
               type: string
+              example: React Developer
             location:
               type: string
+              example: Manila
             results_wanted:
               type: integer
+              example: 10
             country:
               type: string
+              example: PHILIPPINES
+            site_name:
+              type: array
+              items:
+                type: string
+              example: ["linkedin", "indeed"]
     responses:
       200:
         description: Job results
@@ -104,26 +57,26 @@ def get_jobs():
     location = data.get("location")
     results_wanted = int(data.get("results_wanted", 10))
     country = data.get("country", "USA")
+    site_name = data.get("site_name", ["linkedin", "indeed"])
 
     if not search_term or not location:
         return jsonify({"error": "search_term and location are required"}), 400
 
-    jobs_df = scrape_jobs(
-        site_name=["linkedin"],
-        search_term=search_term,
-        location=location,
-        results_wanted=results_wanted,
-        country_indeed=country,
-        linkedin_fetch_description=True
-    )
+    try:
+        jobs_df = scrape_jobs(
+            site_name=site_name,
+            search_term=search_term,
+            location=location,
+            results_wanted=results_wanted,
+            country_indeed=country,
+            linkedin_fetch_description=True,
+        )
 
-    jobs = jobs_df.to_dict(orient="records")
+        jobs = jobs_df.to_dict(orient="records")
 
-    for job in jobs:
-        job["tech_mentions"] = extract_tech(job.get("description", ""))
-        job["salary_display"] = extract_salary(job)
-
-    return jsonify({"jobs": jobs, "count": len(jobs)})
+        return jsonify({"jobs": jobs, "count": len(jobs)})
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 @app.route("/")
 def index():
