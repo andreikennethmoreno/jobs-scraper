@@ -1,11 +1,1 @@
-beautifulsoup4==4.13.5
-flasgger==0.9.7.1
 Flask==3.1.2
-markdownify==1.2.0
-numpy==2.3.3
-pandas==2.3.2
-pydantic==2.11.9
-regex==2024.11.6
-Requests==2.32.5
-tls_client==1.0.1
-urllib3==2.5.0
