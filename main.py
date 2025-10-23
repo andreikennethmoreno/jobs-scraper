@@ -6,7 +6,17 @@ import json
 import pandas as pd
 
 app = Flask(__name__)
-swagger = Swagger(app)
+swagger_template = {
+    "swagger": "2.0",
+    "info": {
+        "title": "Job Scraper API 👔",
+        "description": "An API for scraping jobs from Linked and Indeed sites using JobSpy.",
+        "version": "1.0.0",
+    },
+    "basePath": "/api"
+}
+
+swagger = Swagger(app, template=swagger_template)
 
 
 @app.route("/api/countries", methods=["GET"])
