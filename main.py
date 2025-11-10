@@ -145,6 +145,100 @@ def get_jobs():
         return jsonify({"error": str(e)}), 500
 
 
+@app.route("/api/generate-course-roadmap", methods=["POST"])
+def generate_course_roadmap():
+    """
+    Generate a custom course roadmap based on a job description.
+    ---
+    parameters:
+      - name: body
+        in: body
+        required: true
+        schema:
+          type: object
+          example:
+            job_id: "li-1234567890"
+            title: "Full Stack Developer"
+            description: "We are looking for a Full Stack Developer proficient in Python, Django, React, and PostgreSQL. Responsibilities include building APIs, developing front-end applications, and integrating with cloud services. Experience with Docker, AWS, and Git is required. Salary: $60,000 - $80,000 per year."
+            location: "Manila, Philippines"
+            country: "PHILIPPINES"
+    responses:
+      200:
+        description: Suggested course roadmap
+        schema:
+          type: object
+          example:
+            title: "Full Stack Developer Roadmap"
+            description: "Custom roadmap to acquire skills for Full Stack Development"
+            course_roadmap:
+              - course_title: "Python Fundamentals"
+                course_objective: "Learn core Python programming skills"
+                course_description: "Covers Python syntax, data structures, and best practices."
+              - course_title: "Django Web Development"
+                course_objective: "Build web apps with Django"
+                course_description: "Covers models, views, templates, REST API, and deployment."
+              - course_title: "Frontend with React"
+                course_objective: "Learn React and front-end development"
+                course_description: "Covers components, state, hooks, and connecting to APIs."
+    """
+    import json
+    import re
+
+    data = request.get_json(force=True)
+    job_title = data.get("title", "Unknown")
+    description = data.get("description", "")
+
+    client = get_next_client()
+
+    prompt = f"""
+You are an expert career coach. Given this job description:
+
+{description}
+
+Generate a course roadmap for someone who wants to qualify for this job. 
+Focus on the actual technologies, programming languages, frameworks, and tools mentioned. 
+Each course should cover a fundamental or beginner-friendly approach to that technology.
+
+Requirements:
+- Include at least 3 courses, but add more if there are extra relevant technologies/tools.
+- Each course must have:
+  - course_title
+  - course_objective
+  - course_description
+- Each course should focus on practical, hands-on fundamentals.
+
+Return strictly JSON ONLY, no markdown, no explanations.
+"""
+
+    response = client.models.generate_content(
+        model="gemini-2.5-flash",
+        contents=prompt
+    )
+
+    raw_text = getattr(response, "text", "{}").strip()
+    print("Raw AI response:", repr(raw_text))
+
+    # CLEAN AI OUTPUT: remove markdown code fences if present
+    cleaned_text = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw_text, flags=re.IGNORECASE).strip()
+
+    try:
+        roadmap_json = json.loads(cleaned_text)
+    except json.JSONDecodeError:
+        # fallback: try safe eval in case AI used single quotes
+        try:
+            import ast
+            roadmap_json = ast.literal_eval(cleaned_text)
+        except Exception:
+            roadmap_json = {
+                "title": f"{job_title} Roadmap",
+                "description": "Custom roadmap could not be generated",
+                "course_roadmap": []
+            }
+
+    return jsonify(roadmap_json)
+
+
+
 
 @app.route("/api/extract-job-info", methods=["POST"])
 def extract_job_info():
