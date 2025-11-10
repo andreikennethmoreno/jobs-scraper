@@ -13,8 +13,37 @@ from requests.adapters import HTTPAdapter, Retry
 
 from jobspy.model import CompensationInterval, JobType, Site
 
-urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
+import os
+from google import genai
+from itertools import cycle
+from dotenv import load_dotenv
+from bs4 import BeautifulSoup
 
+
+load_dotenv()
+
+# Load all API keys
+GEMINI_KEYS = [
+    os.environ.get("GEMINI_API_KEY_1"),
+    os.environ.get("GEMINI_API_KEY_2"),
+    os.environ.get("GEMINI_API_KEY_3"),
+]
+GEMINI_KEYS = [k for k in GEMINI_KEYS if k]  # filter out empty ones
+
+if not GEMINI_KEYS:
+    raise ValueError("No Gemini API keys found in environment variables!")
+
+# Infinite round-robin key cycle
+_key_cycle = cycle(GEMINI_KEYS)
+
+def get_next_client():
+    """Return a Gemini client using the next API key."""
+    key = next(_key_cycle)
+    return genai.Client(api_key=key)
+
+
+
+urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 def create_logger(name: str):
     logger = logging.getLogger(f"JobSpy:{name}")

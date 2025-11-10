@@ -2,8 +2,10 @@ from flask import Flask, request, jsonify, redirect
 from jobspy import scrape_jobs
 from jobspy.model import Country
 from flasgger import Swagger
+from jobspy.util import get_next_client
 import json
 import pandas as pd
+from datetime import datetime
 
 app = Flask(__name__)
 swagger_template = {
@@ -17,6 +19,54 @@ swagger_template = {
 }
 
 swagger = Swagger(app, template=swagger_template)
+
+
+@app.route("/api/generate", methods=["POST"])
+def generate_text():
+    """
+    Generate text using Google Gemini API
+    ---
+    consumes:
+      - application/json
+    parameters:
+      - in: body
+        name: body
+        required: true
+        schema:
+          type: object
+          properties:
+            prompt:
+              type: string
+              example: "Explain how AI works in a few words"
+    responses:
+      200:
+        description: Generated text response
+        examples:
+          application/json:
+            prompt: "Explain how AI works in a few words"
+            date_generated: "2025-11-04T12:00:00.000000"
+            response: "AI mimics human learning using data and algorithms."
+    """
+    data = request.get_json(silent=True)
+    if not data or "prompt" not in data:
+        return jsonify({"error": "Missing 'prompt' field in JSON body"}), 400
+
+    prompt = data["prompt"]
+
+    try:
+        client = get_next_client()  # rotate keys each request
+        response = client.models.generate_content(
+            model="gemini-2.5-flash-lite",
+            contents=prompt,
+        )
+
+        return jsonify({
+            "prompt": prompt,
+            "date_generated": datetime.utcnow().isoformat(),
+            "response": getattr(response, "text", "").strip(),
+        })
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 
 @app.route("/api/countries", methods=["GET"])
@@ -58,7 +108,7 @@ def get_jobs():
         data = request.get_json(force=True)
         search_term = data.get("search_term")
         location = data.get("location")
-        results_wanted = int(data.get("results_wanted", 10))
+        results_wanted = int(data.get("results_wanted", 5))
         country = data.get("country", "USA")
         site_name = data.get("site_name", ["linkedin", "indeed"])
 
@@ -93,6 +143,114 @@ def get_jobs():
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
+
+
+@app.route("/api/extract-job-info", methods=["POST"])
+def extract_job_info():
+    """
+    Extract tech stack and salary from a single job description.
+    ---
+    parameters:
+      - name: body
+        in: body
+        required: true
+        schema:
+          type: object
+          example:
+            job_id: "li-1234567890"
+            title: "Full Stack Developer"
+            description: "We are looking for a Full Stack Developer proficient in Python, Django, React, and PostgreSQL. Responsibilities include building APIs, developing front-end applications, and integrating with cloud services. Experience with Docker, AWS, and Git is required. Salary: $60,000 - $80,000 per year."
+            location: "Manila, Philippines"
+            country: "PHILIPPINES"
+    responses:
+      200:
+        description: Tech stack array and salary
+        schema:
+          type: object
+          example:
+            job_id: "li-1234567890"
+            tech_mentioned: ["Python", "Django", "React", "PostgreSQL", "Docker", "AWS", "Git"]
+            extracted_salary: "$60,000 - $80,000"
+    """
+    import re
+
+    try:
+        data = request.get_json(force=True)
+        job_id = data.get("job_id", "unknown")
+        description = data.get("description", "")
+        location = data.get("location", "Unknown")
+        country = data.get("country", "USA")
+
+        if not description:
+            return jsonify({
+                "job_id": job_id,
+                "tech_mentioned": [],
+                "extracted_salary": "Not specified"
+            })
+
+        client = get_next_client()
+
+        # Combined prompt with strict JSON enforcement
+        combined_prompt = f"""
+You are an assistant that extracts tech stack and salary from a job description.
+Respond with JSON only. Do not add explanations or markdown.
+
+Job description:
+{description}
+
+Location: {location}
+Country: {country}
+
+Return JSON in the format:
+{{
+  "tech_mentioned": ["Python", "Django", "React"],
+  "extracted_salary": "$60,000 - $80,000"
+}}
+If no technologies are mentioned, return an empty array for tech_mentioned.
+If no salary is mentioned, return "Not specified" for extracted_salary.
+"""
+
+        response = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=combined_prompt
+        )
+
+        result_text = getattr(response, "text", "{}").strip()
+
+        # Debug print to see raw AI output
+        print("Raw AI response:", repr(result_text))
+
+        # Try to parse AI output
+        try:
+            result_json = json.loads(result_text)
+            tech_mentioned = result_json.get("tech_mentioned", [])
+            if not isinstance(tech_mentioned, list):
+                tech_mentioned = []
+            extracted_salary = result_json.get("extracted_salary", "Not specified")
+        except Exception:
+            tech_mentioned = []
+
+            # Fallback regex for salary extraction
+            salary_match = re.search(
+                r"[\$₱¥]\s?\d{1,3}(?:,\d{3})*(?:\s?-\s?[\$₱¥]?\d{1,3}(?:,\d{3})*)?",
+                description
+            )
+            extracted_salary = salary_match.group(0) if salary_match else "Not specified"
+
+        return jsonify({
+            "job_id": job_id,
+            "tech_mentioned": tech_mentioned,
+            "extracted_salary": extracted_salary
+        })
+
+    except Exception as e:
+        return jsonify({
+            "job_id": data.get("job_id", "unknown"),
+            "tech_mentioned": [],
+            "extracted_salary": "Not specified",
+            "error": str(e)
+        })
 
 
 @app.route("/")
