@@ -160,7 +160,7 @@ def generate_course_roadmap():
           example:
             job_id: "li-1234567890"
             title: "Frontend Engineer"
-            description: "We need a developer proficient in React and TypeScript for building banking dashboards."
+            description: "We need a developer proficient in React and TypeScript."
             tech_mentioned: ["React", "TypeScript", "Tailwind"]
     responses:
       200:
@@ -169,14 +169,11 @@ def generate_course_roadmap():
           type: object
           example:
             title: "Frontend Engineer Roadmap"
-            description: "Custom roadmap covering React, TypeScript, Tailwind"
             course_roadmap:
               - course_title: "Advanced React Patterns"
+                course_tech: "React"
                 course_objective: "Master React for complex dashboards"
                 course_description: "about Advanced React Patterns"
-              - course_title: "TypeScript for Enterprise"
-                course_objective: "Type-safe development for banking apps"
-                course_description: "about TypeScript for Enterprise"
     """
     import json
     import re
@@ -220,6 +217,7 @@ You must generate a course roadmap based strictly on the "REQUIRED TECHNOLOGIES"
 2. **Contextual Relevance:** Do not just teach the technology generically. Tailor the `course_objective` to how that technology is used in the "Job Description" provided above.
 3. **Formatting:**
    - `course_title`: The name of the technology + a relevant suffix (e.g., "React for Dashboards").
+   - `course_tech`: The exact name of the technology (e.g., "React", "Python", "SQL").
    - `course_objective`: 1 short sentence connecting the tech to the job responsibilities.
    - `course_description`: MUST be the exact string: "about {{course_title}}"
 
@@ -228,7 +226,7 @@ You must generate a course roadmap based strictly on the "REQUIRED TECHNOLOGIES"
   "title": "{job_title} Roadmap",
   "description": "Curated path for {job_title}",
   "course_roadmap": [
-     {{ "course_title": "...", "course_objective": "...", "course_description": "..." }}
+      {{ "course_title": "...", "course_tech": "...", "course_objective": "...", "course_description": "..." }}
   ]
 }}
 """
@@ -242,7 +240,7 @@ You must generate a course roadmap based strictly on the "REQUIRED TECHNOLOGIES"
             )
         except Exception:
             response = client.models.generate_content(
-                model="gemini-1.5-flash",
+                model="gemini-2.0-flash",
                 contents=prompt
             )
 
@@ -256,6 +254,7 @@ You must generate a course roadmap based strictly on the "REQUIRED TECHNOLOGIES"
             roadmap_json = json.loads(cleaned_text)
         except json.JSONDecodeError:
             try:
+                # Fallback for single quotes or slight format errors
                 roadmap_json = ast.literal_eval(cleaned_text)
             except Exception:
                 roadmap_json = {
@@ -272,7 +271,6 @@ You must generate a course roadmap based strictly on the "REQUIRED TECHNOLOGIES"
             "description": str(e), 
             "course_roadmap": []
         }), 500
-
 
 
 
