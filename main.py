@@ -145,10 +145,11 @@ def get_jobs():
         return jsonify({"error": str(e)}), 500
 
 
+
 @app.route("/api/generate-course-roadmap", methods=["POST"])
 def generate_course_roadmap():
     """
-    Generate a custom course roadmap based on a job description.
+    Generate a custom course roadmap where each Major Tech gets its own course.
     ---
     parameters:
       - name: body
@@ -158,84 +159,119 @@ def generate_course_roadmap():
           type: object
           example:
             job_id: "li-1234567890"
-            title: "Full Stack Developer"
-            description: "We are looking for a Full Stack Developer proficient in Python, Django, React, and PostgreSQL. Responsibilities include building APIs, developing front-end applications, and integrating with cloud services. Experience with Docker, AWS, and Git is required. Salary: $60,000 - $80,000 per year."
-            location: "Manila, Philippines"
-            country: "PHILIPPINES"
+            title: "Frontend Engineer"
+            description: "We need a developer proficient in React and TypeScript for building banking dashboards."
+            tech_mentioned: ["React", "TypeScript", "Tailwind"]
     responses:
       200:
         description: Suggested course roadmap
         schema:
           type: object
           example:
-            title: "Full Stack Developer Roadmap"
-            description: "Custom roadmap to acquire skills for Full Stack Development"
+            title: "Frontend Engineer Roadmap"
+            description: "Custom roadmap covering React, TypeScript, Tailwind"
             course_roadmap:
-              - course_title: "Python Fundamentals"
-                course_objective: "Learn core Python programming skills"
-                course_description: "Covers Python syntax, data structures, and best practices."
-              - course_title: "Django Web Development"
-                course_objective: "Build web apps with Django"
-                course_description: "Covers models, views, templates, REST API, and deployment."
-              - course_title: "Frontend with React"
-                course_objective: "Learn React and front-end development"
-                course_description: "Covers components, state, hooks, and connecting to APIs."
+              - course_title: "Advanced React Patterns"
+                course_objective: "Master React for complex dashboards"
+                course_description: "about Advanced React Patterns"
+              - course_title: "TypeScript for Enterprise"
+                course_objective: "Type-safe development for banking apps"
+                course_description: "about TypeScript for Enterprise"
     """
     import json
     import re
-
-    data = request.get_json(force=True)
-    job_title = data.get("title", "Unknown")
-    description = data.get("description", "")
-
-    client = get_next_client()
-
-    prompt = f"""
-You are an expert career coach. Given this job description:
-
-{description}
-
-Generate a course roadmap for someone who wants to qualify for this job. 
-Focus on the actual technologies, programming languages, frameworks, and tools mentioned. 
-Each course should cover a fundamental or beginner-friendly approach to that technology.
-
-Requirements:
-- Include at least 3 courses, but add more if there are extra relevant technologies/tools.
-- Each course must have:
-  - course_title
-  - course_objective
-  - course_description
-- Each course should focus on practical, hands-on fundamentals.
-
-Return strictly JSON ONLY, no markdown, no explanations.
-"""
-
-    response = client.models.generate_content(
-        model="gemini-2.5-flash",
-        contents=prompt
-    )
-
-    raw_text = getattr(response, "text", "{}").strip()
-    print("Raw AI response:", repr(raw_text))
-
-    # CLEAN AI OUTPUT: remove markdown code fences if present
-    cleaned_text = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw_text, flags=re.IGNORECASE).strip()
+    import ast
 
     try:
-        roadmap_json = json.loads(cleaned_text)
-    except json.JSONDecodeError:
-        # fallback: try safe eval in case AI used single quotes
-        try:
-            import ast
-            roadmap_json = ast.literal_eval(cleaned_text)
-        except Exception:
-            roadmap_json = {
-                "title": f"{job_title} Roadmap",
-                "description": "Custom roadmap could not be generated",
-                "course_roadmap": []
-            }
+        data = request.get_json(force=True)
+        job_title = data.get("title", "Unknown Job")
+        description = data.get("description", "")
+        
+        # --- 1. Extract Tech List (Expects a simple array) ---
+        tech_list = data.get("tech_mentioned", [])
+        
+        # Safety check: Ensure it is a list. If string, wrap it.
+        if isinstance(tech_list, str):
+            tech_list = [tech_list]
+        elif not isinstance(tech_list, list):
+            tech_list = [] # Fallback
+        
+        # Create a string representation for the prompt
+        tech_string = json.dumps(tech_list)
+        # -----------------------------
 
-    return jsonify(roadmap_json)
+        client = get_next_client()
+
+        # --- 2. Prompt: 1 Tech = 1 Course logic ---
+        prompt = f"""
+You are an expert technical curriculum developer.
+
+**CONTEXT:**
+Job Title: {job_title}
+Job Description: {description}
+
+**REQUIRED TECHNOLOGIES:**
+{tech_string}
+
+**INSTRUCTIONS:**
+You must generate a course roadmap based strictly on the "REQUIRED TECHNOLOGIES" list above.
+
+1. **One-to-One Mapping:** For EACH item in the "REQUIRED TECHNOLOGIES" list, create EXACTLY ONE course.
+2. **Contextual Relevance:** Do not just teach the technology generically. Tailor the `course_objective` to how that technology is used in the "Job Description" provided above.
+3. **Formatting:**
+   - `course_title`: The name of the technology + a relevant suffix (e.g., "React for Dashboards").
+   - `course_objective`: 1 short sentence connecting the tech to the job responsibilities.
+   - `course_description`: MUST be the exact string: "about {{course_title}}"
+
+**Output Format (JSON Only):**
+{{
+  "title": "{job_title} Roadmap",
+  "description": "Curated path for {job_title}",
+  "course_roadmap": [
+     {{ "course_title": "...", "course_objective": "...", "course_description": "..." }}
+  ]
+}}
+"""
+        # -------------------------------------------
+
+        # Use helper if available, otherwise standard call
+        try:
+            response = client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=prompt
+            )
+        except Exception:
+            response = client.models.generate_content(
+                model="gemini-1.5-flash",
+                contents=prompt
+            )
+
+        raw_text = getattr(response, "text", "{}").strip()
+        print("Raw AI response:", repr(raw_text))
+
+        # CLEAN AI OUTPUT: remove markdown code fences
+        cleaned_text = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw_text, flags=re.IGNORECASE).strip()
+
+        try:
+            roadmap_json = json.loads(cleaned_text)
+        except json.JSONDecodeError:
+            try:
+                roadmap_json = ast.literal_eval(cleaned_text)
+            except Exception:
+                roadmap_json = {
+                    "title": f"{job_title} Roadmap",
+                    "description": "Custom roadmap could not be generated",
+                    "course_roadmap": []
+                }
+
+        return jsonify(roadmap_json)
+
+    except Exception as e:
+        return jsonify({
+            "title": "Error", 
+            "description": str(e), 
+            "course_roadmap": []
+        }), 500
 
 
 
@@ -243,7 +279,7 @@ Return strictly JSON ONLY, no markdown, no explanations.
 @app.route("/api/extract-job-info", methods=["POST"])
 def extract_job_info():
     """
-    Extract tech stack and salary from a single job description.
+    Extract major/minor tech stack and salary from a job description.
     ---
     parameters:
       - name: body
@@ -259,12 +295,14 @@ def extract_job_info():
             country: "PHILIPPINES"
     responses:
       200:
-        description: Tech stack array and salary
+        description: Extracted major/minor tech stack and salary information
         schema:
           type: object
           example:
             job_id: "li-1234567890"
-            tech_mentioned: ["Python", "Django", "React", "PostgreSQL", "Docker", "AWS", "Git"]
+            tech_mentioned:
+              major: ["Python", "Django", "React", "PostgreSQL"]
+              minor: ["Docker", "AWS", "Git"]
             extracted_salary: "$60,000 - $80,000"
     """
     import re
@@ -279,16 +317,26 @@ def extract_job_info():
         if not description:
             return jsonify({
                 "job_id": job_id,
-                "tech_mentioned": [],
+                "tech_mentioned": {},
                 "extracted_salary": "Not specified"
             })
 
         client = get_next_client()
 
-        # Combined prompt with strict JSON enforcement
+        # ... (keep your existing combined_prompt) ...
         combined_prompt = f"""
-You are an assistant that extracts tech stack and salary from a job description.
-Respond with JSON only. Do not add explanations or markdown.
+You are an assistant that analyzes a job description and extracts:
+1. Required (major) technologies
+2. Optional (minor) or nice-to-have technologies
+3. Salary information
+
+Respond with JSON only. Do not include explanations or markdown.
+
+Instructions:
+- "major" technologies = core skills required for the role, essential to perform the job, often repeated or emphasized.
+- "minor" technologies = optional tools, nice-to-have skills, supporting tools, or low-importance extras mentioned only briefly.
+- Only include actual technologies, frameworks, tools, or programming languages.
+- If none are found, return empty arrays.
 
 Job description:
 {description}
@@ -296,36 +344,61 @@ Job description:
 Location: {location}
 Country: {country}
 
-Return JSON in the format:
+Return JSON in the following format:
 {{
-  "tech_mentioned": ["Python", "Django", "React"],
+  "tech_mentioned": {{
+    "major": ["Python", "React", "TypeScript"],
+    "minor": ["Excel", "Confluence"]
+  }},
   "extracted_salary": "$60,000 - $80,000"
 }}
-If no technologies are mentioned, return an empty array for tech_mentioned.
-If no salary is mentioned, return "Not specified" for extracted_salary.
-"""
 
-        response = client.models.generate_content(
-            model="gemini-2.5-flash",
-            contents=combined_prompt
-        )
+If salary is not mentioned, set extracted_salary to "Not specified".
+"""
+        
+        # Use the safe generator if you added the helper function, otherwise use standard
+        try:
+            response = client.models.generate_content(
+                model="gemini-2.5-flash",
+                contents=combined_prompt
+            )
+        except Exception:
+             # Fallback to stable model if 2.5 is overloaded
+             response = client.models.generate_content(
+                model="gemini-1.5-flash",
+                contents=combined_prompt
+            )
 
         result_text = getattr(response, "text", "{}").strip()
+        
+        # Clean Markdown Code Fences (Important step to avoid JSON errors)
+        result_text = re.sub(r"^```(?:json)?\s*|\s*```$", "", result_text, flags=re.IGNORECASE).strip()
 
-        # Debug print to see raw AI output
         print("Raw AI response:", repr(result_text))
 
-        # Try to parse AI output
         try:
             result_json = json.loads(result_text)
-            tech_mentioned = result_json.get("tech_mentioned", [])
-            if not isinstance(tech_mentioned, list):
-                tech_mentioned = []
-            extracted_salary = result_json.get("extracted_salary", "Not specified")
-        except Exception:
-            tech_mentioned = []
+            
+            # Get the tech_mentioned object
+            tech_mentioned = result_json.get("tech_mentioned", {})
 
-            # Fallback regex for salary extraction
+            # --- THE FIX IS HERE ---
+            # We now check if it is a DICT (Object), not a List
+            if not isinstance(tech_mentioned, dict):
+                # If AI returns a list (legacy format), try to wrap it, otherwise empty dict
+                if isinstance(tech_mentioned, list):
+                    tech_mentioned = {"major": tech_mentioned, "minor": []}
+                else:
+                    tech_mentioned = {"major": [], "minor": []}
+            # -----------------------
+
+            extracted_salary = result_json.get("extracted_salary", "Not specified")
+
+        except Exception as e:
+            print(f"JSON Parse Error: {e}")
+            tech_mentioned = {"major": [], "minor": []}
+            
+            # Fallback regex for salary
             salary_match = re.search(
                 r"[\$₱¥]\s?\d{1,3}(?:,\d{3})*(?:\s?-\s?[\$₱¥]?\d{1,3}(?:,\d{3})*)?",
                 description
@@ -341,7 +414,7 @@ If no salary is mentioned, return "Not specified" for extracted_salary.
     except Exception as e:
         return jsonify({
             "job_id": data.get("job_id", "unknown"),
-            "tech_mentioned": [],
+            "tech_mentioned": {"major": [], "minor": []},
             "extracted_salary": "Not specified",
             "error": str(e)
         })
