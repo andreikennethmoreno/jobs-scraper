@@ -6,6 +6,9 @@ from jobspy.util import get_next_client
 import json
 import pandas as pd
 from datetime import datetime
+import re
+import ast
+
 
 app = Flask(__name__)
 swagger_template = {
@@ -146,47 +149,83 @@ def get_jobs():
 
 
 
+
 @app.route("/api/generate-course-roadmap", methods=["POST"])
 def generate_course_roadmap():
     """
     Generate a custom course roadmap where each Major Tech gets its own course.
     ---
     parameters:
-      - name: body
-        in: body
+      - in: body
+        name: body
         required: true
         schema:
           type: object
-          example:
-            job_id: "li-000111222"
-            title: "Frontend Developer (Junior)"
-            description: "We are looking for a junior frontend developer to create UI components and assist with design integration."
+          properties:
+            job_id:
+              type: string
+            extracted_salary:
+              type: string
             tech_mentioned:
-              - "HTML"
-              - "CSS"
-              - "JavaScript"
-              - "React"
-              - "Figma"
+              type: object
+              properties:
+                major:
+                  type: array
+                  items:
+                    type: string
+                minor:
+                  type: array
+                  items:
+                    type: string
+          example:
+            extracted_salary: "$60,000 - $80,000"
+            job_id: "li-1234567890"
+            tech_mentioned:
+              major:
+                - "Python"
+                - "Django"
+                - "React"
+                - "PostgreSQL"
+              minor:
+                - "Docker"
+                - "AWS"
+                - "Git"
     responses:
       200:
         description: Suggested course roadmap
         schema:
           type: object
+          properties:
+            title: { type: string }
+            description: { type: string }
+            difficulty_level: { type: string }
+            course_roadmap:
+              type: object
+              properties:
+                major:
+                  type: array
+                  items:
+                    type: object
+                minor:
+                  type: array
+                  items:
+                    type: object
           example:
-            title: "Frontend Developer (Junior) Roadmap"
+            title: "Backend Developer Roadmap"
+            description: "Curated path for Backend Developer"
+            difficulty_level: "Intermediate"
             course_roadmap:
               major:
-                - course_title: "HTML Foundations"
-                  course_tech: "HTML"
-                  course_objective: "Build structured UI components."
-                  course_description: "about HTML Foundations"
+                - course_title: "Python Mastery"
+                  course_tech: "Python"
+                  course_objective: "Enhance backend logic capabilities."
+                  course_description: "about Python Mastery"
               minor:
-                - course_title: "Figma Essentials"
-                  course_tech: "Figma"
-                  course_objective: "Assist in UI design collaboration."
-                  course_description: "about Figma Essentials"
+                - course_title: "Docker Basics"
+                  course_tech: "Docker"
+                  course_objective: "Improve deployment workflow."
+                  course_description: "about Docker Basics"
     """
-
     import json
     import re
     import ast
@@ -196,82 +235,67 @@ def generate_course_roadmap():
         job_title = data.get("title", "Unknown Job")
         description = data.get("description", "")
         
-        # --- 1. Extract Tech List (Expects a simple array) ---
-        tech_list = data.get("tech_mentioned", [])
+        # 🟢 FIX START: Better Input Handling -----------------------
+        tech_data = data.get("tech_mentioned", [])
         
-        # Safety check: Ensure it is a list. If string, wrap it.
-        if isinstance(tech_list, str):
-            tech_list = [tech_list]
-        elif not isinstance(tech_list, list):
-            tech_list = [] # Fallback
+        # 1. Handle String input (legacy/swagger test)
+        if isinstance(tech_data, str):
+            try:
+                tech_data = json.loads(tech_data)
+            except:
+                tech_data = [tech_data]
         
-        # Create a string representation for the prompt
-        tech_string = json.dumps(tech_list)
-        # -----------------------------
+        # 2. 🟢 CRITICAL FIX: Allow both List AND Dict
+        if not isinstance(tech_data, (list, dict)):
+            tech_data = [] # Only wipe if it's junk data
+        
+        # 3. Create string representation for the prompt
+        # This preserves the { major: [], minor: [] } structure string
+        tech_string = json.dumps(tech_data, indent=2)
+        # 🟢 FIX END -----------------------------------------------
 
         client = get_next_client()
 
-        # --- 2. Prompt: 1 Tech = 1 Course logic ---
+        # 🟢 UPDATED PROMPT to understand the structure
         prompt = f"""
-You are an expert Technical Curriculum Developer and Career Path Architect.
+You are an expert Technical Curriculum Developer.
 
 **CONTEXT:**
 Job Title: {job_title}
 Job Description: {description}
 
-**REQUIRED TECHNOLOGIES:**
+**REQUIRED TECHNOLOGIES (Input):**
 {tech_string}
 
 **INSTRUCTIONS:**
-You must generate a structured course roadmap based strictly on the "REQUIRED TECHNOLOGIES" list above.
+1. **Analyze Input:** - If "REQUIRED TECHNOLOGIES" is a simple list, generate courses for every item.
+   - If "REQUIRED TECHNOLOGIES" is an object with "major" and "minor" lists, READ BOTH LISTS.
+   - **CRITICAL:** You must generate a course for EVERY item found in the input.
 
-### Step 1: Categorize & Sort
-You must split the technologies into two categories: **Major** and **Minor**.
+2. **Categorize & Output:**
+   - Organize the output courses into "major" and "minor" arrays.
+   - Use the input's categorization as a guide, but ensure every tech is covered.
 
-**A. MAJOR SKILLS (Core Stack):**
-Include core programming languages, main frameworks (frontend/backend), and databases.
-**Crucial:** You MUST order the `major` list in this specific learning sequence:
-1. **Languages** (e.g., Python, TypeScript, Java, Go)
-2. **Frontend Frameworks** (e.g., React, Vue, Angular)
-3. **Backend Frameworks** (e.g., Node.js, Django, Spring Boot)
-4. **Databases** (e.g., PostgreSQL, MongoDB, MySQL)
-5. **Core Infrastructure** (e.g., Docker, AWS - only if critical to the core role)
-
-**B. MINOR SKILLS (Tools & Utilities):**
-Include libraries, testing tools, build tools, project management, or niche utilities.
-**Ordering:** Sort these from **Easiest/Foundational** to **Hardest/Advanced**.
-
-### Step 2: Determine Difficulty
-Analyze the "Job Description" for keywords (e.g., "Senior", "Lead", "Architect" implies Advanced; "Junior", "Entry" implies Beginner). Also consider the volume of skills.
-Set `difficulty_level` to one of: "Beginner", "Intermediate", or "Advanced".
-
-### Step 3: Course Creation Rules
-1. **One-to-One Mapping:** For EACH item in the "REQUIRED TECHNOLOGIES" list, create EXACTLY ONE course object.
-2. **Contextual Relevance:** Tailor the `course_objective` specifically to how that technology is used in the "Job Description".
-3. **Formatting:**
-   - `course_title`: The name of the technology + a relevant suffix (e.g., "React for Dashboards").
-   - `course_tech`: The exact name of the technology (e.g., "React", "Python").
-   - `course_objective`: 1 short sentence connecting the tech to the job responsibilities.
-   - `course_description`: MUST be the exact string: "about {{course_title}}"
+3. **Difficulty:** - If job title contains "Senior" -> Advanced.
+   - If "Junior" -> Beginner.
+   - Otherwise -> Intermediate.
 
 **Output Format (JSON Only):**
 {{
   "title": "{job_title} Roadmap",
   "description": "Curated path for {job_title}",
-  "difficulty_level": "...",
+  "difficulty_level": "Beginner | Intermediate | Advanced",
   "course_roadmap": {{
       "major": [
-          {{ "course_title": "...", "course_tech": "...", "course_objective": "...", "course_description": "..." }}
+          {{ "course_title": "Title", "course_tech": "Tech Name", "course_objective": "Objective", "course_description": "about {{course_title}}" }}
       ],
       "minor": [
-          {{ "course_title": "...", "course_tech": "...", "course_objective": "...", "course_description": "..." }}
+          {{ "course_title": "Title", "course_tech": "Tech Name", "course_objective": "Objective", "course_description": "about {{course_title}}" }}
       ]
   }}
 }}
 """
-        # -------------------------------------------
 
-        # Use helper if available, otherwise standard call
         try:
             response = client.models.generate_content(
                 model="gemini-2.5-flash",
@@ -286,20 +310,18 @@ Set `difficulty_level` to one of: "Beginner", "Intermediate", or "Advanced".
         raw_text = getattr(response, "text", "{}").strip()
         print("Raw AI response:", repr(raw_text))
 
-        # CLEAN AI OUTPUT: remove markdown code fences
         cleaned_text = re.sub(r"^```(?:json)?\s*|\s*```$", "", raw_text, flags=re.IGNORECASE).strip()
 
         try:
             roadmap_json = json.loads(cleaned_text)
         except json.JSONDecodeError:
             try:
-                # Fallback for single quotes or slight format errors
                 roadmap_json = ast.literal_eval(cleaned_text)
             except Exception:
                 roadmap_json = {
                     "title": f"{job_title} Roadmap",
                     "description": "Custom roadmap could not be generated",
-                    "course_roadmap": []
+                    "course_roadmap": {"major": [], "minor": []}
                 }
 
         return jsonify(roadmap_json)
@@ -308,7 +330,7 @@ Set `difficulty_level` to one of: "Beginner", "Intermediate", or "Advanced".
         return jsonify({
             "title": "Error", 
             "description": str(e), 
-            "course_roadmap": []
+            "course_roadmap": {"major": [], "minor": []}
         }), 500
 
 
