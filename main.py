@@ -396,13 +396,13 @@ If salary is not mentioned, set extracted_salary to "Not specified".
         # Use the safe generator if you added the helper function, otherwise use standard
         try:
             response = client.models.generate_content(
-                model="gemini-2.5-flash",
+                model="gemini-2.0-flash",
                 contents=combined_prompt
             )
         except Exception:
              # Fallback to stable model if 2.5 is overloaded
              response = client.models.generate_content(
-                model="gemini-1.5-flash",
+                model="gemini-2.5-flash",
                 contents=combined_prompt
             )
 
