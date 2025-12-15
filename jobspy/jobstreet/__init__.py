@@ -1,9 +1,10 @@
-# jobspy/jobstreet/__init__.py
 from __future__ import annotations
 
 import math
 import os
 import json
+import time # <--- Added time for delays
+import random # <--- Added random for natural delays
 from urllib.parse import urlparse
 from bs4 import BeautifulSoup
 import cloudscraper
@@ -29,19 +30,13 @@ class JobStreet(Scraper):
         print("DEBUG: JobStreet Class Initialized")
         super().__init__(Site.JOBSTREET, proxies=proxies, ca_cert=ca_cert, user_agent=user_agent)
         
-        print("DEBUG: Creating CloudScraper Instance...")
-        # Matching your working script's initialization
         self.scraper = cloudscraper.create_scraper()
         
         if self.proxies:
-            print(f"DEBUG: Setting Proxies: {self.proxies}")
             self.scraper.proxies = self.proxies
 
-        # 1. Load Cookies
         self._load_cookies()
 
-        # 2. Update Headers (EXACTLY matching your working script's logic)
-        # Your working script sets these specific headers after cookie load
         self.scraper.headers.update({
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
             'Connection': 'keep-alive',
@@ -51,29 +46,15 @@ class JobStreet(Scraper):
         self.country_code = None
 
     def _load_cookies(self):
-        """
-        Loads cookies from jobspy/config/jobstreet.json
-        """
+        # ... (Keep your existing cookie logic here exactly as is) ...
         try:
             current_dir = os.path.dirname(os.path.abspath(__file__))
             jobspy_dir = os.path.dirname(current_dir)
             cookie_file = os.path.join(jobspy_dir, "config", "jobstreet.json")
             
-            print(f"DEBUG: Looking for cookies at: {cookie_file}")
-
             if os.path.exists(cookie_file):
                 with open(cookie_file, 'r') as f:
                     cookies_list = json.load(f)
-                
-                print(f"DEBUG: Found {len(cookies_list)} cookies.")
-                
-                # Check domain validity
-                if len(cookies_list) > 0:
-                    first_domain = cookies_list[0].get('domain', '')
-                    print(f"DEBUG: Cookie Domain Check: {first_domain}")
-                    if "jobstreet" not in first_domain and "seek" not in first_domain and "jobsdb" not in first_domain:
-                        print("DEBUG: WARNING!!! Cookies appear to be for the wrong domain!")
-
                 for cookie in cookies_list:
                     self.scraper.cookies.set(
                         cookie.get('name'), 
@@ -81,10 +62,6 @@ class JobStreet(Scraper):
                         domain=cookie.get('domain', ''),
                         path=cookie.get('path', '/')
                     )
-                print("DEBUG: Cookies loaded successfully.")
-            else:
-                print(f"DEBUG: Cookie file NOT FOUND at {cookie_file}")
-                
         except Exception as e:
             print(f"DEBUG: Error loading cookies: {e}")
 
@@ -101,7 +78,6 @@ class JobStreet(Scraper):
         except:
             self.country_code = "id"
         
-        # Pagination setup
         jobs_per_page = 30
         start_page = (scraper_input.offset // jobs_per_page) + 1
         total_needed = scraper_input.results_wanted
@@ -113,6 +89,7 @@ class JobStreet(Scraper):
             if current_count >= total_needed:
                 break
             
+            # ... (URL construction logic) ...
             work_slug = scraper_input.search_term.replace(" ", "-") if scraper_input.search_term else "jobs"
             loc_slug = scraper_input.location.replace(" ", "-") if scraper_input.location else "anywhere"
             
@@ -130,16 +107,13 @@ class JobStreet(Scraper):
             base_domain = f"{parsed_uri.scheme}://{parsed_uri.netloc}"
 
             try:
-                # Headers are already set in __init__, just call get
                 response = self.scraper.get(url)
                 
                 if response.status_code == 404:
-                    print("DEBUG: 404 Not Found.")
                     break
 
-                # Cloudflare Check
-                if "Just a moment..." in response.text or "Verify you are human" in response.text:
-                    print("DEBUG: BLOCKED - Cloudflare challenge active. Cookies are invalid or expired.")
+                if "Just a moment..." in response.text:
+                    print("DEBUG: BLOCKED - Cloudflare challenge active.")
                     break
                 
                 soup = BeautifulSoup(response.text, "html.parser")
@@ -147,13 +121,13 @@ class JobStreet(Scraper):
                 print(f"DEBUG: Found {len(job_cards)} job cards.")
                 
                 if not job_cards:
-                    # print(soup.prettify()[:500]) # Uncomment to see HTML if 0 cards
                     break
 
                 for card in job_cards:
                     if current_count >= total_needed:
                         break
 
+                    # Pass base_domain to process_job_card
                     job = self._process_job_card(card, base_domain)
                     if job:
                         job_list.append(job)
@@ -165,6 +139,43 @@ class JobStreet(Scraper):
 
         print(f"DEBUG: >>> FINISHED. Total: {len(job_list)} <<<")
         return JobResponse(jobs=job_list)
+
+    # ---------------------------------------------------------
+    # NEW METHOD: Fetch Description
+    # ---------------------------------------------------------
+    def _get_description(self, job_url):
+        """
+        Visits the individual job link to scrape the description.
+        """
+        if not job_url:
+            return None
+            
+        try:
+            # Random sleep to avoid rate limiting (0.5 to 1.5 seconds)
+            time.sleep(random.uniform(0.5, 1.5)) 
+            
+            print(f"DEBUG: Fetching description for {job_url}...")
+            response = self.scraper.get(job_url)
+            
+            if response.status_code != 200:
+                print(f"DEBUG: Failed to fetch description. Status: {response.status_code}")
+                return None
+                
+            soup = BeautifulSoup(response.text, "html.parser")
+            
+            # JobStreet/Seek usually stores description in data-automation="jobAdDetails"
+            description_div = soup.find("div", attrs={"data-automation": "jobAdDetails"})
+            
+            if description_div:
+                # Get text with markdown-like formatting (newlines)
+                return description_div.get_text(separator="\n", strip=True)
+            else:
+                print("DEBUG: Description container not found.")
+                return None
+                
+        except Exception as e:
+            print(f"DEBUG: Error fetching description: {e}")
+            return None
 
     def _process_job_card(self, card, base_domain) -> JobPost | None:
         try:
@@ -185,6 +196,11 @@ class JobStreet(Scraper):
                 parts = clean_url.split("-")
                 if parts:
                     job_id = parts[-1]
+
+            # --- START NEW DESCRIPTION LOGIC ---
+            # We explicitly fetch the description now
+            full_description = self._get_description(job_url)
+            # --- END NEW DESCRIPTION LOGIC ---
 
             company_tag = card.find("a", attrs={"data-automation": "jobCompany"})
             company_name = company_tag.get_text(strip=True) if company_tag else None
@@ -223,9 +239,10 @@ class JobStreet(Scraper):
                 compensation=compensation,
                 job_type=[],
                 company_logo=company_logo,
-                description=None,
+                description=full_description, # <--- Pass the fetched description here
                 date_posted=None
             )
 
         except Exception as e:
+            print(f"DEBUG: process_job_card error: {e}")
             return None
