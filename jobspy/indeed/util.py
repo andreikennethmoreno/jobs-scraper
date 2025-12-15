@@ -1,3 +1,4 @@
+# indeed/util.py
 from jobspy.model import CompensationInterval, JobType, Compensation
 from jobspy.util import get_enum_from_job_type
 

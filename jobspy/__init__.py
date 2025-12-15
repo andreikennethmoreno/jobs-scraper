@@ -1,3 +1,4 @@
+# __init__.py
 from __future__ import annotations
 
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -10,6 +11,7 @@ from jobspy.indeed import Indeed
 from jobspy.linkedin import LinkedIn
 from jobspy.model import JobType, Location, JobResponse, Country
 from jobspy.model import SalarySource, ScraperInput, Site
+from jobspy.jobstreet import JobStreet
 from jobspy.util import (
     set_logger_level,
     extract_salary,
@@ -53,6 +55,7 @@ def scrape_jobs(
     SCRAPER_MAPPING = {
         Site.LINKEDIN: LinkedIn,
         Site.INDEED: Indeed,
+        Site.JOBSTREET: JobStreet,
         
     }
     set_logger_level(verbose)
@@ -211,7 +214,12 @@ def scrape_jobs(
         return pd.DataFrame()
 
 
-# Add BDJobs to __all__
 __all__ = [
-    "BDJobs",
+    "scrape_jobs",
+    "JobType",
+    "Site",
+    "Country",
+    "Location",
+    "Compensation",
+    "ScraperInput",
 ]

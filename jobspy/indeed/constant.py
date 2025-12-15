@@ -1,3 +1,4 @@
+# /indeed/constant.py
 job_search_query = """
     query GetJobData {{
         jobSearch(

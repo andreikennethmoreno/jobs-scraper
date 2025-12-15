@@ -1,0 +1,66 @@
+[
+  {
+    "domain": ".glints.com",
+    "expirationDate": 99999999999,
+    "hostOnly": false,
+    "httpOnly": false,
+    "name": "builderSessionId",
+    "path": "/",
+    "sameSite": "no_restriction",
+    "secure": true,
+    "session": false,
+    "storeId": null,
+    "value": ""
+  },
+  {
+    "domain": "glints.com",
+    "expirationDate": 999999,
+    "hostOnly": true,
+    "httpOnly": true,
+    "name": "session",
+    "path": "/",
+    "sameSite": "lax",
+    "secure": true,
+    "session": false,
+    "storeId": null,
+    "value": ""
+  },
+  {
+    "domain": "glints.com",
+    "expirationDate": 9999,
+    "hostOnly": true,
+    "httpOnly": true,
+    "name": "device_id",
+    "path": "/",
+    "sameSite": null,
+    "secure": false,
+    "session": false,
+    "storeId": null,
+    "value": ""
+  },
+  {
+    "domain": "glints.com",
+    "expirationDate": 999,
+    "hostOnly": true,
+    "httpOnly": false,
+    "name": "g_state",
+    "path": "/",
+    "sameSite": null,
+    "secure": false,
+    "session": false,
+    "storeId": null,
+    "value": ""
+  },
+  {
+    "domain": "glints.com",
+    "hostOnly": true,
+    "httpOnly": false,
+    "name": "traceInfo",
+    "path": "/",
+    "sameSite": "no_restriction",
+    "secure": true,
+    "session": true,
+    "storeId": null,
+    "value": ""
+  }
+]
