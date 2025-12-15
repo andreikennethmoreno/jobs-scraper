@@ -6,9 +6,9 @@ import os
 import json
 from urllib.parse import urlparse
 from bs4 import BeautifulSoup
-import cloudscraper  # Using cloudscraper for WAF bypass
+import cloudscraper
 
-from jobspy.jobstreet.constant import DOMAIN_MAP, DEFAULT_URL_TEMPLATE, headers
+from jobspy.jobstreet.constant import DOMAIN_MAP, DEFAULT_URL_TEMPLATE
 from jobspy.jobstreet.util import parse_salary_string
 from jobspy.model import (
     Scraper,
@@ -30,22 +30,23 @@ class JobStreet(Scraper):
         super().__init__(Site.JOBSTREET, proxies=proxies, ca_cert=ca_cert, user_agent=user_agent)
         
         print("DEBUG: Creating CloudScraper Instance...")
-        self.scraper = cloudscraper.create_scraper(
-            browser={
-                'browser': 'chrome',
-                'platform': 'windows',
-                'desktop': True
-            }
-        )
+        # Matching your working script's initialization
+        self.scraper = cloudscraper.create_scraper()
         
         if self.proxies:
             print(f"DEBUG: Setting Proxies: {self.proxies}")
             self.scraper.proxies = self.proxies
-        else:
-            print("DEBUG: No Proxies set.")
 
-        # <--- NEW: LOAD COOKIES LOGIC --->
+        # 1. Load Cookies
         self._load_cookies()
+
+        # 2. Update Headers (EXACTLY matching your working script's logic)
+        # Your working script sets these specific headers after cookie load
+        self.scraper.headers.update({
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36',
+            'Connection': 'keep-alive',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+        })
         
         self.country_code = None
 
@@ -54,13 +55,8 @@ class JobStreet(Scraper):
         Loads cookies from jobspy/config/jobstreet.json
         """
         try:
-            # 1. Get the directory of THIS file (jobspy/jobstreet)
             current_dir = os.path.dirname(os.path.abspath(__file__))
-            
-            # 2. Go up 1 level to 'jobspy' folder
             jobspy_dir = os.path.dirname(current_dir)
-            
-            # 3. Build path to config/jobstreet.json
             cookie_file = os.path.join(jobspy_dir, "config", "jobstreet.json")
             
             print(f"DEBUG: Looking for cookies at: {cookie_file}")
@@ -71,10 +67,14 @@ class JobStreet(Scraper):
                 
                 print(f"DEBUG: Found {len(cookies_list)} cookies.")
                 
-                # Load cookies into CloudScraper
+                # Check domain validity
+                if len(cookies_list) > 0:
+                    first_domain = cookies_list[0].get('domain', '')
+                    print(f"DEBUG: Cookie Domain Check: {first_domain}")
+                    if "jobstreet" not in first_domain and "seek" not in first_domain and "jobsdb" not in first_domain:
+                        print("DEBUG: WARNING!!! Cookies appear to be for the wrong domain!")
+
                 for cookie in cookies_list:
-                    # CRITICAL: Ensure the domain matches the site you are scraping!
-                    # If your JSON has ".glints.com", it won't work for ".jobstreet.com"
                     self.scraper.cookies.set(
                         cookie.get('name'), 
                         cookie.get('value'), 
@@ -90,12 +90,9 @@ class JobStreet(Scraper):
 
     def scrape(self, scraper_input: ScraperInput) -> JobResponse:
         print("DEBUG: >>> STARTING SCRAPE METHOD <<<")
-        print(f"DEBUG: Search Term: {scraper_input.search_term}")
-        print(f"DEBUG: Location: {scraper_input.location}")
         
         job_list = []
         
-        # 1. Determine Country Code
         try:
             if isinstance(scraper_input.country.value, tuple):
                  self.country_code = scraper_input.country.value[1].split(":")[0].lower()
@@ -104,8 +101,6 @@ class JobStreet(Scraper):
         except:
             self.country_code = "id"
         
-        print(f"DEBUG: Resolved Country Code: {self.country_code}")
-
         # Pagination setup
         jobs_per_page = 30
         start_page = (scraper_input.offset // jobs_per_page) + 1
@@ -113,14 +108,11 @@ class JobStreet(Scraper):
         max_pages = start_page + math.ceil(total_needed / jobs_per_page)
         
         current_count = 0
-        print(f"DEBUG: Paging from {start_page} to {max_pages}")
 
         for page in range(start_page, max_pages + 1):
             if current_count >= total_needed:
-                print("DEBUG: Reached total needed jobs. Stopping.")
                 break
             
-            # 2. Construct URL
             work_slug = scraper_input.search_term.replace(" ", "-") if scraper_input.search_term else "jobs"
             loc_slug = scraper_input.location.replace(" ", "-") if scraper_input.location else "anywhere"
             
@@ -132,78 +124,53 @@ class JobStreet(Scraper):
             url = url_template.format(country=self.country_code, work=work_slug, location=loc_slug)
             url += f"?page={page}"
             
-            print(f"DEBUG: ------------------------------------------------")
             print(f"DEBUG: TARGET URL: {url}")
             
             parsed_uri = urlparse(url)
             base_domain = f"{parsed_uri.scheme}://{parsed_uri.netloc}"
 
             try:
-                # 3. Perform Request
-                print("DEBUG: Sending Request via CloudScraper...")
+                # Headers are already set in __init__, just call get
                 response = self.scraper.get(url)
                 
-                print(f"DEBUG: Response Status Code: {response.status_code}")
-                
                 if response.status_code == 404:
-                    print("DEBUG: ERROR - 404 Not Found. Check URL structure.")
-                    log.error(f"404 Not Found: {url}")
+                    print("DEBUG: 404 Not Found.")
                     break
-
-                if not response.ok:
-                    print(f"DEBUG: ERROR - Request failed with status {response.status_code}")
-                    break
-                
-                # 4. Check HTML Content
-                html_len = len(response.text)
-                print(f"DEBUG: Received HTML content (Length: {html_len} chars)")
-                
-                soup = BeautifulSoup(response.text, "html.parser")
 
                 # Cloudflare Check
-                page_text = soup.get_text()
-                if "Just a moment..." in page_text or "Verify you are human" in page_text:
-                    print("DEBUG: !!! BLOCKED BY CLOUDFLARE CHALLENGE !!!")
-                    log.error("Blocked by Cloudflare challenge.")
+                if "Just a moment..." in response.text or "Verify you are human" in response.text:
+                    print("DEBUG: BLOCKED - Cloudflare challenge active. Cookies are invalid or expired.")
                     break
                 
-                # 5. Extract Job Cards
+                soup = BeautifulSoup(response.text, "html.parser")
                 job_cards = soup.find_all("article", attrs={"data-automation": "normalJob"})
-                print(f"DEBUG: Found {len(job_cards)} job cards on page {page}")
+                print(f"DEBUG: Found {len(job_cards)} job cards.")
                 
                 if not job_cards:
-                    print("DEBUG: No job cards found. Dumping first 500 chars of HTML for inspection:")
-                    print(soup.prettify()[:500])
+                    # print(soup.prettify()[:500]) # Uncomment to see HTML if 0 cards
                     break
 
-                for i, card in enumerate(job_cards):
+                for card in job_cards:
                     if current_count >= total_needed:
                         break
 
-                    print(f"DEBUG: Processing card {i+1}...")
                     job = self._process_job_card(card, base_domain)
                     if job:
-                        print(f"DEBUG:   -> Success: {job.title} at {job.company_name}")
                         job_list.append(job)
                         current_count += 1
-                    else:
-                        print("DEBUG:   -> Failed to parse card.")
                         
             except Exception as e:
-                print(f"DEBUG: CRITICAL EXCEPTION on page {page}: {e}")
-                log.error(f"Error scraping page {page}: {str(e)}")
+                print(f"DEBUG: Scrape error: {e}")
                 break
 
-        print(f"DEBUG: >>> FINISHED SCRAPE. Total jobs found: {len(job_list)} <<<")
+        print(f"DEBUG: >>> FINISHED. Total: {len(job_list)} <<<")
         return JobResponse(jobs=job_list)
 
     def _process_job_card(self, card, base_domain) -> JobPost | None:
         try:
-            # Title
             title_tag = card.find("a", attrs={"data-automation": "jobTitle"})
             title = title_tag.get_text(strip=True) if title_tag else None
             
-            # URL
             job_url = None
             if title_tag and title_tag.has_attr('href'):
                 raw_link = title_tag['href']
@@ -212,7 +179,6 @@ class JobStreet(Scraper):
                 else:
                     job_url = f"{base_domain}{raw_link}"
             
-            # ID
             job_id = None
             if job_url:
                 clean_url = job_url.split("?")[0]
@@ -220,15 +186,12 @@ class JobStreet(Scraper):
                 if parts:
                     job_id = parts[-1]
 
-            # Company
             company_tag = card.find("a", attrs={"data-automation": "jobCompany"})
             company_name = company_tag.get_text(strip=True) if company_tag else None
             
-            # Location
             location_tags = card.find_all("a", attrs={"data-automation": "jobLocation"})
             location_text = ", ".join([tag.get_text(strip=True) for tag in location_tags]) if location_tags else None
             
-            # Salary
             salary_tag = card.find("span", attrs={"data-automation": "jobSalary"})
             salary_text = salary_tag.get_text(strip=True) if salary_tag else None
             
@@ -247,7 +210,6 @@ class JobStreet(Scraper):
                         currency=curr
                     )
 
-            # Logo
             logo_container = card.find("div", attrs={"data-automation": "company-logo-container"})
             logo_img = logo_container.find("img") if logo_container else None
             company_logo = logo_img["src"] if logo_img and logo_img.has_attr("src") else None
@@ -266,5 +228,4 @@ class JobStreet(Scraper):
             )
 
         except Exception as e:
-            print(f"DEBUG: Error inside _process_job_card: {e}")
             return None
