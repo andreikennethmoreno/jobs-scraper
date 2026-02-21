@@ -9,6 +9,8 @@ from urllib.parse import urlparse
 from bs4 import BeautifulSoup
 import cloudscraper
 
+
+
 from jobspy.jobstreet.constant import DOMAIN_MAP, DEFAULT_URL_TEMPLATE
 from jobspy.jobstreet.util import parse_salary_string
 from jobspy.model import (
