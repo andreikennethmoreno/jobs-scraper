@@ -15,31 +15,6 @@ class IndeedException(Exception):
     def __init__(self, message=None):
         super().__init__(message or "An error occurred with Indeed")
 
-
-class ZipRecruiterException(Exception):
+class JobStreetException(Exception):
     def __init__(self, message=None):
-        super().__init__(message or "An error occurred with ZipRecruiter")
-
-
-class GlassdoorException(Exception):
-    def __init__(self, message=None):
-        super().__init__(message or "An error occurred with Glassdoor")
-
-
-class GoogleJobsException(Exception):
-    def __init__(self, message=None):
-        super().__init__(message or "An error occurred with Google Jobs")
-
-
-class BaytException(Exception):
-    def __init__(self, message=None):
-        super().__init__(message or "An error occurred with Bayt")
-
-class NaukriException(Exception):
-    def __init__(self,message=None):
-        super().__init__(message or "An error occurred with Naukri")
-
-
-class BDJobsException(Exception):
-    def __init__(self, message=None):
-        super().__init__(message or "An error occurred with BDJobs")
+        super().__init__(message or "An error occurred with JobStreet")

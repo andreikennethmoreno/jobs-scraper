@@ -83,14 +83,15 @@ def get_countries():
     countries = [c.name for c in Country]
     return jsonify({"countries": countries})
 
+
 def normalize_location_for_jobstreet(location):
     """
     JobStreet PH often fails with 'City, Province' strings.
-    This strips it down to the primary city to improve search hits (e.g., 'Bacoor, Cavite' -> 'Bacoor').
+    This strips it down to the primary city to improve search hits.
     """
     if location and "," in location:
         return location.split(",")[0].strip()
-
+    return location # Added return for non-comma case
 
 
 
@@ -128,16 +129,20 @@ def get_jobs():
         if not search_term or not location:
             return jsonify({"error": "search_term and location are required"}), 400
 
-        # Normalize site_name for Vercel JSON weirdness
+        # 1. Normalize site_name to handle string or list input
         if isinstance(site_name, str):
             try:
                 site_name = json.loads(site_name)
             except Exception:
                 site_name = [s.strip() for s in site_name.split(",") if s.strip()]
-
-        # Ensure it's a list
+        
         if not isinstance(site_name, list):
             site_name = [str(site_name)]
+
+        # 2. 🟢 Apply JobStreet Localization
+        # If jobstreet is in the request, we clean the location (e.g., 'Bacoor, Cavite' -> 'Bacoor')
+        if any("jobstreet" in s.lower() for s in site_name):
+            location = normalize_location_for_jobstreet(location)
 
         jobs_df = scrape_jobs(
             site_name=site_name,
@@ -150,13 +155,16 @@ def get_jobs():
 
         if jobs_df is None or not isinstance(jobs_df, pd.DataFrame):
             return jsonify({"error": "No job data returned."}), 500
+            
+        # 3. 🟢 Data Integrity Fix: Fill NaNs/NaTs 
+        # Standard JSON cannot handle 'NaN'. JobStreet data often has empty fields.
+        jobs_df = jobs_df.fillna("")
 
         jobs = jobs_df.to_dict(orient="records")
         return jsonify({"jobs": jobs, "count": len(jobs)})
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
-
 
 
 

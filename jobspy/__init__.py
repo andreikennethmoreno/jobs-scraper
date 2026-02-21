@@ -8,6 +8,7 @@ import pandas as pd
 
 from jobspy.indeed import Indeed
 from jobspy.linkedin import LinkedIn
+from jobspy.jobstreet import JobStreet
 from jobspy.model import JobType, Location, JobResponse, Country
 from jobspy.model import SalarySource, ScraperInput, Site
 from jobspy.util import (
@@ -53,6 +54,7 @@ def scrape_jobs(
     SCRAPER_MAPPING = {
         Site.LINKEDIN: LinkedIn,
         Site.INDEED: Indeed,
+        Site.JOBSTREET: JobStreet,
         
     }
     set_logger_level(verbose)

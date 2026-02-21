@@ -1,0 +1,26 @@
+# --- Python & Environment ---
+.venv/
+venv/
+ENV/
+*.py[cod]
+__pycache__/
+.python-version
+.pytest_cache/
+
+# --- Local Git & Config ---
+.git/
+.gitignore
+.vercel/
+README.md
+
+# --- Local Data & Scraps ---
+*.db
+*.sqlite3
+*.csv
+*.json
+!apispec_1.json
+instance/
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
