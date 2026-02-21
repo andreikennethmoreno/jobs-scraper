@@ -1,0 +1,28 @@
+# --- Python & Virtual Environments ---
+.venv/
+venv/
+ENV/
+bin/
+lib/
+include/
+*.py[cod]
+__pycache__/
+.python-version
+
+# --- Environment Variables (CRITICAL) ---
+.env
+.flaskenv
+
+# --- Flask & Development ---
+instance/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- OS Specific ---
+.DS_Store
+Thumbs.db
+
+# --- Database (if using SQLite) ---
+*.db
+*.sqlite3
