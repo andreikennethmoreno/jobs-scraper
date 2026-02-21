@@ -287,12 +287,8 @@ class JobResponse(BaseModel):
 class Site(Enum):
     LINKEDIN = "linkedin"
     INDEED = "indeed"
-    ZIP_RECRUITER = "zip_recruiter"
-    GLASSDOOR = "glassdoor"
-    GOOGLE = "google"
-    BAYT = "bayt"
-    NAUKRI = "naukri"
-    BDJOBS = "bdjobs"  # Add this line
+    JOBSTREET = "jobstreet"
+
 
 
 class SalarySource(Enum):

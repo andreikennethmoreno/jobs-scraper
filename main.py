@@ -83,6 +83,16 @@ def get_countries():
     countries = [c.name for c in Country]
     return jsonify({"countries": countries})
 
+def normalize_location_for_jobstreet(location):
+    """
+    JobStreet PH often fails with 'City, Province' strings.
+    This strips it down to the primary city to improve search hits (e.g., 'Bacoor, Cavite' -> 'Bacoor').
+    """
+    if location and "," in location:
+        return location.split(",")[0].strip()
+
+
+
 
 @app.route("/api/jobs", methods=["POST"])
 def get_jobs():
@@ -100,7 +110,7 @@ def get_jobs():
             site_name:
               type: array
               items: { type: string }
-              example: ["linkedin", "indeed"]
+              example: ["linkedin", "indeed", "jobstreet"]
             results_wanted: { type: integer, example: 10 }
             country: { type: string, example: PHILIPPINES }
     responses:
@@ -113,7 +123,7 @@ def get_jobs():
         location = data.get("location")
         results_wanted = int(data.get("results_wanted", 5))
         country = data.get("country", "USA")
-        site_name = data.get("site_name", ["linkedin", "indeed"])
+        site_name = data.get("site_name", ["linkedin", "indeed", "jobstreet"])
 
         if not search_term or not location:
             return jsonify({"error": "search_term and location are required"}), 400
@@ -146,6 +156,7 @@ def get_jobs():
 
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
 
 
 
